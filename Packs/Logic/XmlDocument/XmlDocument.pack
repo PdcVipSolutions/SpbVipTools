@@ -1,0 +1,19 @@
+﻿#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+
+% privately used packages
+#include @"pfc\log\Log.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"pfc\collection\collection.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\XmlDocument\XmlElement.pro"
+#include @"Packs\Logic\XmlDocument\XmlAttribute.pro"
+#include @"Packs\Logic\XmlDocument\XmlDocument.pro"

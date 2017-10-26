@@ -1,0 +1,15 @@
+﻿#include @"Packs\Gui\AboutDialog\AboutDialog.ph"
+
+#requires @"Packs\Gui\AboutDialog\AboutDialog.dlg"
+% privately used packages
+#include @"pfc\gui\controls\editControl\editControl.ph"
+#include @"pfc\gui\controls\iconControl\iconControl.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\resourceIdentifiers.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Gui\AboutDialog\AboutDialog.pro"

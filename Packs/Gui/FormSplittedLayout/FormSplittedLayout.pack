@@ -1,0 +1,25 @@
+﻿#include @"packs\gui\FormSplittedLayout\FormSplittedLayout.ph"
+
+#requires @"packs\gui\FormSplittedLayout\SplitContainerControl.ctl"
+% privately used packages
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"pfc\collection\collection.ph"
+#include @"pfc\stream\stream.ph"
+#include @"pfc\gui\controls\messageControl\messageControl.ph"
+#include @"pfc\resourceIdentifiers.ph"
+
+% privately used packages
+#include @"pfc\gui\gui.ph"
+#include @"pfc\gui\controls\splitterControl\splitterControl.ph"
+#include @"pfc\gui\controls\controlSupport\controlSupport.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"pfc\core.ph"
+
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"packs\gui\FormSplittedLayout\FormSplittedLayout.pro"
+#include @"packs\gui\FormSplittedLayout\SplitContainerControl.pro"

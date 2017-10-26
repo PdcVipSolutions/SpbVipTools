@@ -1,0 +1,13 @@
+﻿#include @"Packs\Logic\Web\xmlHttpEventSink\xmlHttpEventSink.ph"
+
+% privately used packages
+#include @"pfc\core.ph"
+#include @"pfc\windowsApi\msXML_api\msXML_HTTP_api\msxml_HTTP_api.ph"
+#include @"pfc\multiThread\multiThread.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\Web\xmlHttpEventSink\xmlHttpEventSink.pro"

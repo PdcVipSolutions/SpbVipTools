@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wsm_options>
+  <be_options>
+    <group title="VirtualDir">
+      <VirtDir VirtName="$(ProgramFiles)" path="C:\Program Files (x86)\" />
+      <VirtDir VirtName="$(WinSys32)" path="C:\Windows\System32\" />
+      <VirtDir VirtName="$(ProDir)" path="C:\Users\Виктор Юхтенко\Documents\PDCTools\Vip8\" />
+    </group>
+    <group select="Vip Project" title="PerformExt">
+      <source ext="vipprj" name="Vip Project">
+        <open feMode="false" filename="$(ProDir)Vip8\bin\vip.exe" />
+        <run argRun="/build /saveproject" codePage="65001" compRun="wsBE_PerformVIPPRJ" feMode="false" filename="$(ProDir)bin\vipBuilder.exe" reargRun="/rebuild /saveproject" streamMode="1" />
+        <exec cmdExec="&quot;$(SourceExeDir)\$(ExeName)&quot;" execOn="true" feMode="true" />
+      </source>
+      <source ext="htm,html" name="Html file">
+        <open feMode="true" filename="$(ProgramFiles)Internet Explorer\iexplore.exe" />
+        <run codePage="1200" streamMode="0" />
+        <exec cmdExec="$(WinSys32)notepad.exe $(SourceFile)" execOn="true" feMode="true" />
+      </source>
+      <source ext="cmd, bat" name="Win CommandFile">
+        <open feMode="true" filename="$(WinSys32)notepad.exe $(SourceFile)" />
+        <run argRun="/u/c" codePage="866" feMode="false" filename="$(winSys32)cmd.exe" reargRun="/u/c" streamMode="0" suffixRun="&lt;$(SpbSolutions)\bin\yes.txt" />
+        <exec cmdExec="$(WinSys32)cmd.exe $(SourceFile)" execOn="true" feMode="false" />
+      </source>
+    </group>
+  </be_options>
+  <fe_options>
+    <group title="wsFE_Tasks">
+      <rbState path="[namedValue(&quot;reset&quot;,boolean(true)),namedValue(&quot;local&quot;,boolean(false))]" />
+      <work_space path="C:\Users\Виктор Юхтенко\Documents\GitHub\SpbRSolutions\SpbVipTools\Bin" />
+      <source path="C:\Users\Виктор Юхтенко\Documents\GitHub\SpbRSolutions\SpbVipTools\Bin" />
+      <folder path="C:\Users\Виктор Юхтенко\Documents\GitHub\SpbRSolutions\SpbVipTools\Bin" />
+    </group>
+    <group title="wsFE_Form">
+      <nodeIDList path="[namedValue(&quot;work_space&quot;,string(&quot;Unknown&quot;))]" />
+      <ribbon path="[section(&quot;workSpace&quot;,&quot;WorkSpace Editing&quot;,noTip,none,[block([[cmd(&quot;workSpace&quot;,imageAndText(vertical))]]),block([[cmd(&quot;treeMenu&quot;,imageAndText(vertical))]])]),section(&quot;manipulate&quot;,&quot;Manipulate Entity&quot;,noTip,none,[block([[cmd(&quot;DeleteEntity&quot;,imageAndText(vertical))],[cmd(&quot;MoveNodeUp&quot;,imageAndText(vertical))],[cmd(&quot;MoveNodeDown&quot;,imageAndText(vertical))]])]),section(&quot;sourceSpace&quot;,&quot;Source Editing&quot;,noTip,none,[block([[cmd(&quot;addSource&quot;,imageAndText(vertical))],[cmd(&quot;addFromFolder&quot;,imageAndText(vertical))],[cmd(&quot;openSource&quot;,imageAndText(vertical))]])]),section(&quot;actions&quot;,&quot;Source Actions&quot;,noTip,none,[block([[cmd(&quot;run/reRun&quot;,imageAndText(vertical))]]),block([[cmd(&quot;run/reRunAll&quot;,imageAndText(vertical))]]),block([[cmd(&quot;Pause&quot;,imageAndText(vertical))],[cmd(&quot;Stop&quot;,imageAndText(vertical))],[cmd(&quot;Exec&quot;,imageAndText(vertical))]]),block([[cmd(&quot;resetSource&quot;,imageAndText(vertical))]])]),section(&quot;about&quot;,&quot;Help &amp; About&quot;,noTip,none,[block([[cmd(&quot;showFilter&quot;,imageAndText(vertical))]]),block([[cmd(&quot;settingsdlg&quot;,imageAndText(vertical))]]),block([[cmd(&quot;showlocaloptions&quot;,imageAndText(vertical))]]),block([[cmd(&quot;ribbon.design&quot;,imageAndText(vertical))]]),block([[cmd(&quot;about&quot;,imageAndText(vertical))]])])]" />
+      <filter path="[&quot;Vip Project&quot;,&quot;Win CommandFile&quot;,&quot;Html file&quot;]" />
+      <lang cur="en" />
+    </group>
+    <group title="wSFE_SourceList">
+      <color textColor="[]" />
+    </group>
+  </fe_options>
+</wsm_options>

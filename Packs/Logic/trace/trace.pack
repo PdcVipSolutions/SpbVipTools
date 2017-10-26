@@ -1,0 +1,14 @@
+﻿#include @"Packs\Logic\trace\trace.ph"
+
+% privately used packages
+#include @"pfc\string\string.ph"
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"pfc\collection\collection.ph"
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\trace\trace.pro"

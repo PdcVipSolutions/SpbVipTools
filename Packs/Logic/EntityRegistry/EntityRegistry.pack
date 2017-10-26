@@ -1,0 +1,13 @@
+﻿#include @"Packs\Logic\EntityRegistry\EntityRegistry.ph"
+
+% privately used packages
+#include @"pfc\string\string.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\EntityRegistry\EntityRegistry.pro"

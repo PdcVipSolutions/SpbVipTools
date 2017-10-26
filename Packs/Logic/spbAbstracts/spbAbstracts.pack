@@ -1,0 +1,17 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"Packs\Logic\spbAbstracts\spbAbstracts.ph"
+
+% privately used packages
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\spbAbstracts\spbAbstracts.pro"
