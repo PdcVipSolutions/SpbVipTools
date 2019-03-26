@@ -1,4 +1,4 @@
-﻿% Copyright SPBrSolutions
+﻿% Copyright (c) Prolog Development Center SPb
 
 implement spbXmlLigntSupport
     open core, xmlLite

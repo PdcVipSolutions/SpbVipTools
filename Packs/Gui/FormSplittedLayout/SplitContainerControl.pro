@@ -4,8 +4,6 @@ implement splitContainerControl
     inherits userControlSupport
     open core, vpiDomains
 
-
-
 clauses
     new(Parent):-
         new(),

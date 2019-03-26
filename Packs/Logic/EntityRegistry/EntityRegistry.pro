@@ -11,7 +11,7 @@ constants
 facts - redBlackTreeStruct
     tree_V:redBlackTree::tree{string, @Entity}:=treeInitial_C.
 
-predicates
+class predicates
     entityIdComparator:core::comparator{string,string}.
 clauses
     entityIdComparator(Name1,Name2)=equal():-

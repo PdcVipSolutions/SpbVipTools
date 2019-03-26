@@ -1,4 +1,4 @@
-﻿% Copyright Prolog Development Center SPB
+﻿% Copyright Prolog Development Center SPb
 
 class xmlHttpEventSink : xmlHttpEventSink
 

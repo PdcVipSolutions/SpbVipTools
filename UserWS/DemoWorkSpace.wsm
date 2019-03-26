@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <work_space title="SpbRSolutions" ws_File="C:\Users\Виктор Юхтенко\Documents\SpbProjects\SPBrSolutions_75\Cmd\Solutions\SystemNew.wsm">
   <group title="Clean">
-    <group title="CleanExamples">
-      <source datetime="2.10.2017 17:57:50" filename="$(SpbExamples)CleanCommonExamples.cmd" status="4" />
-    </group>
-    <group title="CleanSpbRProjects">
-      <source datetime="2.10.2017 18:00:06" filename="$(SpbProjects)CleanSPbProjects.cmd" status="2" />
-    </group>
+    <source filename="$(SpbProjects)CleanSPbProjects.cmd" />
+    <source filename="$(SpbExamples)CleanCommonExamples.cmd" />
+    <source filename="$(SpbExamples)Polyline\CleanPolyline.cmd" />
   </group>
   <group title="SpbExamples">
     <group title="Polyline">
@@ -14,38 +11,39 @@
         <source filename="$(SpbExamples)Polyline\ReadmeEn.html" />
         <source filename="$(SpbExamples)Polyline\ReadmeRu.html" />
         <source filename="$(SpbExamples)Polyline\VersionReference.html" />
-        <source datetime="20.09.2017 22:46:23" filename="$(SpbExamples)Polyline\CleanPolyline.cmd" status="4" />
       </group>
       <group title="Rel1-10">
-        <source datetime="2.10.2017 18:02:36" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:39" filename="$(SpbExamples)PolyLine\Polyline2\PolyLine2.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:40" filename="$(SpbExamples)PolyLine\Polyline3\Polyline3.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:40" filename="$(SpbExamples)PolyLine\Polyline4\Polyline4.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:41" filename="$(SpbExamples)PolyLine\Polyline5\Polyline5.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:42" filename="$(SpbExamples)PolyLine\Polyline6\Polyline6.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:42" filename="$(SpbExamples)PolyLine\Polyline7\Polyline7.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:43" filename="$(SpbExamples)PolyLine\PolyLine8\Polyline8.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:44" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" />
-        <source datetime="19.09.2017 23:53:37" filename="$(SpbExamples)PolyLine\PolyLine10\Polyline10.vipprj" status="4" warnings="7" />
+        <source datetime="18.11.2018 18:56:03" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
+        <source datetime="2.01.2019 23:15:28" filename="$(SpbExamples)PolyLine\Polyline2\PolyLine2.vipprj" status="4" />
+        <source datetime="18.11.2018 18:56:06" filename="$(SpbExamples)PolyLine\Polyline3\Polyline3.vipprj" status="4" />
+        <source datetime="18.11.2018 18:56:07" filename="$(SpbExamples)PolyLine\Polyline4\Polyline4.vipprj" status="4" />
+        <source datetime="18.11.2018 18:56:21" filename="$(SpbExamples)PolyLine\Polyline5\Polyline5.vipprj" status="4" />
+        <source datetime="18.11.2018 18:57:00" filename="$(SpbExamples)PolyLine\Polyline6\Polyline6.vipprj" status="4" warnings="3" />
+        <source datetime="18.11.2018 18:57:38" filename="$(SpbExamples)PolyLine\Polyline7\Polyline7.vipprj" status="4" warnings="4" />
+        <source datetime="18.11.2018 18:58:17" filename="$(SpbExamples)PolyLine\PolyLine8\Polyline8.vipprj" status="4" warnings="1" />
+        <source datetime="18.11.2018 18:58:53" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" warnings="1" />
+        <source datetime="18.11.2018 18:59:30" filename="$(SpbExamples)PolyLine\PolyLine10\Polyline10.vipprj" status="4" warnings="1" />
       </group>
       <group title="Rel11">
-        <source datetime="20.09.2017 21:35:20" filename="$(SpbExamples)Polyline\Polyline11\ReadmeEn.html" status="4" />
+        <source filename="$(SpbExamples)Polyline\Polyline11\ReadmeEn.html" />
         <source filename="$(SpbExamples)Polyline\Polyline11\ReadmeRu.html" />
-        <source datetime="20.09.2017 21:35:47" filename="$(SpbExamples)Polyline\Polyline11\VersionReference.html" status="4" />
+        <source filename="$(SpbExamples)Polyline\Polyline11\VersionReference.html" />
         <group title="SourceApps">
-          <source datetime="20.09.2017 00:01:53" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" />
-          <source datetime="20.09.2017 00:02:39" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
-          <source datetime="20.09.2017 00:04:28" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" />
-          <source datetime="2.10.2017 00:53:58" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="7" />
+          <source datetime="18.11.2018 19:00:10" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" warnings="5" />
+          <source datetime="7.01.2019 22:08:01" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
+          <source datetime="18.11.2018 19:02:34" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" warnings="9" />
+          <source datetime="18.11.2018 19:25:45" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="4">
+            <command addModeA="true" addModeS="true" argument="" index="1" suffix="" />
+            <command addModeA="true" addModeS="true" argument="" index="2" suffix="" />
+            <command addModeA="true" addModeS="true" argument="" index="3" suffix="" />
+            <command addModeA="true" addModeS="true" argument="" index="4" suffix="" />
+          </source>
         </group>
-        <group title="Source+Lib">
-          <source datetime="20.09.2017 00:05:06" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_Console.vipprj" status="4" />
-          <source datetime="20.09.2017 00:05:44" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsole.vipprj" status="4" />
-          <source datetime="20.09.2017 00:07:38" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindows.vipprj" status="4" />
-        </group>
+        <group title="Source+Lib" />
+        <source datetime="18.11.2018 19:03:14" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" status="4" />
+        <source datetime="18.11.2018 19:04:44" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" status="4" warnings="4" />
+        <source datetime="18.11.2018 19:05:19" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" status="4" />
       </group>
-      <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Exe\LanguageWSM.xml" />
-      <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Exe\OptionsWSM.xml" />
       <group title="Rel12">
         <group title="Readme">
           <source filename="$(SpbExamples)PolyLine\Polyline12\Readme.htm" />
@@ -54,15 +52,15 @@
           <source filename="$(SpbExamples)PolyLine\Polyline12\VersionReference.html" />
         </group>
         <group title="Apps">
-          <source datetime="14.10.2017 00:22:13" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj" status="4" />
-          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin1\Polyline12_ObjWindows1.vipprj" />
-          <source datetime="14.10.2017 00:23:25" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin2\Polyline12_ObjWindows2.vipprj" status="4" />
-          <source datetime="14.10.2017 00:32:24" filename="$(SpbExamples)PolyLine\Polyline12\Programs\BuildHumanInterfaceLib.cmd" status="4" />
+          <source datetime="18.11.2018 19:06:48" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj" status="4" warnings="9" />
+          <source datetime="18.11.2018 19:09:50" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin1\Polyline12_ObjWindows1.vipprj" status="4" />
+          <source datetime="18.11.2018 19:11:18" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin2\Polyline12_ObjWindows2.vipprj" status="4" warnings="9" />
+          <source datetime="18.11.2018 19:11:18" filename="$(SpbExamples)PolyLine\Polyline12\Programs\BuildHumanInterfaceLib.cmd" status="4" />
         </group>
         <group title="App+Lib">
-          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib0\Polyline12_ObjWindowsLib0.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib1\Polyline12_ObjWindowsLib1.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib2\Polyline12_ObjWindowsLib2.vipprj" />
+          <source datetime="18.11.2018 19:13:05" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib0\Polyline12_ObjWindowsLib0.vipprj" status="4" warnings="4" />
+          <source datetime="18.11.2018 19:14:33" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib1\Polyline12_ObjWindowsLib1.vipprj" status="4" warnings="4" />
+          <source datetime="18.11.2018 19:16:04" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib2\Polyline12_ObjWindowsLib2.vipprj" status="4" warnings="4" />
         </group>
       </group>
       <group title="Rel13">
@@ -70,50 +68,49 @@
         <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" />
         <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" />
         <group title="DLLs">
-          <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" />
+          <source datetime="18.11.2018 19:16:42" filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" status="4" warnings="1" />
+          <source datetime="18.11.2018 19:17:49" filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" status="4" warnings="8" />
+          <source datetime="18.11.2018 19:18:26" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" status="4" warnings="1" />
         </group>
         <group title="Application">
-          <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" />
+          <source datetime="18.11.2018 19:20:08" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" status="4" warnings="11" />
         </group>
       </group>
       <group title="KeyProjects">
         <group title="PL_1">
-          <source datetime="9.10.2017 22:58:58" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
+          <source datetime="18.11.2018 19:20:08" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
           <source filename="$(SpbExamples)PolyLine\Polyline1\Readme.htm" />
         </group>
         <group title="PL_9">
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" />
+          <source datetime="18.11.2018 19:20:09" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" />
           <source filename="$(SpbExamples)PolyLine\PolyLine9\Readme.htm" />
         </group>
         <group title="PL_11">
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\ReadmeEn.html" status="7" />
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\ReadmeRu.html" status="7" />
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\VersionReference.html" status="7" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\ReadmeEn.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\ReadmeRu.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\VersionReference.html" />
           <group title="SourceApp">
-            <source datetime="9.10.2017 22:59:00" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:00" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:10" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:11" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:12" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" />
           </group>
           <group title="Source+Lib">
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="4" />
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:03" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" status="4" />
+            <source datetime="18.11.2018 19:25:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="4" />
+            <source datetime="18.11.2018 19:20:13" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:14" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:15" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" status="4" />
           </group>
         </group>
         <group title="PL_13">
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" status="7" />
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" status="7" />
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\VersionReference.html" status="7" />
+          <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" />
           <group title="DLL">
-            <source datetime="9.10.2017 22:59:05" filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:06" filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:06" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:16" filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:17" filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:18" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" status="4" />
           </group>
           <group title="Application">
-            <source datetime="9.10.2017 22:59:07" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" status="4" />
+            <source datetime="18.11.2018 19:20:19" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" status="4" />
           </group>
         </group>
       </group>
@@ -146,9 +143,9 @@
     </group>
     <group title="WinTimer">
       <group title="Applications">
-        <source datetime="20.09.2017 00:08:27" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer0\WinTimer0.vipprj" status="4" />
-        <source datetime="20.09.2017 00:08:28" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer1\WinTimer1.vipprj" status="4" />
-        <source datetime="20.09.2017 00:08:29" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" status="4" />
+        <source datetime="18.11.2018 19:21:44" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer0\WinTimer0.vipprj" status="4" warnings="5" />
+        <source datetime="18.11.2018 19:23:02" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer1\WinTimer1.vipprj" status="4" warnings="4" />
+        <source datetime="18.11.2018 19:24:23" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" status="4" warnings="5" />
       </group>
     </group>
   </group>
@@ -158,15 +155,52 @@
       <source filename="$(SpbProjects)WS_manager\Doc\ReadMeRu.html" />
       <source filename="$(SpbProjects)WS_manager\Doc\ReadMeEn.html" />
       <group title="WSM_mono">
-        <source datetime="14.10.2017 16:36:20" filename="$(SpbProjects)WS_manager\WSM_mono\WorkSpaceManager.vipprj" status="4" />
+        <source datetime="18.11.2018 20:06:35" filename="$(SpbProjects)WS_manager\WSM_mono\WorkSpaceManager.vipprj" status="4">
+          <command addModeA="true" addModeS="true" argument="" index="1" suffix="" />
+          <command addModeA="true" addModeS="true" argument="" index="2" suffix="" />
+          <command addModeA="true" addModeS="true" argument="" index="3" suffix="" />
+          <command addModeA="true" addModeS="true" argument="" index="4" suffix="" />
+        </source>
       </group>
       <group title="WSM_http_CS">
-        <source datetime="14.10.2017 16:38:55" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\WSMbackend.vipprj" status="4" />
-        <source datetime="14.10.2017 16:39:08" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WSMfrontend.vipprj" status="4" />
+        <source datetime="18.11.2018 20:06:37" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\WSMbackend.vipprj" status="4" />
+        <source datetime="18.11.2018 20:07:19" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WSMfrontend.vipprj" status="4" />
       </group>
+      <source filename="$(SpbProjects)WS_manager\Doc\WSMshortDescriptionRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\WSMshortDescriptionEn.html" />
     </group>
     <group title="DelFiles">
-      <source datetime="29.09.2017 10:48:05" filename="$(SpbProjects)DelFiles\DelFiles.vipprj" status="4" warnings="2" />
+      <source filename="$(SpbProjects)DelFiles\DelFiles.vipprj" />
     </group>
+  </group>
+  <group title="WSM_Help">
+    <group title="Russian">
+      <source filename="$(SpbProjects)WS_manager\Doc\ReadMeRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\WSMshortDescriptionRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\wsm_helpRu.hhp" />
+      <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpRu.chm" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\HelpRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\IntroductionRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\InitialActionsRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\FileTypeDefRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\CreateAndEditWSM_VarsRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\AddAndRemoveFilesRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\WorkSpaceStructureRu.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\FileActionsRu.html" />
+    </group>
+    <group title="English">
+      <source filename="$(SpbProjects)WS_manager\Doc\ReadMeEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\WSMshortDescriptionEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\WSM_HelpEn.hhp" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\HelpEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\IntroductionEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\InitialActionsEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\FileTypeDefEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\CreateAndEditWSM_VarsEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\AddAndRemoveFilesEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\WorkSpaceStructureEn.html" />
+      <source filename="$(SpbProjects)WS_manager\Doc\Help\FileActionsEn.html" />
+    </group>
+    <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpEn.chm" />
   </group>
 </work_space>

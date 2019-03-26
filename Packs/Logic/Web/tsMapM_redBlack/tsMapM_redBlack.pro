@@ -19,6 +19,9 @@ clauses
          }).
 
 clauses
+    tsGet_nd()=queues:getAll_nd().
+
+clauses
     tsRemoveKey(Key) :-
         cs:synchronize ({ :-
             queues:removeKey(Key)
