@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="hidden" version="10.06.2019">
+  <language_list eng="English" rus="Russian" />
+  <subst id="spb_tools">..\..\..\SpbVipTools</subst>
+  <row id="ribbon.section.hidden" meaning="ToBeDefined">
+    <rus>Скрытые функции</rus>
+    <eng>Hidden functions</eng>
+  </row>
+  <row id="ribbon.cmd.hidden.make-dictionary" meaning="ToBeDefined">
+    <rus>Создать Словарь</rus>
+    <eng>Create Dictionary</eng>
+  </row>
+  <row id="ribbon.cmd.hidden.make-dictionary.menulabel" meaning="ToBeDefined">
+    <rus>Создать Словарь</rus>
+    <eng>Create Dictionary</eng>
+  </row>
+  <row id="ribbon.cmd.hidden.make-dictionary.tooltip" meaning="ToBeDefined">
+    <rus>Создать или модифицировать Словарь</rus>
+    <eng>Create and modify Dictionary</eng>
+  </row>
+  <row id="ribbon.cmd.hidden.run-cookbook" meaning="invoke CookBook">
+    <eng>Show CookBook</eng>
+    <rus>Показать CookBook</rus>
+  </row>
+  <row id="ribbon.cmd.hidden.run-cookbook.menulabel" meaning="CookBook_HelpFileName">
+    <eng>Show CookBook</eng>
+    <rus>Показать CookBook</rus>
+  </row>
+  <row id="ribbon.cmd.hidden.run-cookbook.tooltip" meaning="CookBook_HelpFileName">
+    <eng>Invoke the CookBook, explaining the Coding rules</eng>
+    <rus>Вызвать Руководство по программированию для Application Frame</rus>
+  </row>
+  <row id="cookbook_file" meaning="CookBook HelpFileName">
+    <eng>$$(Project.Name)AppData\AppFrameCookBookEn.chm</eng>
+    <rus>$$(Project.Name)AppData\AppFrameCookBookRu.chm</rus>
+  </row>
+  <row id="ribbon.cmd.hidden.remove-extra-languages" meaning="ribbon.cmd.hidden.remove-extra-languages">
+    <eng>RemoveExtraLngs</eng>
+    <rus>Удалить лишние языки</rus>
+  </row>
+  <row id="ribbon.cmd.hidden.remove-extra-languages.menulabel" meaning="ribbon.cmd.hidden.remove-extra-languages.menulabel">
+    <eng>RemoveExtraLngs</eng>
+    <rus>Удалить лишние языки</rus>
+  </row>
+  <row id="ribbon.cmd.hidden.remove-extra-languages.tooltip" meaning="ribbon.cmd.hidden.remove-extra-languages.tooltip">
+    <eng>Remove Extra Languages from All Dictionaries</eng>
+    <rus>Удалить лишние языки из всех словарей</rus>
+  </row>
+</language>

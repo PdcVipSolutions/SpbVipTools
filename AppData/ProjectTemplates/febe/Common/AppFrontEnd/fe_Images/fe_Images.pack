@@ -1,0 +1,16 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Images\fe_Images.ph"
+
+% privately used packages
+#include @"pfc\windowsApi\Shell_api\Shell_api.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\gui\ImageList\ImageList.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Images\fe_Images.pro"

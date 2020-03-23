@@ -1,0 +1,8 @@
+﻿#include @"..\Common\AppFrontEnd\TaskWindow\Toolbars\ProjectToolbar.ph"
+#requires @"..\Common\AppFrontEnd\TaskWindow\Toolbars\ProjectToolbar.tb"
+% privately used packages
+#include @"pfc\resourceIdentifiers.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\TaskWindow\Toolbars\ProjectToolbar.pro"

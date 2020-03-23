@@ -1,0 +1,33 @@
+﻿#include @"appHead\appHead.ph"
+
+% privately used packages
+#include @"Packs\Logic\appFrameSupport\http_Client\http_Client.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\multiThread\monitorQueue\monitorQueue.ph"
+#include @"pfc\multiThread\multiThread.ph"
+#include @"pfc\windowsApi\httpServer_api\httpServer_api.ph"
+#include @"..\Common\AppBackEnd\backEnd\backEnd.ph"
+#include @"pfc\collection\collection.ph"
+#include @"pfc\core.ph"
+#include @"pfc\exception\exception.ph"
+#include @"pfc\math\math.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\time\time.ph"
+#include @"pfc\web\http\http.ph"
+#include @"pfc\web\json\json.ph"
+#include @"pfc\web\json\jsonRpc\jsonRpc.ph"
+#include @"pfc\web\json\jsonRpcService\jsonRpcService.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"..\Common\AppBackEnd\be_Core\be_CoreTasks\be_CoreTasks.ph"
+
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+% private classes
+
+% implementations
+#include @"appHead\appHead.pro"

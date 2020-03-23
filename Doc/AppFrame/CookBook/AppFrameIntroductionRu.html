@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-5" /><title>AppFrameIntroduction</title>
+
+</head>
+<body>
+<h2 style="font-family: Arial;"><small><small>Copyright
+(c) Prolog Development Center SPb</small></small></h2>
+<h1 style="font-family: Arial;">Application Frame.
+Введение. <br />
+</h1>
+<h2 style="font-family: Arial;">Назначение</h2>
+<p style="font-family: Arial;">Набор
+шаблонов проектов Applicaion Frame (используется также название
+AppFrame)&nbsp;, &nbsp;может служить основой приложений,
+которые&nbsp;</p>
+<ul style="font-family: Arial;">
+<li>имеют
+клиент-серверную архитектуру в виде FrontEnd и BackEnd,
+взаимодействующих либо в рамках единого моно-приложения, либо
+посредством HTTP</li>
+<li>базируются на применении панели управления (ribbon)</li>
+</ul>
+и имеют следующие отличительные особенности:<br />
+<ul style="font-family: Arial;">
+<li>панель управления (ribbon)</li>
+<ul>
+<li>может быть описана, в том числе,&nbsp; как XML
+структура</li>
+<li>может легко расширяться и настраиваться</li>
+</ul>
+<li>позволяет расширять функции приложения подключением
+плагинов, выполненных по PZL-технологии (см. <a href="VpPuzzle/VpPuZzle%20Introduction.htm">VipPzlSystem</a>)</li>
+<li>используют
+настраиваемые словари для элементов пользовательского интерфейса, в том
+числе с целью получения мультиязычных приложений</li>
+<li>обеспечивает возможность как синхронного, так и
+асинхронного обмена информацией между &nbsp;FrontEnd и BackEnd.</li>
+</ul>
+<p style="font-family: Arial;">Набор
+шаблонов проектов Applicaion Frame создан на основании опыта
+&nbsp;разработки проекта &nbsp;WorkspaceManager&nbsp; (WSM,
+см.&nbsp;<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span style="font-weight: bold; font-style: italic;">SpbVipTools\Bin\wsmAppData\WorkSpaceManagerRu.pd</span>f</font></font>)<br />
+Выполнено В. Юхтенко (Prolog Development
+Center SPb). Консультации по http-взаимодействию оказывал А.
+Басукинский.</p>
+<h2 style="font-family: Arial;">Архитектура</h2>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Архитектура
+приложения ориентирована на строгое
+разделение пользовательского интерфейса и логической части.</span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;" />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Структура
+моно приложения приведена на следущем рисунке</p>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span><img style="font-family: Arial; width: 640px; height: 480px;" alt="" src="Pictures/AppFrame_Mono.PNG" />
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Здесь
+синими стрелками показаны связи внутри BackEnd и FrontEnd
+соответственно, а красными - организация связи между BackEnd
+&nbsp;и
+FrontEnd.</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Регистратор
+объектов ObjectRegistry является составной частью Pzl-системы.</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Внутри
+этих структур модули получают доступ к другим модулям через
+BE(FE)-Connector, который обращается к регистру
+объектов&nbsp;ObjectRegistry.</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">События,
+возникающие по инициативе противоположной стороны обрабатываются
+модулями соответственно&nbsp; FE-Requests и BE-Responces, которые
+вызывают на исполнение&nbsp; модули BE(FE) Tasks. Те, в свою
+очередь,
+обращается к
+остальным модулям BackEnd (FrontEnd). Получив данные для
+противоположной стороны, модуль BE(FE)Tasks посылает сообщение через
+модуль BE(FE) Event. Противоположная строна подписывается на события
+источника данных для нее.<br />
+</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Инициатором
+обмена данными всегда является FrontEnd, который инициирует выполнение
+задач в BackEnd.&nbsp;</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Работа
+происходит в асинхронном режиме: отправив запрос, FrontEnd возвращается
+к своей работе. BackEnd, получив запрос выполняет задачу и, возможно,
+инициирует передачу данных во FrontEnd. Это может быть либо одно
+сообщение, либо последовательность сообщений, которые должны быть
+обработаны во FrontEnd.</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Модули
+расширения Plug-ins являются DLL, организованными по определенным
+правилам и подключаются через систему PZL (PuZzle).</p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Такая
+структура приложения позволяет практически безболезненно перейти к
+варианту раздельных приложений (BackEnd и FrontEnd), взаимодействующих
+по http- протоколу, добавив и включив в работу Http-Сервер и
+Http-Клиент.</p>
+<span style="font-family: Arial;">Структура такого
+приложения приведена на следующем рисунке</span>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><img style="width: 640px; height: 731px;" alt="" src="Pictures/AppFrame_Splitted.PNG" /></p>
+<p style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="font-weight: bold;">Client</span><span>&nbsp;</span>и<span>&nbsp;</span><span style="font-weight: bold;">Server<span>&nbsp;</span></span>&nbsp;сами
+преобразовывают данные и организуют их передачу между BackEnd и
+FrontEnd. При этом как FrontEnd, так и BackEnd содержат в своем составе
+PZL-систему:. Это обеспечивает возможность использования Plug-in (ов)
+&nbsp;как в&nbsp;BackEnd, так и во FrontEnd.</p>
+<h2 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Технологии</h2>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">При
+разработке WSM&nbsp; использованы технологии PDC VIP v.9,
+технологии и приемы собственной разработки:</span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;" />
+<ul style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<li>Клиент-серверная архитектура;</li>
+<li>Регистрация объектов в общедоступной памяти;</li>
+<li>Организация хранения данных в формате XML;</li>
+<li>Обмен данными на основе событий (Event Messaging);</li>
+<li>Организация пространства формы&nbsp;на базе split
+Screen;</li>
+<li>Организация&nbsp; управления на базе панели
+(пакет&nbsp;ribbon-control фирмы PDC);</li>
+<li>Представление панели в текстовом виде в формате XML;</li>
+<li>Использование DLL в качестве plugin по соглашениям
+PZL-технологии;</li>
+<li>Обмен данными&nbsp;по http;</li>
+<li>Обмен
+данными в формате&nbsp;EDF (Exchange Data Format - формат PDCspb) в
+сочетании с JSON (последнее только при обмене по http) ;</li>
+<li>Использование технологии асинхронного обмена данными (пакет
+future фирмы PDC).</li>
+</ul>
+<h2 style="font-family: Arial;"><a name="set_of_templates"></a>Набор шаблонов</h2>
+<span style="font-family: Arial;">На базе предлагаемой
+концепции построен ряд шаблонов, обладающих следующими особенностями
+(xxx - условное имя проекта)</span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<table style="text-align: left; width: 853px; height: 375px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>xxx_MonoSDI</td>
+<td>Шаблон
+SDI &nbsp;Моно&nbsp; приложения, в которм BackEnd и FrontEnd
+объединены
+в рамках одного xxx.Exe файла. Является основой для создания и отладки
+всех остальных вариантов SDI-приложений</td>
+</tr>
+<tr>
+<td>xxx_MonoMDI</td>
+<td>Шаблон MDI &nbsp;Моно&nbsp; приложения, в
+которм BackEnd и FrontEnd объединены
+в рамках одного xxx.Exe файла. Является основой для создания и отладки
+всех остальных вариантов MDI-приложений</td>
+</tr>
+<tr>
+<td>xxx_pzlMono</td>
+<td>Шаблон SDI &nbsp;Моно&nbsp; pzl-компоненты, в
+которм BackEnd и FrontEnd объединены в
+рамках одной pzl-комоненты.&nbsp;
+Может полностью выполнять все
+функции, предусмотренные в рамках проекта на базе xxx_МоноSDI. Помещена
+в одноименный PZL-контейнер. Может
+подключаться в качестве Plug-In к любому приложению, обладающему
+свойствами PZL-порта.</td>
+</tr>
+<tr>
+<td>xxx_httpBackEnd</td>
+<td>Шаблон
+BackEnd приложения, который может полностью выполнять функции BackEnd,
+предусмотренные в рамках проекта на базе xxx_Моно(SDI/MDI). Является
+http-сервером для клиентов на основе шаблоновxxx_httpFrontEndMDI
+или&nbsp;xxx_httpFrontEndSDI </td>
+</tr>
+<tr>
+<td>xxx_httpFrontEnd</td>
+<td>Шаблон SDI FrontEnd приложения, который может полностью
+выполнять
+функции FrontEnd, предусмотренные в рамках проекта на базе xxx_МоноSDI.
+Является http-клиентом для совместной работы с http-сервером
+xxx_httpBackEnd.</td>
+</tr>
+<tr>
+<td>xxx_pzlHttpFrontEnd</td>
+<td>Шаблон
+SDI FrontEnd pzl-компоненты, которая может полностью выполнять
+функции FrontEnd, предусмотренные в рамках проекта на базе xxx_МоноSDI.
+Является pzl-компонентой и может подключаться в качестве Plug-In к
+любому приложению, обладающему свойствами PZL-порта.&nbsp;Является
+http-клиентом для совместной работы с http-сервером xxx_httpBackEnd.</td>
+</tr>
+<tr>
+<td>xxx_pzlHttpBackEnd</td>
+<td>Шаблон
+BackEnd&nbsp;pzl-компоненты, который может полностью выполнять
+функции
+BackEnd, предусмотренные в рамках проекта на базе xxx_Моно(SDI/MDI).
+Является одновременно и&nbsp;pzl-компонентой и&nbsp;
+http-сервером для
+клиентов на основе&nbsp;шаблонов xxx_httpFrontEndMDI
+или&nbsp;xxx_httpFrontEndSDI</td>
+</tr>
+</tbody>
+</table>
+<br style="font-family: Arial;" />
+Шаблоны
+проектов не содержат никакой информации, связанной с назначением
+приложения. Они содержат только механизмы, поддерживающую основные
+свойства приложения:<br />
+<ul>
+<li>Обмен информацией между FrontEnd и BackEnd</li>
+<li>Обмен информацией между модулями</li>
+<li>Поддержуку словарей</li>
+<li>Загрузку, расширение и трансформацию панели управления</li>
+<li>Исполнение&nbsp;команд</li>
+<li>Подключение Плагинов и их запуск</li>
+</ul>
+<h2></h2>
+<br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span></span></span>
+</body></html>

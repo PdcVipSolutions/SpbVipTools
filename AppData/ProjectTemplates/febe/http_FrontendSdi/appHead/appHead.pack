@@ -1,0 +1,30 @@
+﻿#include @"appHead\appHead.ph"
+
+% privately used packages
+#include @"Packs\Logic\PzlSystem\OpenPzl\Packs\Pzl.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\pzlLog\pzlLog.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\gui\messageLoop\messageLoop.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\web\json\json.ph"
+
+#include @"pfc\windowsApi\httpServer_api\httpServer_api.ph"
+#include @"pfc\web\http\httpServerApi\requestQueue_file\requestQueue_file.ph"
+#include @"pfc\web\http\httpServerApi\httpServerApi.ph"
+#include @"pfc\web\http\httpServerApi\requestQueue_rpc\requestQueue_rpc.ph"
+#include @"pfc\communications\ioCompletionPort\ioCompletionPort.ph"
+#include @"pfc\log\streamAppender\streamAppender.ph"
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"..\Common\AppFrontEnd\fe_Form\fe_Form.ph"
+#include @"pfc\windowsApi\systemInformation_api\systemInformation_api.ph"
+#include @"pfc\log\Log.ph"
+#include @"..\Common\AppFrontEnd\frontEnd\frontEnd.ph"
+#include @"Packs\Logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"appHead\appHead.pro"

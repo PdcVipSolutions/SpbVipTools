@@ -2,6 +2,7 @@
 
 #requires @"Packs\Gui\AboutDialog\AboutDialog.dlg"
 % privately used packages
+#include @"pfc\gui\controls\imageControl\imageControl.ph"
 #include @"pfc\gui\controls\editControl\editControl.ph"
 #include @"pfc\gui\controls\iconControl\iconControl.ph"
 #include @"pfc\gui\controls\textControl\textControl.ph"

@@ -1,0 +1,10 @@
+﻿#include @"..\Common\optionsDlg_Dictionary\optionsDlg_Dictionary.ph"
+
+% privately used packages
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+% implementations
+#include @"..\Common\optionsDlg_Dictionary\optionsDlg_Dictionary.pro"

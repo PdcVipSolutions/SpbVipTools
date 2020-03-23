@@ -1,0 +1,979 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+		
+		<title></title><meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<style type="text/css">.source-vip .de1 { COLOR: black; FONT-FAMILY: Verdana, Arial, sans-serif }
+	.source-vip .de2 { COLOR: black; FONT-FAMILY: Verdana, Arial, sans-serif }
+	.source-vip { FONT-SIZE: 95%; COLOR: black; FONT-FAMILY: Verdana, Arial, sans-serif }
+	.source-vip .head { }
+	.source-vip .foot { }
+	.source-vip .imp { FONT-WEIGHT: bold; COLOR: red }
+	.source-vip .ln-xtra { COLOR: #cc0; BACKGROUND-COLOR: #ffc }
+	.source-vip LI { FONT-WEIGHT: normal; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, sans-serif }
+	.source-vip LI.li2 { FONT-WEIGHT: bold }
+	.source-vip .kw1 { COLOR: #808000 }
+	.source-vip .kw2 { COLOR: #333399 }
+	.source-vip .kw3 { COLOR: #800080 }
+	.source-vip .co1 { COLOR: #aa77bd }
+	.source-vip .coMULTI { COLOR: #aa77bd }
+	.source-vip .es0 { COLOR: #008080 }
+	.source-vip .br0 { COLOR: #000000 }
+	.source-vip .st0 { COLOR: #00b7b7 }
+	.source-vip .nu0 { COLOR: #0000ff }
+	.source-vip .re0 { COLOR: #008000 }
+	.source-vip .re1 { COLOR: #808000 }
+	.source-vip .re2 { COLOR: #333399 }
+		</style></head>
+
+	<body>
+		<div id="globalWrapper">
+			<div id="column-content">
+				<div id="content"><a id="top" name="top"></a>
+					<h1 class="firstHeading">Class Pzl</h1>
+					<div id="bodyContent">Copyright 
+								(C)&nbsp;Prolog Development Center SPb.
+						<h1><span class="mw-headline">Purpose</span></h1>
+						<p>The destination of the class Pzl is to support the use of pzl-components and to 
+							get information regarding the status of the pzl-system. The class Pzl must be 
+							included into any project, which deals with pzl-components. Such a project may 
+							be both the pzl-container and the project generating the executable 
+							application.
+						</p><p>Any class, which included into the project and which uses the pzl-technology may 
+							use the predicates of the class Pzl.
+						</p>
+						
+						<h1><span class="mw-headline">The list of domains used by the class</span></h1>
+						<table id="Table1" style="background: rgb(249, 249, 249) none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: green;" border="1" cellspacing="0">
+							<tbody><tr>
+								<td>pzlComponentsRegisterFileName_D
+								</td>
+								<td>The status of the file-registry of the given application
+								</td>
+							</tr>
+							<tr>
+								<td>pzlContainerContentInfo_D
+								</td>
+								<td>Information regarding the components of the pzl-container
+								</td>
+							</tr>
+							<tr>
+								<td>pzlComponentInfo_D
+								</td>
+								<td>The desriptor of the pzl-component
+								</td>
+							</tr>
+							<tr>
+								<td>entityUID_D
+								</td>
+								<td>The identifier of the entity
+								</td>
+							</tr>
+						</tbody></table>
+						<a name="The_list_of_predicates_of_the_class_Pzl"></a>
+						<h1><span class="mw-headline">The list of predicates of the class Pzl</span></h1>
+						<p>The list of predicates of the class Pzl is divided on sublists (the standard 
+							VIP-predicate classInfo is not considered):
+						</p>
+						<ul>
+							<li>
+								<b>Container Information</b>
+							</li>
+						</ul>
+						<dl>
+							<dd>
+								This group is not for use in the ordinary programming. It serves to get the 
+								information regardng the container, such as the level of the license, 
+								information regarding components etc..
+							</dd>
+						</dl>
+						<ul>
+							<li>
+								<b>Component handling</b>
+							</li>
+						</ul>
+						<dl>
+							<dd>
+								This group of predicates gives the possibility to create instances of 
+								components using their identifiers and nicnames.<br>
+								This group also contains the predicate to assign the standard output flow. If 
+								you use the standard style of VIP programming, then you use this set of 
+								predicates rare.
+							</dd>
+						</dl>
+						<ul>
+							<li>
+								<b>Object registration</b>
+							</li>
+						</ul>
+						<dl>
+							<dd>
+								This group of predicates is frequently used one. It serves to register active 
+								objects and to get information regarding currently active objects. The object 
+								registry is accessible from the any part of the application based on the 
+								pzl-technology.
+							</dd>
+						</dl>
+						<ul>
+							<li>
+								<b>Special predicates</b>
+							</li>
+						</ul>
+						<dl>
+							<dd>
+								The special predicates used by special tools. Not for use by end users.
+							</dd>
+						</dl>
+						<table id="Table2" style="background: rgb(249, 249, 249) none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: green;" border="1" cellspacing="0">
+							<tbody><tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">classInfo.<br><span class="re0">Get</span> information about the version <span class="kw2">and</span> the date of the latest modification of the <span class="re1">class</span> <span class="re0">Pzl</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Container Information</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerName:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;string <span class="re0">ThisContainerName</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.<br><span class="re0">Get</span> the name of the file-container, where the given component is placed</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerVersion:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;string <span class="re0">ThisContainerVersion</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.<br><span class="re0">Get</span> the identifier of the version of the container, where the given component is placed</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getLicenseLevel:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;string <span class="re0">PZLUserLicenseLevel</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.<br><span class="re0">Get</span> the name of the license level of the container, where the given component is placed</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getComponentRegisterFileName:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;pzlDomains::<span class="me1">pzlComponentsRegisterFileName_D</span> <span class="re0">ComponentRegisterFileName</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.<br><span class="re0">Get</span> the name of the component registry file, assigned <span class="kw2">to</span> the current application</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerContentList:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">PZLContainerFileName</span><span class="br0">)</span>-&gt;pzlDomains::<span class="me1">pzlContainerContentInfo_D</span> <span class="re0">ContentInfo</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.<br><span class="re0">Get</span> the list of components, contained in the container with the given name</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Component handling</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">setStdOutputStream:<span class="me1"><span class="br0">(</span>outputStream</span> <span class="re0">OutputStream</span><span class="br0">)</span>.<br><span class="re0">Assign</span> the specified <span class="re0">OutputStream</span> <span class="kw2">as</span> the standard output stream for all components used by the given application</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">newByName:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">Name</span>,object <span class="re0">InObject</span><span class="br0">)</span>-&gt;object <span class="re0">OutObject</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.<br><span class="re0">Create</span> new object using the name of the component</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">newByID:<span class="me1"><span class="br0">(</span>pzlDomains</span>::<span class="me1">entityUID_D</span>,object <span class="re0">InObject</span><span class="br0">)</span>-&gt;object <span class="re0">OutObject</span>.<br><span class="re0">Create</span> new object using the component identifier</pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Object registration</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">register:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.<br><span class="re0">Register</span> the <span class="re0">Object</span> using the given <span class="re0">ObjectName</span> <span class="br0">(</span><span class="kw2">single</span> registration<span class="br0">)</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">registerMulti:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.<br><span class="re0">Register</span> the <span class="re0">Object</span> using the given <span class="re0">ObjectName</span> <span class="re0">ObjectName</span> <span class="br0">(</span>possible multiple registration<span class="br0">)</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getObjectByName_nd:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span><span class="br0">)</span>-&gt;object <span class="re0">Object</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>i<span class="br0">)</span>.<br><span class="re0">Get</span> the <span class="re0">Object</span>, registered previously using the given name <span class="re0">ObjectName</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getNameByObject_nd:<span class="me1"><span class="br0">(</span>object</span> <span class="re0">Object</span><span class="br0">)</span>-&gt;string <span class="re0">ObjectNameLow</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>i<span class="br0">)</span>.<br><span class="re0">Get</span> the <span class="re0">ObjectNames</span> for given <span class="re0">Object</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getNameAndObject_nd:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>o,o<span class="br0">)</span>.<br><span class="re0">Gen</span> <span class="re0">Object</span> <span class="kw2">and</span> it<span class="st0">'s assosiated name ObjectName</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegister:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.<br><span class="re0">Deregister</span> the given <span class="re0">Object</span> with the given <span class="re0">ObjectName</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterByName:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.<br><span class="re0">Deregister</span> all abjects with the given name <span class="re0">ObjectName</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterByObject:<span class="me1"><span class="br0">(</span>object</span> <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.<br><span class="re0">Deregister</span> given object <span class="re0">Object</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterAll:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.<br><span class="re0">Deregister</span> all objects <span class="br0">(</span>clear the object registry<span class="br0">)</span></pre>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Special predicates. Not documented</b>
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>releaseInactiveContainers:().
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>getContainerActivity_nd:(string FileName,unsigned RefCounter) nondeterm (o,o).
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>getContainerToBeUnloaded_nd:(string FileName) nondeterm (o).
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>subscribe:(notificationAgency::notificationListener NotificationListener).
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>unSubscribe:(notificationAgency::notificationListener NotificationListener).
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>newInstance:().
+								</td>
+							</tr>
+							<tr style="color: gray;">
+								<td>release:().
+								</td>
+							</tr>
+						</tbody></table>
+						<br><h1><span class="mw-headline"><a name="domains"></a>Domain details</span></h1>
+						
+						<h2><span class="mw-headline" title="pzlComponentsRegisterFileName_D"><a name="pzlComponentsRegisterFileName_D"></a>pzlDomains::pzlComponentsRegisterFileName_D</span></h2>
+						<p>The status of the component registry file
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlComponentsRegisterFileName_D=<br>  pzlRegistryFileName<span class="br0">(</span>string <span class="re0">FileName</span><span class="br0">)</span>;<br>  pzlRegistryFileNameWronglyDefined;<br>  pzlRegistryFileNameNotInUse.</pre>
+						</div>
+						<p>The domain pzlComponentsRegisterFileName_D defines one of the statuses of the 
+							component registry file for the given applicaion.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlRegistryFileName<span class="br0">(</span>string <span class="re0">FileName</span><span class="br0">)</span>
+<span class="re0">The</span> file <span class="re0">FileName</span> assigned <span class="kw2">as</span> the component registry file.</pre>
+						</div>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlRegistryFileNameWronglyDefined<br><span class="re0">The</span> component registry file wrongly defined. <span class="re0">Possibly</span> the file not existed, when assignment was done.</pre>
+						</div>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlRegistryFileNameNotInUse<br><span class="re0">There</span> was no component registry file assignment.</pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="entityUID_D"><a name="entityUID_D"></a>pzlDomains::entityUID_D</span></h2>
+						<p>The domain entityUID_D helps to identify different entities. It may have two 
+							variants:
+						</p>
+						<ul>
+							<li>
+							simple form str(string)
+							</li><li>
+								complex form uid(...), which corresponds to the nativeGuid of the Visual 
+								Prolog, which in turn corresponds to the GUID of the Microsoft company.
+							</li>
+						</ul>
+						<p>The simple form doesn&#8217;t provide the uniqueness of the identifiers. It is 
+							recommended to use in examples and in the exercises.
+						</p>
+						<p>The complex form provides the uniqueness of the identifiers. It is not 
+							convenient to remember and to manipulate.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">domains</span>
+  entityUID_D =
+    str<span class="br0">(</span>string <span class="re0">StringIdentifier</span><span class="br0">)</span>;<br>    uid<span class="br0">(</span>
+       core::<span class="me1">unsigned32</span> <span class="re0">Unsigned</span>,<br>       core::<span class="me1">unsigned16</span> <span class="re0">Short1</span>,<br>       core::<span class="me1">unsigned16</span> <span class="re0">Short2</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte1</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte2</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte3</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte4</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte5</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte6</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte7</span>,<br>       core::<span class="me1">unsigned8</span> <span class="re0">Byte8</span>
+       <span class="br0">)</span>.</pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="pzlContainerContentInfo_D"><a name="pzlContainerContentInfo_D"></a><a name="pzlComponentInfo_D"></a>pzlDomains::pzlContainerContentInfo_D, 
+								pzlDomains::pzlComponentInfo_D</span></h2>
+						<p>The Domain pzlContainerContentInfo_D used to describe the content of the 
+							pzl-containers. It is represented as the list of descriptions of components.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlContainerContentInfo_D = pzlComponentInfo_D*.</pre>
+						</div>
+						<p>Each element of the list is the term of the domain pzlComponentInfo_D
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlComponentInfo_D=pzlComponentInfo<br>  <span class="br0">(</span>
+  string <span class="re0">Alias</span>,<br>  entityUID_D <span class="re0">ComponentID</span>,<br>  booleanInt <span class="re0">Runable</span>,<br>  core::<span class="me1">namedValue_List</span> <span class="re0">UserDefinedInfo</span>
+  <span class="br0">)</span></pre>
+						</div>
+						<p>Here
+						</p>
+						<ul>
+							<li>
+							Alias &#8211; the string name of the component,
+							</li><li>
+							ComponentID &#8211; component identifier
+							</li><li>
+							Runable &#8211; Boolean flag, which shows whether the component can be called and can 
+							run independently.
+							</li><li>
+								UserDefinedInfo &#8211; the list of parameters interpreted by the developer of the 
+								component.
+							</li>
+						</ul>
+						
+						<h1><span class="mw-headline">Predicate details</span></h1>
+						
+						<h2><span class="mw-headline" title="getContainerName"><a name="getContainerName"></a>pzl::getContainerName/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerName:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;string <span class="re0">ThisContainerName</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Get the name of the file-container, where the given component is placed
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Returnes the name (full path) of the file where the given pzl-component is 
+							placed.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">ContainerName</span>=pzl::<span class="me1">getContainerName</span><span class="br0">(</span><span class="br0">)</span>,<br>stdIO::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Component /"</span><span class="re0">MyComponent</span>/<span class="st0">" placed at container&nbsp;%"</span>,<span class="re0">ContainerName</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="getContainerVersion"><a name="getContainerVersion"></a>pzl::getContainerVersion/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerVersion:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;string <span class="re0">ThisContainerVersion</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span></pre>
+						</div>
+						<p>Get the identifier of the container version, where the given component is placed
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Returnes the version of the pzl-container, where the given component placed. The 
+							version of the container declared as the value of the string type (string). It 
+							is defined by the constant "pzlContainerVersion_C" in the file PzlConfig.i of 
+							the container project.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>If the file PzlConfig.i of the given container contains the constant declaration
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">constants</span>
+  pzlContainerVersion_C=<span class="st0">"1.0;001"</span>.</pre>
+						</div>
+						<p>then the following code gets the version No of the given container
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">ContainerVersion</span>=pzl::<span class="me1">getContainerVersion</span><span class="br0">(</span><span class="br0">)</span>,<br>stdIO::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Container Version -&nbsp;%"</span>,<span class="re0">ContainerVersion</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						<p>It will be sent to the output stream: "Container version - 1.0;001"
+						</p><h2><span class="mw-headline" title="getComponentRegisterFileName"><a name="getComponentRegisterFileName"></a>pzl::getComponentRegisterFileName/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getComponentRegisterFileName:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;pzlDomains::<span class="me1">pzlComponentsRegisterFileName_D</span> <span class="re0">ComponentRegisterFileName</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Get the status of the component registry file of the given application
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Returns one of the following terms, indicating the status of the component 
+							registry file of the current application:
+						</p>
+						<ul>
+							<li>
+							pzlRegistryFileName(FileName) - FileName defines the full name of the assigned 
+							file.
+							</li><li>
+							pzlRegistryFileNameWronglyDefined &#8211; the registry file is wrongly defined
+							</li><li>
+								pzlRegistryFileNameNotInUse &#8211; the registry file is not in use
+							</li>
+						</ul>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">RegisterStatus</span>=pzl::<span class="me1">getComponentRegisterFileName</span><span class="br0">(</span><span class="br0">)</span>,<br><span class="br0">(</span>
+   <span class="re0">RegisterStatus</span>=pzlDomains::<span class="me1">pzlRegistryFileName</span><span class="br0">(</span><span class="re0">FileName</span><span class="br0">)</span>,<br>   stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"The registry file -&nbsp;%<span class="es0">\n</span>"</span>,<span class="re0">FileName</span><span class="br0">)</span>
+<span class="kw2">or</span>
+   <span class="re0">RegisterStatus</span>=pzlDomains::<span class="me1">pzlRegistryFileNameNotInUse</span>,<br>   stdio::<span class="me1">write</span><span class="br0">(</span><span class="st0">"The registry file is not in use <span class="es0">\n</span>"</span><span class="br0">)</span>
+<span class="kw2">or</span>
+   <span class="re0">RegisterStatus</span>=pzlDomains::<span class="me1">pzlRegistryFileNameWronglyDefined</span>,<br>   stdio::<span class="me1">write</span><span class="br0">(</span><span class="st0">"The registry file not found while assignment<span class="es0">\n</span>"</span><span class="br0">)</span>
+<span class="br0">)</span>,<br>&#8230;</pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="getContainerContentList"><a name="getContainerContentList"></a>pzl::getContainerContentList/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getContainerContentList:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">PZLContainerFileName</span><span class="br0">)</span>
+  -&gt;pzlDomains::<span class="me1">pzlContainerContentInfo_D</span> <span class="re0">ContentInfo</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Get the list of components, contained in the container with the given name
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate returns the list of descriptions of components, which are placed 
+							in the container with the given name. It is not necessary that the components 
+							of the container to be registered in the pzl-system.
+						</p>
+						<p>To get the list of components of the main application it must be used:
+						</p>
+						<ul>
+							<li>
+							"pzlPort" or
+							</li><li>
+								The name (full or relative) of the executable file of the main application
+							</li>
+						</ul>
+						<p>Each element of the returned list is the term of the domain pzlComponentInfo_D
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">pzlComponentInfo_D=pzlComponentInfo<br>  <span class="br0">(</span>
+  string <span class="re0">Alias</span>,<br>  entityUID_D <span class="re0">ComponentID</span>,<br>  booleanInt <span class="re0">Runable</span>,<br>  core::<span class="me1">namedValue_List</span> <span class="re0">UserDefinedInfo</span>
+  <span class="br0">)</span></pre>
+						</div>
+						<p>Where
+						</p>
+						<ul>
+							<li>
+							Alias &#8211; string name of the component
+							</li><li>
+							ComponentID &#8211; the identifier of the component
+							</li><li>
+							Runable &#8211; Boolean flag, which indicates the possibility to be invoked 
+							independently
+							</li><li>
+								UserDefinedInfo &#8211; the list of parameters, defined by the developer of the 
+								component.
+							</li>
+						</ul>
+						<p><b>Exceptions</b>
+						</p>
+						<p>The following exceptions are generated if
+						</p>
+						<ul>
+							<li>
+							the file-container not found
+							</li><li>
+							the dll container can not be loaded
+							</li><li>
+							the version of the dll-container doesn&#8217;t correspond to the version of the main 
+							application
+							</li><li>
+							the license level of the main application is lower then the license level of 
+							the container
+							</li><li>
+								the Dll-container doesn&#8217;t correspond to the pzl-agreements
+							</li>
+						</ul>
+						<p><b>Example</b>
+						</p>
+						<p>In the example below by the event &#8216;&#8217;&#8217;onShowComponentsDescription&#8217;&#8217;&#8217; (pushbutton 
+							on the pane) the information regarding the container 
+							"..\\VPPuzzle\\Examples\\PZL\\HelloWorld.pzl" components is requested. This 
+							info is sent to the standard output stream
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">predicates</span>
+  onShowComponentsDescription&nbsp;: <span class="me1">button</span>::<span class="me1">clickResponder</span>.<br><span class="kw1">clauses</span>
+  onShowComponentsDescription<span class="br0">(</span><span class="re0">_Source</span><span class="br0">)</span> = button::<span class="me1">defaultAction</span>:-<br>    <span class="re0">DataList</span>=pzl::<span class="me1">getContainerContentList</span><span class="br0">(</span><span class="st0">"..<span class="es0">\\</span>VPPuzzle<span class="es0">\\</span>Examples<span class="es0">\\</span>PZL<span class="es0">\\</span>HelloWorld.pzl"</span><span class="br0">)</span>,<br>    <span class="re2">foreach</span> <span class="re0">Element</span>=list::<span class="me1">getMember_nd</span><span class="br0">(</span><span class="re0">DataList</span><span class="br0">)</span> <span class="kw2">do</span>
+      stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Element=%<span class="es0">\n</span>"</span>,<span class="re0">Element</span><span class="br0">)</span>
+    <span class="re2">end foreach</span>.</pre>
+						</div>
+						<p>For this concrete container we will get
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">Element</span>=pzlcomponentinfo<span class="br0">(</span><span class="st0">"HelloWorld"</span>,str<span class="br0">(</span><span class="st0">"HelloWorld"</span><span class="br0">)</span>,<span class="nu0">1</span>,<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span></pre>
+						</div>
+						<p>And for the container FactDemo_UI the same code
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">clauses</span>
+  onShowComponentsDescription<span class="br0">(</span><span class="re0">_Source</span><span class="br0">)</span> = button::<span class="me1">defaultAction</span>:-<br>    <span class="re0">DataList</span>=pzl::<span class="me1">getContainerContentList</span><span class="br0">(</span><span class="st0">"..<span class="es0">\\</span>VPPuzzle<span class="es0">\\</span>Examples<span class="es0">\\</span>PZL<span class="es0">\\</span>FactDemo_UI.pzl"</span><span class="br0">)</span>,<br>    <span class="re2">foreach</span> <span class="re0">Element</span>=list::<span class="me1">getMember_nd</span><span class="br0">(</span><span class="re0">DataList</span><span class="br0">)</span> <span class="kw2">do</span>
+      stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Element=%<span class="es0">\n</span>"</span>,<span class="re0">Element</span><span class="br0">)</span>
+    <span class="re2">end foreach</span>.</pre>
+						</div>
+						<p>returns (the formatting done manually):
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">Data</span>:=pzlcomponentinfo<span class="br0">(</span>
+  <span class="st0">"FactDemo"</span>,<br>   str<span class="br0">(</span><span class="st0">"Fact_UI"</span><span class="br0">)</span>,<br>   <span class="nu0">1</span>,<br>   <span class="br0">[</span>
+   namedvalue<span class="br0">(</span><span class="st0">"CodeExporter"</span>,string<span class="br0">(</span><span class="st0">"FactDemoExporter"</span><span class="br0">)</span><span class="br0">)</span>,<br>   namedvalue<span class="br0">(</span><span class="st0">"ProxyExporter"</span>,string<span class="br0">(</span><span class="st0">"FactDemoExporter"</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">]</span>
+   <span class="br0">)</span></pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="newByID"><a name="newByID"></a>pzl::newByID/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">newByID:<span class="me1"><span class="br0">(</span>pzlDomains</span>::<span class="me1">entityUID_D</span> <span class="re0">ComponentID</span>,object <span class="re0">InObject</span><span class="br0">)</span>-&gt;object <span class="re0">OutObject</span>.</pre>
+						</div>
+						<p>Create new object, using the unique component identifier
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Creates the new object of the pzl-component, which is registered with the 
+							identifier ComponentID.
+						</p>
+						<p>Pzl-component with the identifier ComponentID must be registered in one of 
+							registration places &#8211; or in the Windows registry, or in the component 
+							registration file, created by the User (*.pzr).
+						</p>
+						<p>The reference to the object InObject may be the reference to any object. if it 
+							supposed to make a call to that object InObject, then the component, which is 
+							used to create the object, must know the domain-interface of the object 
+							InObject.
+						</p>
+						<p>The returned object Object is the reference to the created object. To use the 
+							predicate of the created object the object OutObject must be converted to the 
+							appropriate domain-interface.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>If pzl-system can not create the instance of the component, then the exception 
+							will be generated by possible reasons:
+						</p>
+						<ol>
+							<li>
+							pzl-system has no access to the component registry.
+							</li><li>
+							pzl-component with the given name not found in the component registry.
+							</li><li>
+							pzl-container, which contains the given component can not be loaded
+							</li><li>
+							pzl-container and the main application are incompatible
+							</li><li>
+							main application has the license level lower, then the license level of the 
+							pzl-container
+							</li><li>
+							the pzl-container doesn&#8217;t contain the component with the given ID
+							</li><li>
+								the constructor of the given component can not create the instance of the 
+								component
+							</li>
+						</ol>
+						<p>If the exception occurred by the reasons 3,4 è 5, then the pzl-system tries to 
+							unload the container. If this is impossible, then the new exception generated.
+						</p>
+						<p>In the exception stack the last description contains the text:
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">&#8221;newByID failured for the <span class="re0">Component</span> with the <span class="re0">ID</span> &lt;<span class="re0">ID</span>&gt;<span class="st0">"</span></pre>
+						</div>
+						<p><b>Example</b>
+						</p>
+						<p>The component registed with the ID str(&#8220;MyComponent&#8221;) supports the interface 
+							iMyComponent, where the predicate myPredicate(...) is defined.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">Object</span>=newByID<span class="br0">(</span>str<span class="br0">(</span><span class="st0">"MyComponent"</span><span class="br0">)</span>,<span class="re0">This</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>=tryConvert<span class="br0">(</span>iMyComponent,<span class="re0">Object</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>:<span class="me1">myPredicate</span><span class="br0">(</span>...<span class="br0">)</span>,<br>...</pre>
+						</div>
+						<p>In case if the unique UID is used, then the call will look like
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">Object</span>=newByID<span class="br0">(</span>uid<span class="br0">(</span>0xDF29A0EA,0x7BA6,0x4425,0x8D,0x88,0x2B,0x3C,0x6F,0xDA,0x0C,0x73<span class="br0">)</span>,<span class="re0">This</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>=tryConvert<span class="br0">(</span>iMyComponent,<span class="re0">Object</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>:<span class="me1">myPredicate</span><span class="br0">(</span>...<span class="br0">)</span>,<br>...</pre>
+						</div>
+						
+						<h2><span class="mw-headline" title="newByName"><a name="newByName"></a>pzl::newByName/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">newByName:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">Name</span>,object <span class="re0">InObject</span><span class="br0">)</span>-&gt;object <span class="re0">OutObject</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span></pre>
+						</div>
+						<p>Create new object, using the string name of the component &lt;/vip&gt;
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Creates the new object of the pzl-component, registered with the name Name.
+						</p>
+						<p>The pzl-component named Name must be registered in one of available places of 
+							the registration &#8211; in the Windows registry or in the user&#8217;s component registry 
+							file (*.pzr).
+						</p>
+						<p>The object InObject may be any object, which has the sense in the called object. 
+							If it is supposed that the component will have any call to the InObject , then 
+							the component must know the domain-interface of the object InObject.
+						</p>
+						<p>The returned object OutObject is the result of the operation. To make a call of 
+							any predicate of the object OutObject it must be done the conversion of the 
+							object to the domain defined by the appropriate interface of that class.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>There may be exceptions generated:
+						</p>
+						<ol>
+							<li>
+							pzl-system has no access to the component registry.
+							</li><li>
+							pzl-component with the given name not found in the component registry.
+							</li><li>
+							pzl-container, which contains the given component, can not be loaded
+							</li><li>
+							pzl-container and the main application are incompatible
+							</li><li>
+							main application has the license level lower, then the license level of the 
+							pzl-container
+							</li><li>
+							the pzl-container doesn&#8217;t contain the component with the given Name
+							</li><li>
+								the constructor of the given component can not create the instance of the 
+								component
+							</li>
+						</ol>
+						<p>If the exception occurred by the reasons 3,4 è 5, then the pzl-system tries to 
+							unload the container. If this is impossible, then the new exception generated.
+						</p>
+						<p>In the exception stack the last description contains the text:
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">&#8221;newByName failured for the <span class="re0">Component</span> with the name &lt;<span class="re0">Name</span>&gt;<span class="st0">"</span></pre>
+						</div>
+						<p><b>Example</b>
+						</p>
+						<p>The component MyComponent supports the interface iMyComponent. Predicate 
+							myPredicate(...) is the part of the interface iMyComponent.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">Object</span>=newByName<span class="br0">(</span><span class="st0">"MyComponent"</span>,<span class="re0">This</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>=tryConvert<span class="br0">(</span>iMyComponent,<span class="re0">Object</span><span class="br0">)</span>,<br><span class="re0">MyComponentInstance</span>:<span class="me1">myPredicate</span><span class="br0">(</span>...<span class="br0">)</span>,<br>...</pre>
+						</div>
+						<a name="pzl::setStdOutputStream.2F1"></a>
+						<h2><span class="mw-headline" title="setStdOutputStream"><a name="setStdOutputStream"></a>pzl::setStdOutputStream/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">setStdOutputStream:<span class="me1"><span class="br0">(</span>outputStream</span> <span class="re0">OutputStream</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Assign the given output Stream as the standard output stream for all components 
+							used by this application
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Any component may assign the existing output stream as the standard output 
+							stream. If this happens, then all components, participating in the given 
+							application begin to use this output stream as the standard one.
+						</p>
+						<p>In that case if one component assigned the output stream &#8216;&#8217;&#8217;A&#8217;&#8217;&#8217; as the standard 
+							one, and some other component after that assigned the output stream &#8216;&#8217;&#8217;B&#8217;&#8217;&#8217; as 
+							the standard one, then when the first component becomes active again it will 
+							use the output stream &#8216;&#8217;&#8217;B&#8217;&#8217;&#8217; as the standard one.
+						</p>
+						<p>If the first component anyway needs the output stream &#8216;&#8217;&#8217;A&#8217;&#8217;&#8217; then it must 
+							reassign the output string according to it&#8217;s needs.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>The next peace of code creates the new output stream and assigns it as the 
+							standard output stream
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">MessageStream</span>=outputStream_message&nbsp;::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>,<br>pzl::<span class="me1">setStdOutputStream</span><span class="br0">(</span><span class="re0">MessageStream</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						<a name="pzl::register.2F2"></a>
+						<h2><span class="mw-headline" title="register">pzl::register/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">register:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Register the object using the given name ObjectName (single registration)
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Gives the possibility to register object in the global for the current 
+							application run object registry. Any object of the Visual Prolog may be 
+							registered in the global registry, using the string name.
+						</p>
+						<p>Predicate register(), gets the object Object and the string name ObjectName, 
+							choosen by programmer and put this object to the registry with this name.
+						</p>
+						<p>The only one object with that name can be placed to the registry.
+						</p>
+						<p>If there is the object with the same (case insensitive) name in the registry, 
+							then the exception is generated. The same object may be placed to the object 
+							registry using different names.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>If object registry already contains the object with the same name.
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>The following example shows the initialization of the pzl-system and the 
+							creation and the registration of the TaskWindow. The TaskWindow can be created 
+							and registered only once. As the string name it is used the value, which all 
+							components (and other classes of the application) must know.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br>run<span class="br0">(</span><span class="br0">)</span>:-<br>  pzlPort::<span class="me1">init</span><span class="br0">(</span><span class="br0">)</span>,<br>  <span class="re0">TaskWindow</span> = taskWindow::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>,<br>  pzl::<span class="me1">register</span><span class="br0">(</span>studioConstants::<span class="me1">studioTaskWindow_C</span>,<span class="re0">TaskWindow</span><span class="br0">)</span>,<br>  <span class="re0">TaskWindow</span>:<span class="me1">addShowListener</span><span class="br0">(</span>onShow<span class="br0">)</span>,<br>  <span class="re0">TaskWindow</span>:<span class="me1">addMenuItemListener</span><span class="br0">(</span>resourceIdentifiers::<span class="me1">id_file_run_profile</span>,onRunProfile<span class="br0">)</span>,<br>  <span class="re0">TaskWindow</span>:<span class="me1">show</span><span class="br0">(</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>It is known from the context of the program, that here in that place of the code 
+							the TaskWindow is created first time, so we do not use the exception handling 
+							here.
+						</p>
+						<p>In the example below the exception handling is used, because of there is the 
+							possibility to try to create the form more that once.
+						</p>
+						<p>It is supposed, that the variable TaskWindow previously have gotten the value 
+							and can be used as the parent window
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">TicketForm</span> = ticketForm::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>,<br>trap<span class="br0">(</span>pzl::<span class="me1">register</span><span class="br0">(</span><span class="st0">"Ticket Form"</span>,<span class="re0">TicketForm</span> <span class="br0">)</span>,<span class="re0">Error</span>,<span class="re0">ExceptionHandler</span><span class="br0">(</span><span class="re0">Error</span>,<span class="st0">"Ticket form "</span><span class="br0">)</span><span class="br0">)</span>,<br><span class="re0">TicketForm</span>&nbsp;:<span class="me1">show</span><span class="br0">(</span><span class="re0">TaskWindow</span><span class="br0">)</span>.<br>...</pre>
+						</div>
+						<a name="pzl::registerMulti.2F2"></a>
+						<h2><span class="mw-headline" title="registerMulti"><a name="registerMulti"></a>pzl::registerMulti/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">registerMulti:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Register the object using the given name ObjectName (possibly multiple 
+							registrations)
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Gives the possibility to register object in the global for the current 
+							application run object registry. Any object of the Visual Prolog may be 
+							registered in the global registry, using the string name.
+						</p>
+						<p>Predicate registerMulti(&#8230;), gets the object Object and the string name 
+							ObjectName, chosen by programmer and put this object to the registry with this 
+							name.
+						</p>
+						<p>Predicate registerMulti(...) places the only one object Object with the given 
+							name. If the same object with the same name exists in the registry already, 
+							then no execution performed.
+						</p>
+						<p>Many object with the same name may be placed to the registry using the 
+							registryMulti(&#8230;) predicate.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>In the following example we register the Form Editor, which may be created many 
+							times. Each time the form is registered with the same name. The programmer is 
+							responsible for the resolving collisions between objects, when he gets the 
+							object from the registry, using the name.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">FormEditorObject</span>=formEditor::<span class="me1">new</span><span class="br0">(</span><span class="re0">This</span><span class="br0">)</span>,<br>pzl::<span class="me1">registerMulti</span><span class="br0">(</span><span class="st0">"FromEditor "</span>,<span class="re0">FormEditorObject</span><span class="br0">)</span>,<br><span class="re0">FormEditorObject</span>:<span class="me1">show</span><span class="br0">(</span><span class="re0">TaskWindow</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						<a name="pzl::getObjectByName_nd.2F1"></a>
+						<h2><span class="mw-headline" title="getObjectByName_nd"><a name="getObjectByName_nd"></a>pzl::getObjectByName_nd/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getObjectByName_nd:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span><span class="br0">)</span>-&gt;object <span class="re0">Object</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Get object registered with the name ObjectName
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate getObjectByName_nd(...) returns in the nondeterm mode all objects, 
+							registered before in the object registry with the name ObjectName. If the 
+							object hot found in the registry, then the predicate fails.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>See example below:
+						</p>
+						<p>The first clause checks whether the object with the name componentAlias_C stored 
+							in the object registry before. If object registered before, then it is 
+							converted to the domain messageForm and the focus on the object is set. 
+							Predicate&#8217;s execution complete.
+						</p>
+						<p>The second clause remembers the current output stream, than the new instance of 
+							the class messageForm created. It gets the stored in the object registry 
+							ApplicationWindow object as the input parameter. The newly created object 
+							stored in the object registry with the name componentAlias_C.
+						</p>
+						<p>The predicate getApplicationWindow() restores the reference to the object 
+							ApplicationWindow from the object registry. If the object with the name 
+							ApplicationWindow not created (object not found in the object registry), then 
+							exception generated.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">createMessageForm<span class="br0">(</span><span class="re0">_InText</span><span class="br0">)</span>:-<br>  <span class="re0">Object</span>=pzl::<span class="me1">getObjectByName_nd</span><span class="br0">(</span>componentAlias_C<span class="br0">)</span>,<br>  <span class="re0">LiveObject</span>=convert<span class="br0">(</span>messageForm,<span class="re0">Object</span><span class="br0">)</span>,<br>  <span class="re0">LiveObject</span>:<span class="me1">setFocus</span><span class="br0">(</span><span class="br0">)</span>,<br> &nbsp;!.<br>createMessageForm<span class="br0">(</span><span class="re0">_UserText</span><span class="br0">)</span>:-<br>  defaultOutputStream_V:=stdio::<span class="me1">getOutputStream</span><span class="br0">(</span><span class="br0">)</span>,<br>  <span class="re0">ApplicationWindow</span>=getApplicationWindow<span class="br0">(</span><span class="br0">)</span>,<br>  messageForm_V:=messageForm::<span class="me1">display</span><span class="br0">(</span><span class="re0">ApplicationWindow</span><span class="br0">)</span>,<br>  <span class="re0">OutputStream</span>=messageForm_V:<span class="me1">getOutputStream</span><span class="br0">(</span><span class="br0">)</span>,<br>  pzl::<span class="me1">setStdOutputStream</span><span class="br0">(</span><span class="re0">OutputStream</span><span class="br0">)</span>,<br>  pzl::<span class="me1">register</span><span class="br0">(</span>componentAlias_C,<span class="re0">This</span><span class="br0">)</span>,<br>  messageForm_V:<span class="me1">setCloseResponder</span><span class="br0">(</span>onMessageFormCloseRequest<span class="br0">)</span>,<br>  messageForm_V:<span class="me1">addDestroyListener</span><span class="br0">(</span>onDestroy<span class="br0">)</span>.<br>&nbsp;<br><span class="kw1">predicates</span>
+  getApplicationWindow:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>-&gt;applicationWindow.<br><span class="kw1">clauses</span>
+  getApplicationWindow<span class="br0">(</span><span class="br0">)</span>=convert<span class="br0">(</span>applicationWindow,<span class="re0">TaskWindowObj</span><span class="br0">)</span>:-<br>    <span class="re0">TaskWindowObj</span>=pzl::<span class="me1">getObjectByName_nd</span><span class="br0">(</span>studioConstants::<span class="me1">studioTaskWindow_C</span><span class="br0">)</span>,<br>   &nbsp;!.<br>  getApplicationWindow<span class="br0">(</span><span class="br0">)</span>=<span class="re0">_Win</span>:-<br>    common_Exception::<span class="me1">raise_User</span><span class="br0">(</span>classInfo,predicate_FullName<span class="br0">(</span><span class="br0">)</span>,<span class="st0">"InternalError: Unexpected Alternative"</span><span class="br0">)</span>.</pre>
+						</div>
+						<a name="pzl::getNameByObject_nd.2F1"></a>
+						<h2><span class="mw-headline" title="getNameByObject_nd"><a name="getNameByObject_nd"></a>pzl::getNameByObject_nd/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getNameByObject_nd:<span class="me1"><span class="br0">(</span>object</span> <span class="re0">Object</span><span class="br0">)</span>-&gt;string <span class="re0">ObjectNameLow</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Get registration name of the registered object
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate returns in the nondeterm mode all names, which was assigned to the 
+							given object while the registrations. If no object found in the object 
+							registry, then the predicate fails.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>The following piece of code outputs the list of names, which the current object 
+							has in the object registry
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re2">if</span> not<span class="br0">(</span><span class="re0">_RegistryName</span>=pzl::<span class="me1">getNameByObject_nd</span><span class="br0">(</span><span class="re0">This</span><span class="br0">)</span><span class="br0">)</span> <span class="kw2">then</span>
+  stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"The current object&nbsp;% is not registered"</span>,toString<span class="br0">(</span><span class="re0">This</span><span class="br0">)</span><span class="br0">)</span>
+<span class="kw2">else</span>
+  stdio::<span class="me1">write</span><span class="br0">(</span><span class="st0">"The list of the names for the current object&nbsp;%<span class="es0">\n</span>"</span>,<span class="re0">This</span><span class="br0">)</span>,<br>  <span class="re2">foreach</span> <span class="re0">RegistryName</span>=pzl::<span class="me1">getNameByObject_nd</span><span class="br0">(</span><span class="re0">This</span><span class="br0">)</span> <span class="kw2">do</span>
+    stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Name -&gt;&nbsp;%<span class="es0">\n</span>"</span>,<span class="re0">RegistryName</span><span class="br0">)</span>
+  <span class="re2">end foreach</span>
+endif,
+...</pre>
+						</div>
+						<a name="pzl::getNameAndObject_nd.2F2"></a>
+						<h2><span class="mw-headline" title="getNameAndObject_nd"><a name="getNameAndObject_nd"></a>pzl::getNameAndObject_nd/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">getNameAndObject_nd:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">nondeterm</span> <span class="br0">(</span>o,o<span class="br0">)</span>.</pre>
+						</div>
+						<p>Get the name of the object and the object
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Predicate returns in the nondeterm mode all objects and their names, which was 
+							registered before. If no object found in the registry, then the predicate 
+							fails.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>The following example outputs all objects registered in the object registry and 
+							their names,
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re2">if</span> not<span class="br0">(</span>pzl::<span class="me1">getNameAndObject_nd</span><span class="br0">(</span><span class="re0">ObjectName</span>,<span class="re0">Object</span><span class="br0">)</span><span class="br0">)</span> <span class="kw2">then</span>
+  stdio::<span class="me1">write</span><span class="br0">(</span><span class="st0">"There is no objects in the registry<span class="es0">\n</span>"</span><span class="br0">)</span>
+<span class="kw2">else</span>
+  stdio::<span class="me1">write</span><span class="br0">(</span><span class="st0">"The list of the registered objects:<span class="es0">\n</span>"</span><span class="br0">)</span>,<br>  <span class="re2">foreach</span> pzl::<span class="me1">getNameAndObject_nd</span><span class="br0">(</span><span class="re0">ObjectName</span>,<span class="re0">Object</span><span class="br0">)</span> <span class="kw2">do</span>
+    stdio::<span class="me1">writef</span><span class="br0">(</span><span class="st0">"Name:&nbsp;%&nbsp;;Object:&nbsp;%<span class="es0">\n</span>"</span>,<span class="re0">ObjectName</span>,toString<span class="br0">(</span><span class="re0">Object</span><span class="br0">)</span><span class="br0">)</span>
+  <span class="re2">end foreach</span>
+endif,
+...</pre>
+						</div>
+						<a name="pzl::unRegister.2F2"></a>
+						<h2><span class="mw-headline" title="unRegister"><a name="unRegister"></a>pzl::unRegister/2</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegister:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span>,object <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i,i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Remove the registration of the object Object with the registration name 
+							ObjectName
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate removes from the registry object Object with the registration name 
+							ObjectName. If no object Object with the given name ObjectName is found in the 
+							registry, then predicate succeeds anyway.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>In the example below fist makes the try to find the object corresponding to the 
+							main application window (TaskWindow), and then the found object removed from 
+							the object registry
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re2">if</span> <span class="br0">(</span><span class="re0">TaskWindowObject</span>=pzl::<span class="me1">getObjectByName_nd</span><span class="br0">(</span><span class="st0">"TaskWindow"</span><span class="br0">)</span>,!<span class="br0">)</span> <span class="kw2">then</span>
+  pzl::<span class="me1">unRegister</span><span class="br0">(</span><span class="st0">"TaskWindow"</span>,<span class="re0">TaskWindowObject</span><span class="br0">)</span>
+<span class="re2">end if</span>,<br>...</pre>
+						</div>
+						<a name="pzl::unRegisterByName.2F1"></a>
+						<h2><span class="mw-headline" title="unRegisterByName">pzl::<a name="unRegisterByName"></a>unRegisterByName/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterByName:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ObjectName</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Remove the registration of all objects registered in the object registry with 
+							the given name ObjectName
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate removes from the object registry all objects registered with the 
+							given name ObjectName. If there are no objects in the object registry with the 
+							given name, then predicate succeeds anyway.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>In the example below the objects registered with the name &#8220;TaskWindow&#8221; removed 
+							from the object registry.
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br>pzl::<span class="me1">unRegisterByName</span><span class="br0">(</span><span class="st0">"TaskWindow"</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						<a name="pzl::unRegisterByObject.2F1"></a>
+						<h2><span class="mw-headline" title="unRegisterByObject"><a name="unRegisterByObject"></a>pzl::unRegisterByObject/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterByObject:<span class="me1"><span class="br0">(</span>object</span> <span class="re0">Object</span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span>i<span class="br0">)</span>.</pre>
+						</div>
+						<p>Deregister the object Object
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Predicate deregisters all registrations of the object Object in the object 
+							registry. If no object Object registered in the object registry, then the 
+							predicate succeeds anyway.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<p>In the example below the object MessageForm ends the run and:
+						</p>
+						<ul>
+							<li>
+							stores if&#8217;s current status
+							</li><li>
+							removes itself from the object registry
+							</li><li>
+								restores the status of the output stream, which existed before the creation of 
+								the object MessageForm
+							</li>
+						</ul>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="kw1">predicates</span>
+  onDestroy:<span class="me1">window</span>::<span class="me1">destroyListener</span>.<br><span class="kw1">clauses</span>
+  onDestroy<span class="br0">(</span><span class="re0">_Source</span><span class="br0">)</span>:-<br>    setRestoreData<span class="br0">(</span>componentAlias_C,<span class="br0">[</span><span class="br0">]</span>,<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>,<br>    pzl::<span class="me1">unRegisterByObject</span><span class="br0">(</span><span class="re0">This</span><span class="br0">)</span>, <span class="co1">% &lt;--- removes the self registration</span>
+    pzl::<span class="me1">setStdOutputStream</span><span class="br0">(</span>defaultOutputStream_V<span class="br0">)</span>,<br>    messageForm_V:<span class="me1">removeDestroyListener</span><span class="br0">(</span>onDestroy<span class="br0">)</span>,<br>    defaultOutputStream_V:=<span class="kw2">erroneous</span>,<br>    messageForm_V:=<span class="kw2">erroneous</span>.<br>...</pre>
+						</div>
+						<a name="pzl::unRegisterAll.2F0"></a>
+						<h2><span class="mw-headline" title="unRegisterAll"><a name="unRegisterAll"></a>pzl::unRegisterAll/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">unRegisterAll:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span> <span class="kw2">procedure</span> <span class="br0">(</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Clear the object registry.
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Predicate removes all registered before objects from the object registry. 
+							Predicate succeeds even if there is no objects in the object registry.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br>pzl::<span class="me1">unRegisterAll</span><span class="br0">(</span><span class="br0">)</span>,<br>...</pre>
+						</div>
+						<a name="References"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body></html>

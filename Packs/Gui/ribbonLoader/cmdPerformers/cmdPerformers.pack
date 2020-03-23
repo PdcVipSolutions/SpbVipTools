@@ -1,0 +1,13 @@
+﻿#include @"Packs\Gui\ribbonLoader\cmdPerformers\cmdPerformers.ph"
+
+% privately used packages
+#include @"pfc\gui\commands\customCommand\customCommand.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\gui\commands\menuCommand\menuCommand.ph"
+#include @"pfc\gui\commands\command\Command.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Gui\ribbonLoader\cmdPerformers\cmdPerformers.pro"

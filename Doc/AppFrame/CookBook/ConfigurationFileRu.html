@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-5" /><title>CookBookRu</title>
+
+</head>
+<body>
+<span style="font-weight: bold;">Copyright
+(c) Prolog Development Center SPb</span>
+<h1 style="font-family: Arial;">AppFrame CookBook<br />
+</h1>
+<h2><span style="font-weight: bold;"></span>Файл
+конфигурации приложения</h2>
+В AppFrame предполагается сохранение текущего состояния приложения в
+файле конфигурации&nbsp;<span style="font-weight: bold;">Options.xml</span>
+и&nbsp;восстановление предыдущего состояния&nbsp; при старте.<br />
+Местом хранения файла конфигурации является&nbsp; директория <span style="font-weight: bold; font-style: italic;">bin\&lt;имя
+проекта&gt;AppData<br />
+</span>AppFrame, как структура будущего проекта, сохраняет
+следующие данные в виде следующей xml-структуры (показан условный
+проект <span style="font-weight: bold;">FEBE</span>):<br />
+<br />
+&lt;febe_options version="23.08.2019"&gt;<br />
+&nbsp; &lt;be_options /&gt;<br />
+&nbsp; &lt;fe_options lastfolder="...\Bin" use-menu="no"&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;group id="fe_AppWindow"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;language
+current="eng" last="eng" use-dictionary="yes"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;support flag="us" id="eng" title="English" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/language&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ribbon
+startup="default"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;loadable script="febeAppData\ribbon_Basic.xml" /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;embedded /&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;default&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/default&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;sourcelayout &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;changetime="132240248208494519"&gt;[]&lt;/sourcelayout&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;lastlayout&gt;[]&lt;/lastlayout&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/ribbon&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/group&gt;<br />
+&nbsp; &lt;/fe_options&gt;<br />
+&lt;/febe_options&gt;<br />
+<br />
+Аттрибут <span style="font-weight: bold;">version</span>
+определяет версию, которой соответствует содержание файла конфигурации.<br />
+Узел <span style="font-weight: bold;">be_Options</span>
+ядром AppFrame не используется. Должен при необходимости использоваться
+автором конкретного проекта.<br />
+Узел <span style="font-weight: bold;">fe_Options</span>
+относится к FrontEnd и сохраняет только <br />
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">lastfolder</span>
+- последнюю директорию,<br />
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">use-menu</span>
+- определяет должно ли создаваться меню, соответствующее содержимому
+панели (значения "yes" и "no")<br />
+&nbsp;&nbsp;&nbsp; узел <span style="font-weight: bold;">group</span>
+c идентификатором <span style="font-weight: bold;">fe_AppWindow</span>
+содержит информацию<br />
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;о словаре (узел &nbsp;<span style="font-weight: bold;">language</span>)<br />
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;о панели
+управления (узел <span style="font-weight: bold;">ribbon</span>):<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; о способе создания панели управления при
+старте (<span style="font-weight: bold;">default</span>,
+<span style="font-weight: bold;">embedded</span>, <span style="font-weight: bold;">loadable</span>)<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; о конфигурации панели при
+старте приложения (узел <span style="font-weight: bold;">sourcelayout</span>)
+и моменте времени последнего изменения состояния панели<br />
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; о конфигурации панели при завершении
+&nbsp;приложения (узел <span style="font-weight: bold;">lastlayout</span>)<span style="font-weight: bold; font-style: italic;"></span>
+<br />
+<span style="font-weight: bold;">AppFrame не содержит
+инструмента
+для runtime-редактирования файла конфигурации и существенные стартовые
+параметры должны редактироваться вручную любым текстовым редатором.</span><br />
+<br />
+Если файл конфигурации отсутствует, то он создается при старте
+приложения, при этом используется режим панели <span style="font-weight: bold;">default</span>.<br />
+Расширения панели управления отражаются в файле конфигурации
+автоматически. Их также можно указать вручную.<br />
+<br />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span></span></span>
+</body></html>

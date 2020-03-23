@@ -5,6 +5,7 @@ class xmlElement : xmlElement
 
 constructors
     new:(string NameSpace, string ElementName,xmlHierarchy ParentElement).
+    new:(string ElementName,xmlHierarchy ParentElement).
     new:(string ElementName).
 
 predicates

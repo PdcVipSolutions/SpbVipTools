@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+		
+	<title></title><meta name="vs_showGrid" content="False"><meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1"><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"><style type="text/css">/*<![CDATA[*/
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for vip
+ * CSS class: source-vip, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie (http://qbnz.com/highlighter)
+ */
+.source-vip .de1, .source-vip .de2 {font-family: Verdana, Arial, sans-serif; color: black}
+.source-vip  {font-family: Verdana, Arial, sans-serif; color: black; font-size: 95%;}
+.source-vip .head {}
+.source-vip .foot {}
+.source-vip .imp {font-weight: bold; color: red;}
+.source-vip .ln-xtra {color: #cc0; background-color: #ffc;}
+.source-vip li {font-family: Verdana, Arial, sans-serif; color: black; font-weight: normal; font-style: normal;}
+.source-vip li.li2 {font-weight: bold;}
+.source-vip .kw1 {color: #808000;}
+.source-vip .kw2 {color: #333399;}
+.source-vip .kw3 {color: #800080;}
+.source-vip .co1 {color: #AA77BD}
+.source-vip .coMULTI {color: #AA77BD}
+.source-vip .es0 {color: #008080;}
+.source-vip .br0 {color: #000000;}
+.source-vip .st0 {color: #00B7B7;}
+.source-vip .nu0 {color: #0000FF;}
+.source-vip .re0 {color: #008000;}
+.source-vip .re1 {color: #808000;}
+.source-vip .re2 {color: #333399;}
+
+/*]]>*/
+	</style></head>
+	
+	
+	
+	
+	
+	<body><small><span style="font-weight: bold;">Copyright (c) Prolog Development Center SPb</span></small><br>
+		<h1>Pzl-technology - dll-based component approach&nbsp;</h1><p>DLL-based component technology (The Visual Prolog Puzzle or VPPZL or just PZL) 
+		is the set of agreements to build VIP-based applications on the basis of the 
+		standard VIP packages placed into DLLs. The VIP package fitted to 
+		PZL-technology agreements is named pzl-component. The VIP project (executable 
+		or DLL), which contains pzl-components, organized in a special way, is named 
+		pzl-container. The short description of the pzl-technology and it's basic 
+		consepts may be found below.</p>
+	<h2><span class="mw-headline">Motivation</span></h2>
+	<p>Talking about components we consider component as the peace of software, which 
+		can be reused in applications without the change of the source code.
+	</p>
+	<p>The component-based programming is one of the ways to make software development 
+		efficient. The usual ways to represent components in the component-based 
+		technologies today are:
+	</p>
+	<ul>
+		<li>
+		Source code
+		</li><li>
+		Statically linked libraries
+		</li><li>
+			Dynamically linked libraries (DLLs)
+		</li>
+	</ul>
+	<p>As to Visual Prolog the VIP package is the example of the component, which is 
+		represented via the source code.
+	</p>
+	
+	<p>The use of statically linked libraries as components in VIP is possible. Compare to source code the use of statically linked libraries gives the only 
+		opportunity to hide the internal algorithms of the component. But components 
+		based on both source code and static libraries have the negative features:
+	</p>
+	<ul>
+		<li>
+		The size of the application is the sum of the size of used components
+		</li><li>
+			Developers do not have the opportunity to extend the application&#8217;s 
+			functionality without the rebuilding the whole application.
+		</li>
+	</ul>
+	<p>The best way of the component representation is the DLL. With the use of DLLs 
+		almost all goals of the efficient development are reached. Applications become 
+		expandable and easily modifiable. Microsoft Component Model technology (MSCOM) 
+		is the one of the possible sets of agreements regarding the use of DLLs. The 
+		Microsoft agreements, which make DLLs as the COM components are widely used. 
+		Visual Prolog currently supports the use of the MS COM components. But to make 
+		the use of MSCOM in the VIP-style takes time and still has some problems. 
+		Placing the code to DLLs we (being programmers) meet problems which we must 
+		have in mind. We must:&nbsp;take care for the loading and unloading the 
+		DLLs&nbsp;organize the general error handling&nbsp;think about the common 
+		output stream.
+	</p>
+	<p>The goal was to support the use of DLLs with no knowledge about DLLs, using the 
+		current VIP IDE.
+	</p>
+	<a name="The_usual_way_to_use_the_DLL"></a>
+	<h2><span class="mw-headline">The usual way to use the DLL</span></h2>
+	<p>Let&#8217;s assume we have two interacting dynamic classes shown in the table
+	</p>
+	<table id="Table2" style="border: 1px solid rgb(170, 170, 170); padding: 0.2em; background: rgb(249, 249, 249) none repeat scroll 0%; clear: right; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-bottom: 0.5em; margin-left: 1em; color: black;">
+		<tbody>
+			<tr>
+				<td><b>Class A</b></td>
+				<td><b>Class B</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">inrerface a <br><span class="kw1">predicates</span> <br>  pA:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>. <br><span class="re1">end interface</span> a <br>&nbsp;<br><span class="re1">class</span> a:<span class="me1">a</span> <br><span class="re1">end class</span> a <br>&nbsp;<br><span class="re1">implement</span> a <br><span class="kw1">clauses</span> <br>  ...<br>  <span class="re0">Ob</span>=b::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>, <br>  <span class="re0">Ob</span>:<span class="me1">pB</span><span class="br0">(</span><span class="br0">)</span>. <br><span class="kw1">clauses</span> <br>  pA<span class="br0">(</span><span class="br0">)</span>:- <br>  ... <br><span class="re1">end implement</span> a</pre>
+					</div>
+				</td>
+				<td>
+					<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">inrerface b <br><span class="kw1">predicates</span> <br>  pB:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>. <br><span class="re1">end interface</span> b <br>&nbsp;<br><span class="re1">class</span> b:<span class="me1">b</span> <br><span class="re1">end class</span> b <br>&nbsp;<br><span class="re1">implement</span> b <br><span class="kw1">clauses</span> <br>  ... <br>  <span class="re0">Oa</span>=a::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>, <br>  <span class="re0">Oa</span>:<span class="me1">pA</span><span class="br0">(</span><span class="br0">)</span>. <br><span class="kw1">clauses</span> <br>  pB<span class="br0">(</span><span class="br0">)</span>:- <br>  ... <br><span class="re1">end implement</span> b</pre>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p><br>
+		Let&#8217;s assume now that on some reasons we wish to place the implementation of 
+		the class B into DLL. The standard MS Windows methods are supported in VIP6 
+		well enough by the IDE and the PFC class pfc\application\useDLL.
+	</p>
+	<p>It is the easy procedure: using the IDE it is needed to create project with the 
+		target type DLL. Then the package, which includes the class B, must be included 
+		to the appropriate DLL project. The exported predicate must be created and then 
+		it must be linked to the predicates of the class B.
+	</p>
+	<p>The part of the application, which uses class placed to the DLL, must be also 
+		modified. Say for the calling the predicate pB the code in the class A will 
+		look like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">ObjDll</span> = useDll::<span class="me1">load</span><span class="br0">(</span><span class="re0">DLLFileName</span><span class="br0">)</span>, <br>pB_Ref=<span class="re0">ObjDll</span>:<span class="me1">getPredicateHandle</span><span class="br0">(</span>pB_Exp<span class="br0">)</span>, <br>pB_Ref<span class="br0">(</span>&#8230;<span class="br0">)</span>, <br>...</pre>
+	</div>
+	<p>It is not important how much the code above has practical sense. The main point 
+		is that the code of the class A, which calls the predicate pB, must be changed 
+		dramatically and it becomes hardly dependant on the procedure of the 
+		interaction with the class placed to DLL.
+	</p>
+	<p>Moreover, the creation of the instance of the class A and the call of the 
+		predicate pA from the class B side will need to create some special code.
+	</p>
+	<a name="VPPuZzle:_Basic_Idea"></a>
+	<h2><span class="mw-headline">VPPuZzle: Basic Idea</span></h2>
+	<p>The PZL technology makes it possible to split the application on parts, which 
+		are placed to DLL so the codes of the classes are not dramatically changed. The 
+		called and calling classes are indifferent in that case to the place where they 
+		are placed. It means, that all the communication way work well for calling and 
+		called classes:
+	</p>
+	<ul>
+		<li>
+		Main applicaion - DLL
+		</li><li>
+		DLL - Main applicaion
+		</li><li>
+			DLL - DLL
+		</li>
+	</ul>
+	<p>The two features of VIP system are used to make this possible:
+	</p>
+	<ul>
+		<li>
+		The main application and DLLs created by VIP have the same memory space;
+		</li><li>
+			All instances of classes belong to the domain Object.
+		</li>
+	</ul>
+	<p>The PZL technology is built around the basic idea: When some peace of code needs 
+		to call the predicate of some class placed to DLL, then the call new() is 
+		transported to DLL, the new instance of the needed class is created and then 
+		the pointer to the created object is transported back to the caller. Between 
+		main application and DLL this pointer is transported belonging to the Object 
+		domain.
+	</p>
+	<p>But on the back way to the caller it is converted to the domain of the called 
+		class.
+	</p>
+	<p>So in the reality the chain of substitutions and conversions is made, when we 
+		use the call:
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">... <br><span class="re0">MyClassInstance</span>=myClass::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>, <br>...</pre>
+	</div>
+	<p>Let&#8217;s assume the DLL is already loaded.
+	</p>
+	<ol>
+		<li>
+			myClass is the static class with the predicate (not constructor) <strong class="source-vip">
+				new<span class="br0">(</span><span class="br0">)</span></strong>
+		at the calling side.
+		</li><li>
+			The predicate call new() transported to DLL and real constructor is invoked <strong class="source-vip">
+				<span class="re0">MyClassInstance</span>=myClass&nbsp;::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span></strong>
+		</li><li>
+			MyClassInstance converted by <strong class="source-vip"><span class="re0">MyClassObject</span>=convert<span class="br0">(</span>object,<span class="re0">MyClassInstance</span><span class="br0">)</span></strong>
+		</li><li>
+		MyClassObject delivered to calling side
+		</li><li>
+			MyClassObject converted to MyClass domain by <strong class="source-vip"><span class="re0">
+					MyClassInstance</span>=convert<span class="br0">(</span>myClass,<span class="re0">MyClassObject</span><span class="br0">)</span></strong>
+		</li>
+	</ol>
+	<p>Thus from the pragmatic point of view the call
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span></pre>
+	</div>
+	<p>will take place, and then it is used as usual
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">MyClassInstance</span>:<span class="re0">callNeededPredicate</span><span class="br0">(</span>&#8230;<span class="br0">)</span></pre>
+	</div>
+	<p>So the source code of the calling class is not changed.
+	</p>
+	<a name="The_mechanizms_of_the_Pzl-system"></a>
+	<h2><span class="mw-headline">The mechanizms of the Pzl-system</span></h2>
+	<p>The <b>Pzl-system</b> is represented by the class <b>pzl</b>.
+	</p>
+	<p>The <b>pzl-system</b>:
+	</p>
+	<ul>
+		<li>
+		makes automatic loading of DLLs with the needed class
+		</li><li>
+		transports the constructor calls and object pointers back
+		</li><li>
+		gives the opportunity to interact classes placed to different DLLs (not only to 
+		the application and DLL)
+		</li><li>
+		unloads automatically the DLLs, when all classes are finalized by garbage 
+		collector
+		</li><li>
+		leads to minimal changes in the source codes of classes
+		</li><li>
+			doesn&#8217;t change dramatically the structure of the main application
+		</li>
+	</ul>
+	<p>The <b>pzl-technology</b>:
+	</p>
+	<ul>
+		<li>
+		includes all nessesery classes, which support the running of the 
+		pzl-system
+		</li><li>
+		gives the possibility to update the existing application projects so it can use 
+		the PZL technology
+		</li><li>
+		gives the possibility to generate the code of DLLs automatically
+		</li><li>
+			contains all needed tools to use the pzl-system practically
+		</li>
+	</ul>
+	<p>The technology means several entities to be described:
+	</p>
+	<ul>
+		<li>
+		VIP Pack as the pzl-component
+		</li><li>
+		Component Delegate (proxy)
+		</li><li>
+		VIP Project as the pzlContainers
+		</li><li>
+			Main Application as the pzlPort
+		</li>
+	</ul>
+	<a name="Pzl-component"></a>
+	<h3><span class="mw-headline">Pzl-component</span></h3>
+	<p><b>PzlComponent</b> is the usual Visual Prolog class. The only difference is 
+		that:
+	</p>
+	<ul>
+		<li>
+		this class inherits from the class pzlComponent
+		</li><li>
+		the base interface of this class supports interface pzlComponent
+		</li><li>
+		the base interface of this class contains the special constant 
+		componentDescriptor_C
+		</li><li>
+		the interface name and the class name must be different
+		</li><li>
+			The constructor of the class declared as new:(object AnyUserDefinedObject)<br>
+			The argument has no special meaning in the context of the Pzl System.
+		</li>
+	</ul>
+	<p>The constant componentDescriptor_C belongs to the special domain 
+		pzlComponentInfo_D. One of the arguments of the structured domain 
+		pzlComponentInfo_D defines the unique component identifier. The iniquity has 
+		the sense only in the given application. The identifier may belong to the 
+		domain string or it can be a Universal ID, the same as it used in the MSCOM 
+		technology. Component has also the alias, which can be used to create the 
+		instance in some cases. The Component Alias is the part of the component 
+		descriptor also. The source code of the class A after the conversion to the 
+		pzlComponent is shown below.
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">inrerface iA <br>  <span class="kw1">supports</span> pzlComponent <br><span class="kw1">constants</span> <br>  componentDescriptor_C:&#8230;componentInfo<br>    <span class="br0">(</span>
+    componentAlias_C, 
+    componentID_C, 
+    ... 
+    <span class="br0">)</span>. <br><span class="kw1">predicates</span> <br>  pA:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>. <br><span class="re1">end interface</span> iA <br>&nbsp;<br><span class="re1">class</span> a:<span class="me1">iA</span> <br><span class="kw1">constructors</span> <br>  new:<span class="me1"><span class="br0">(</span></span><span class="re0">Object</span><span class="br0">)</span>. <br><span class="re1">end class</span> a <br>&nbsp;<br><span class="re1">implement</span> a <br>  <span class="kw1">inherits</span> pzlComponent <br><span class="kw1">clauses</span> <br>  new<span class="br0">(</span><span class="re0">_Object</span><span class="br0">)</span>:- <br>    ...<br>&nbsp;<br><span class="kw1">clauses</span> <br>  ... <br>  <span class="re0">Ob</span>=b::<span class="me1">new</span><span class="br0">(</span><span class="re0">This</span><span class="br0">)</span>, <br>  <span class="re0">Ob</span>:<span class="me1">pB</span><span class="br0">(</span>&#8230;<span class="br0">)</span>. <br><span class="kw1">clauses</span> <br>  pA<span class="br0">(</span><span class="br0">)</span>:- <br>  ... <br><span class="re1">end implement</span> a</pre>
+	</div>
+	<p>Class B converted to the pzlComponent looks absolutely the same except the name 
+		of the class. You can see that there are changes only in declarations and not 
+		in the meaningful code of the implementation. You can see that the 
+		pzl-component doesn't know nor about the place where it is placed, nor about 
+		the place where the component, which it comminicates with, placed.
+	</p>
+	<a name="The_registration_of_the_component"></a>
+	<h3><span class="mw-headline">The registration of the component</span></h3>
+	<p>Pzl-system must know where the pzl-component is placed at the computer. To 
+		provide this the registration mechanism is used. The information regarding the 
+		component registration may be stored in the user-defined file or it may be 
+		stored in the Windows Registry. The same component may be registerede in more 
+		then one place.
+	</p>
+	<p>The pzl-technology tools give the possibility to register or to deregister any 
+		component from the any place of registration one by one or using the group 
+		mode.
+	</p>
+	<a name="Three_ways_to_create_an_instance_of_the_component"></a>
+	<h3><span class="mw-headline">Three ways to create an instance of the component</span></h3>
+	<p>The initial and the most important process of the communication of two classes 
+		is that one class must get the pointer to the instance of the other created 
+		class.
+	</p>
+	<p>There are three ways to invoke the creation of the instance of the PzlComponent:
+	</p>
+	<ul>
+		<li>
+		By calling the class constructor new()
+		</li><li>
+		By calling the predicate newByName() of the pzl class.
+		</li><li>
+			By calling the predicate newByID() of the pzl class.
+		</li>
+	</ul>
+	<p>The first way was already described and looks like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">... <br><span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="re0">SomeObject</span><span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>:<span class="me1">callNeededPredicate</span><span class="br0">(</span>&#8230;<span class="br0">)</span> <br>...</pre>
+	</div>
+	<p>It corresponds to the usual VIP rules.
+	</p>
+	<p>The second way uses PzlSystem explicitly and looks like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">MyClassObj</span>=pzl::<span class="me1">newByName</span><span class="br0">(</span>&#8220;MyClass&#8221;,...<span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>=tryConvert<span class="br0">(</span>iMyClass, <span class="re0">MyClassObj</span><span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>:callNeededPredicate<span class="br0">(</span>&#8230;<span class="br0">)</span>,</pre>
+	</div>
+	<p>Here iMyClass is the base interface of the class myClass and &#8220;MyClass&#8221; is the 
+		string name (alias) of the class myClass.
+	</p>
+	<p>The third way also uses PzlSystem explicitly and looks like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">MyClassObj</span>=pzl::<span class="me1">newByID</span><span class="br0">(</span>str<span class="br0">(</span>&#8220;MyClass&#8221;<span class="br0">)</span>,...<span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>=tryConvert<span class="br0">(</span>iMyClass, <span class="re0">MyClassObj</span><span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>:callNeededPredicate<span class="br0">(</span>&#8230;<span class="br0">)</span>,</pre>
+	</div>
+	<p>Here iMyClass is the interface of the class myClass, and str(&#8220;MyClass&#8221;) is the 
+		string form of the class identifier.
+	</p>
+	<p>The string form of the class identifier str(...) is the convenient form, but it 
+		doesn't provide the uniqueness. To provide the uniqueness it is recommended to 
+		use the numeric identifier, which must look like (numbers depend on the user's 
+		wishes):
+	</p>
+	<p>uid(0xB5B1AE3D,0xBD01,0x4A29,0x9A,0x14,0x48,0x56,0x34,0x97,0xC7,0xC9).
+	</p>
+	<p>The user is free to choose the way to represent the identifier. For instance 
+		while learning the programming with the pzl-system use it is convenient to use 
+		the string representation of the identifier str(...). In the case of the real 
+		commercial programming it is preferable to use the numeric identifier uid(...).
+	</p>
+	<a name="Class_delegate_.28proxy.29"></a>
+	<h3><span class="mw-headline">Class delegate (proxy)</span></h3>
+	<p>To use the usual VIP style
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="re0">SomeObject</span><span class="br0">)</span>,<br><span class="re0">MyClassInstance</span>:<span style="color: black;" class="re0">callNeededPredicate</span><span class="br0">(</span>&#8230;<span class="br0">)</span>
+...</pre>
+	</div>
+	<p>in the case, when called and calling classes placed in different entities (in 
+		the executable and DLL or in two different DLLs), the process of creation of 
+		the instance of the class uses the delegate (proxy) class.
+	</p>
+	<p>Thus the calling class calls the predicate <strong class="source-vip">new<span class="br0">(</span>&#8230;<span class="br0">)</span></strong>
+		of the proxy class and then proxy class communicates with the Pzl-system and 
+		Pzl-system returns the pointer to the instance of the called class to proxy 
+		class. Proxy class then converts the object domain to the domain of the called 
+		class and the creation of the pointer to the instance is complete.
+	</p>
+	<p>The text of the proxy class is extremely simple and it is possible to generate 
+		the text of the proxy class automatically for each PzlComponent. As an example 
+		the text of the class implementation of the class-proxy is shown
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re1">implement</span> aboutDialog<br>   <span class="kw1">open</span> core<br>&nbsp;<br><span class="kw1"></span>&nbsp;<span class="kw1">clauses</span>
+  new<span class="br0">(</span><span class="re0">ObjIn</span><span class="br0">)</span>=convert<span class="br0">(</span>iAboutDialog,<span class="re0">ObjOut</span><span class="br0">)</span>:-<br>   <span class="re0">ObjOut</span>=pzl::<span class="me1">new</span><span class="br0">(</span>iAboutDialog::<span class="me1">componentID_C</span>, <span class="re0">ObjIn</span><span class="br0">)</span>.</pre>
+	</div>
+	<p>The package file AboutDialog.pack has the text
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw3">#include</span><span class="st0">@"AboutDialog\AboutDialog.ph"</span>
+<span class="kw3">#include</span><span class="st0">@"AboutDialog\AboutDialogProxy.pro"</span></pre>
+	</div>
+	<p>Pzl-technology tools can generate the content of files needed to have a 
+		class-proxy automatically.
+	</p>
+	<a name="The_combination_of_the_Original_and_Proxy_classes"></a>
+	<h3><span class="mw-headline">The combination of the Original and Proxy classes</span></h3>
+	<p>In the case, when called and calling classes placed in one entity (in the 
+		executable or in one DLL), then the communication of the classes in the form
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br><span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="re0">SomeObject</span><span class="br0">)</span>, <br><span class="re0">MyClassInstance</span>:<span class="re0">CallNeededPredicate</span><span class="br0">(</span>&#8230;<span class="br0">)</span> <br>...</pre>
+	</div>
+	<p>happens explicitly, and PZL system doesn&#8217;t participate in the interaction. The 
+		usual VIP rules work here. The package for this case looks like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw3">#include</span><span class="st0">@"AboutDialog\AboutDialog.ph"</span>
+<span class="co1">% privately used packages</span>
+<span class="kw3">#include</span> <span class="st0">@"pfc\string\string.ph"</span>
+<span class="co1">% private interfaces</span>
+ <span class="kw3">#include</span> <span class="st0">@"resourceIdentifiers.i"</span>
+&nbsp;
+<span class="co1">% implementations</span>
+<span class="kw3">#include</span> <span class="st0">@"AboutDialog\AboutDialog.pro"</span></pre>
+	</div>
+	<p>It was found convenient to have all files, related to the pzlComponent - the 
+		Original and Proxy classes and packages, mentioned in one package.
+	</p>
+	<p>The conditional compilation gives the possibility to use the appropriate 
+		declarations and implementations. Depending on the meaning of the conditional 
+		compilation parameter, the original or proxy code is used.
+	</p>
+	<p>The text of the combined package file is shown below.
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw3">#include</span> <span class="st0">@"AboutDialog\AboutDialog.ph"</span>
+<span class="kw3">#include</span> <span class="st0">@"pfc\string\string.ph"</span>
+&nbsp;
+#<span class="re2">if</span> iPzlConfig::<span class="me1">useAboutDialogOriginal_C</span>=true <span class="kw3">#then</span>
+<span class="co1">% privately used packages</span>
+&nbsp;
+<span class="co1">% private classes</span>
+&nbsp;
+<span class="co1">% private interfaces</span>
+    <span class="kw3">#include</span> <span class="st0">@"resourceIdentifiers.i"</span>
+&nbsp;
+<span class="co1">% implementations</span>
+    <span class="kw3">#include</span> <span class="st0">@"AboutDialog\AboutDialog.pro"</span>
+<span class="kw3">#else</span>
+    <span class="kw3">#include</span> <span class="st0">@"AboutDialog\AboutDialogProxy.pro"</span>
+<span class="kw3">#endif</span></pre>
+	</div>
+	<p>The same principle is used to combine the contents of the header file 
+		AboutDialog.ph for the use of the Original and the Proxy related files
+	</p>
+	<p>So if we need to use the original classes, then the constant 
+		useAboutDialogOriginal_C must have the value true, and if we need to use the 
+		proxy-related files, then the constant useAboutDialogOriginal_C must have the 
+		value false.
+	</p>
+	<p>The constant, which defines the way of communication, is defined in the file 
+		PzlConfig.i of the package PzlConfig.pack , which is the collection of the 
+		pzlComponents of the given entity (executable of DLL).
+	</p>
+	<a name="PzlContainer"></a>
+	<h3><span class="mw-headline">PzlContainer</span></h3>
+	<p>The PzlContainer is the usual Visual Prolog project (one container - one 
+		project). It can be the project, which generates the executable application or 
+		it can be the project, which generates the DLL. Unlike the pzl-component, the 
+		PzlContainer &#8220;knows&#8221; which pzl-components it contains. All pzl-components, 
+		which are placed to the given pzl-container, must be included to the special 
+		package PzlConfig. The implementation of the class pzlConfig deals with the 
+		pzl-components also. The picture below shows the structure of the PzlConfig 
+		package as it can be seen on the Project window of the IDE.
+	</p>
+	<p><a class="image" title="Image:PzlConfigStructure.png" href="/index.php?title=%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5:PzlConfigStructure.png"><img src="Pictures/PzlConfigStructure.png" border="1" height="65" width="142"></a>
+	</p>
+	<p>The file of the interface type PzlConfig.i, implementation type PzlConfig.pro 
+		and package type PzlConfig.pack are the only entities, related to the 
+		pzl-components, included to the given project.
+	</p>
+	<p>Files PzlConfig.cl and PzlConfig.ph has no deal with pzlComponents and thus are 
+		included to the set of files of the PzlSystem. Because of the information 
+		regarding the pzlComponents included to the given pzlContainer is concentrated 
+		only in files of the pzlConfig package. This feature gives the possibility to 
+		move pzlComponents from one pzlContainer to another pzlContainer with no 
+		changes in other parts of the projects.
+	</p>
+	<p>Pzl-technology tools may update the content of the pzlConfig files 
+		automatically, when pzlComponent is added (removed) to (from) the given 
+		pzlContainer.
+	</p>
+	
+	<table id="Table3" style="border: 1px solid rgb(170, 170, 170); padding: 0.2em; background: rgb(249, 249, 249) none repeat scroll 0%; clear: right; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; float: right; margin-bottom: 0.5em; margin-left: 1em; color: black;">
+		<tbody>
+			<tr style="background: gainsboro none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+			</tr>
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+	<p>Being the usual project, PzlContainer may contain not only pzlComponents, but it 
+		may contain usual Visual Prolog packs also according to the user needs.<br><br>
+		The feature of the PZL-technology, when two pzlComponents placed in one entity 
+		communicate explicitly with no use of PzlSystem and communicate via PzlSystem, 
+		when they are placed in different entities, gives the possibility to split the 
+		application on parts whenever user finds it convenient to him. No change in 
+		code is needed. Pzl-technology tools can help in this.
+	</p>
+	<table id="Table4" style="border: 1px solid rgb(170, 170, 170); padding: 0.2em; background: rgb(249, 249, 249) none repeat scroll 0%; clear: right; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; float: right; margin-bottom: 0.5em; margin-left: 1em; color: black;">
+		<tbody>
+			<tr style="background: gainsboro none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+			</tr>
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+	<h2><span class="mw-headline">Pzl-system</span></h2>
+	<p>All features of the PZL mechanism are provided by the Pzl-system. Pzl-system 
+		contains some classes represented as source code and some classes represented 
+		as the statically linked libraries. It was used the feature of Visual Prolog 
+		that the source code of libraries can be written in Visual Prolog language. The 
+		picture below shows the content of the PzlSystem for the executable entiry 
+		(EXE).
+	</p>
+	<p><a href="/index.php?title=%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5:SystemStructure_Exe.png"><img style="border: 0px solid ; width: 341px; height: 399px;" alt="" src="Pictures/PzlSystemAddedToMainApplicaion.png"></a><a class="image" title="Image:SystemStructure Exe.png" href="/index.php?title=%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5:SystemStructure_Exe.png"><br></a>
+	</p>
+	<p>And the picture below shows the content of the PzlSystem for the DLL
+	</p>
+	<p><a class="image" title="Image:SystemStructure Dll.png" href="/index.php?title=%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5:SystemStructure_Dll.png"><img style="border: 0px solid ; width: 341px; height: 297px;" alt="Pictures/SystemStructure Dll.png" src="Pictures/SystemStructure_Dll.png"></a>
+	</p>
+	<p>The difference is in the libraries and in the package pzlPort.pack, which used 
+		in the case of application. There is no need to remember all these files &#8211; the 
+		Pzl-technology tools can generate the project for the DLL and any VIP 
+		application project can be easily modified to support the Pzl-technology. The 
+		name PzlPort was chosen for the core of the PzlSystem, which must be included 
+		to the application project.
+	</p>
+	<p>The PzlPort is responsible for the loading and unloading DLLs. When user calls 
+		the pzlComponent constructor, PzlPort finds the DLL, which contains the 
+		appropriate pzl-component. If the DLL is not already loaded, then it loads the 
+		DLL and communicates with the classes of the pzl-container.
+	</p>
+	<p>The PzlPort uses the order as follows:
+	</p>
+	<ul>
+		<li>
+		Local user defined registration file
+		</li><li>
+		Current User at Windows Registry
+		</li><li>
+			Local Machine at Windows Registry
+		</li>
+	</ul>
+	<p>The pzl-technology uses the same principles to support the lifecycle for 
+		classes. When the instance of the class is not needed, then all references to 
+		this class must be removed. PzlPort is responsible to unload the appropriate 
+		DLL, when there is no pzl-components in use. This happens, when the Visual 
+		Prolog garbage collector removes the instance of the class.
+	</p>
+	<p>Thus User has no deal with the DLLs and has the deal the only with classes the 
+		same way as it would be using the standard VIP programming style
+	</p>
+	<a name="Compatibility_and_Authorising"></a>
+	<h3><span class="mw-headline">Compatibility and Authorising</span></h3>
+	<p>Because of the parts of the applications, based on the pzl-Technology, may be 
+		build in different time and with the different versions of the Visual Prolog, 
+		the incompatibility between the application and DLLs and between DLLs may 
+		happen. Tools placed to pzl-port and pzl-container libraries communicate and 
+		check this compatibility before the use of components have started.
+	</p>
+	<p>If the incompatibility have descovered, then the DLL is unloaded and the 
+		exception is generated.
+	</p><h3><span class="mw-headline">Active Objects registration</span></h3>
+	<p>PzlSystem performs some functionality, which are not directly concerns with the 
+		component technology.
+	</p>
+	<p>One of these kinds of the functionality is the Active Object registration. Let&#8217;s 
+		come back to the major construction of the VIP:
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br>   <span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span> <br>   <span class="re0">MyClassInstance</span>:<span class="me1">callNeededPredicate</span><span class="br0">(</span>&#8230;<span class="br0">)</span>, <br>...</pre>
+	</div>
+	<p>Once created instance of the class will be destroyed if the pointer (reference) 
+		to the instance will not be stored. There are many situations, when one 
+		instance may be used by many other classes. Then it is needed to store the 
+		pointer to this instance in the place, which all components can easily reach.
+	</p>
+	<p>When we have the application built using the usual style we may have the static 
+		class, which can store pointers to instances. When we use the technology based 
+		on the DLLs we need some data store, which all components can refer to. In the 
+		pzl-technology the special data store engine embedded to the pzlPort. Any 
+		component placed to any container can easily make the operation like
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">MyClassInstance</span> =myClass::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>, <br>  pzl::<span class="me1">register</span><span class="br0">(</span>&#8220;MyClassInstance1&#8221;, <span class="re0">MyClassInstance</span><span class="br0">)</span>, <br>  <span class="re0">MyClassInstance</span>:callNeededPredicate<span class="br0">(</span>&#8230;<span class="br0">)</span>, <br>...</pre>
+	</div>
+	<p>Any other object can get the object using the call
+	</p>
+	<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">...<br>  <span class="re0">Object</span> =pzl::<span class="me1">getObjectByName_nd</span><span class="br0">(</span>&#8220; MyClassInstance1&#8221;<span class="br0">)</span>,<br> &nbsp;!,<br>  <span class="re0">MyClassInstance</span>=tryConvert<span class="br0">(</span>iMyClass, <span class="re0">Object</span><span class="br0">)</span>, <br>  <span class="re0">MyClassInstance</span>:callNeededPredicate<span class="br0">(</span>&#8230;<span class="br0">)</span>,<br>...</pre>
+	</div>
+	<p>Class Pzl contains many other useful predicates to manipulate with the object 
+		registration.
+	</p>
+	<p>If we follow the idea of the open architect applications, then the user-defined 
+		component may have an access to all components active in the application at the 
+		moment. The only condition is that User must know the interfaces of the classes 
+		in this case and User must know the principles of the organization of the 
+		application.
+	</p>
+	<a name="The_common_Error_Handling_space"></a>
+	<h3><span class="mw-headline">The common Error Handling space</span></h3>
+	<p>Vip has convenient error handling system. Pzl-technology supports the common 
+		error handling space. Thus any pzl-component has the access to the exception 
+		data common to all pzl-components of the application.
+	</p>
+	<a name="The_common_standard_output_stream_STDO"></a>
+	<h3><span class="mw-headline">The common standard output stream STDO</span></h3>
+	<p>All pzl-components active at the given moment use the same standard output 
+		stream.
+	</p>
+	<a name="Summary"></a>
+	<h2><span class="mw-headline">Summary</span></h2>
+	<p>The following features of the Visual Prolog programming system used:
+	</p>
+	<ul>
+		<li>
+		The VIP DLLs permit to use the deterministic and nondeterministic predicates 
+		invoked through the border of the DLL.
+		</li><li>
+		The DLLs work in the same memory space as the main application
+		</li><li>
+		The package-oriented source code organization
+		</li><li>
+		The advanced class system
+		</li><li>
+		The flexible interface concept, combined with the domain concept
+		</li><li>
+		The existence of the domain object, which all instances belong to
+		</li><li>
+		The localization of the constants in classes
+		</li><li>
+		The conditional compilation
+		</li><li>
+			The possibility to build statically linked libraries
+		</li>
+	</ul>
+	<p>The Pzl-technology has all advantages and disadvantages, which VIP programming 
+		has because of it don&#8217;t change much the VIP style of programming.
+	</p>
+	<p>The pzl-technology sets some limitations:
+	</p>
+	<ul>
+		<li>
+		The only one constructor type may be used
+		</li><li>
+		The interacting classes must be dynamic
+		</li><li>
+		The names of the class and the base interface must be different
+		</li><li>
+			Being DLL-based, pzl-components can be invoked only by the applications, which 
+			use the pzl-technology and created by Visual Prolog tools
+		</li>
+	</ul>
+	<p>The usual limitations of VIP DLLs must be taken in account:
+	</p>
+	<ul>
+		<li>
+			The DLL-based components must have the stable set of declarations of 
+			interfaces. When the DLL is built, any changes of the used interfaces may lead 
+			to the exceptions. All interacting components must be rebuild
+		</li>
+	</ul>
+	<ul>
+		<li>
+			VIP DLLs use the Visual Prolog system run-time DLLs, &#8216;which are Visual Prolog 
+			version dependant. Any modification in these DLLs may lead to the unstable 
+			functionality. All interacting user components must be rebuilt when the new 
+			versions of VIP DLLs are issued.</li></ul>
+	<a name="References"></a></body></html>

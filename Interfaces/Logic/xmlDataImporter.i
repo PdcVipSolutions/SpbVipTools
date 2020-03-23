@@ -3,9 +3,6 @@
 interface xmlDataImporter
     open core
 
-properties
-    target_P:object (i).
-
 predicates
     element:(string Prefix,string ElName,tuple{string Prefix,string Name}* Context).
     endElement:(string Prefix,string ElName,tuple{string Prefix,string Name}* Context).

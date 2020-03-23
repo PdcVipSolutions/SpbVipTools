@@ -1,0 +1,10 @@
+﻿#include @"..\Common\defaultDictionary\defaultDictionary.ph"
+
+% privately used packages
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+% implementations
+#include @"..\Common\defaultDictionary\defaultDictionary.pro"

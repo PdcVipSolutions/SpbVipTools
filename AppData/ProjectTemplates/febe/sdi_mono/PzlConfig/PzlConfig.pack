@@ -1,0 +1,19 @@
+/*****************************************************************************
+                                        Visual Prolog PuZzLe Studio
+                        Copyright (c) Prolog Development Center Spb Ltd.
+
+Created by: Visual Prolog PuZzLe Studio
+
+Container: Copyright (c) 1601, Unknown Company
+Used by: Виктор юхтенко/WIN-5L3MH3V6R7Q
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+% privately used packages
+#include @"pfc\exception\exception.ph"
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"

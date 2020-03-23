@@ -1,0 +1,26 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\AppFrameCookBookEn.chm
+Contents file=TableOfContentsEn.hhc
+Default topic=CookBookIndexEn.html
+Display compile progress=No
+Language=0x419 Английский (США)
+
+
+[FILES]
+AppFrameIntroductionEn.html
+DictionariesSupportEn.html
+FE_BE_DataExchangeEn.html
+InterModuleCommunicationEn.html
+RibbonScriptEn.html
+PluginsEn.html
+VpPuZzle\VpPuZzle Introduction.htm
+VpPuZzle\VpPuZzle Observe.htm
+EmbeddedFeaturesEn.html
+AppFrameDemoEn.html
+AppFrameTemplateEn.html
+AppFrameUsageEn.html
+ConfigurationFileEn.html
+
+[INFOTYPES]
+

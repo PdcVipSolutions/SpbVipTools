@@ -1,0 +1,3 @@
+..\bin\setSpbToolsToVip.exe
+
+pause

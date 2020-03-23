@@ -1,0 +1,11 @@
+﻿#include @"Packs\Logic\cancelableInterval\cancelableInterval.ph"
+
+% privately used packages
+#include @"pfc\time\time.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\windowsApi\gui_api\gui_api.ph"
+#include @"pfc\multiThread\multiThread.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Logic\cancelableInterval\cancelableInterval.pro"

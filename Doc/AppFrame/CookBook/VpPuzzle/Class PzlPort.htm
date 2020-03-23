@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+		
+		<title></title><meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<style type="text/css">/*<![CDATA[*/
+.source-vip .de1, .source-vip .de2 {font-family: Verdana, Arial, sans-serif; color: black}
+.source-vip  {font-family: Verdana, Arial, sans-serif; color: black; font-size: 95%;}
+.source-vip .head {}
+.source-vip .foot {}
+.source-vip .imp {font-weight: bold; color: red;}
+.source-vip .ln-xtra {color: #cc0; background-color: #ffc;}
+.source-vip li {font-family: Verdana, Arial, sans-serif; color: black; font-weight: normal; font-style: normal;}
+.source-vip li.li2 {font-weight: bold;}
+.source-vip .kw1 {color: #808000;}
+.source-vip .kw2 {color: #333399;}
+.source-vip .kw3 {color: #800080;}
+.source-vip .co1 {color: #AA77BD}
+.source-vip .coMULTI {color: #AA77BD}
+.source-vip .es0 {color: #008080;}
+.source-vip .br0 {color: #000000;}
+.source-vip .st0 {color: #00B7B7;}
+.source-vip .nu0 {color: #0000FF;}
+.source-vip .re0 {color: #008000;}
+.source-vip .re1 {color: #808000;}
+.source-vip .re2 {color: #333399;}
+
+/*]]>*/
+		</style></head>
+
+	<body>
+		<div id="globalWrapper">
+			<div id="column-content">
+				<div id="content"><a id="top" name="top"></a>
+					<h1 class="firstHeading">Class PzlPort</h1>
+					<div id="bodyContent"><!-- start content -->
+						<p style="font-weight: bold;"><small>Copyright 
+								(C) Prolog Development Center SPb.
+						</small></p>
+						<p><b>package PzlPort</b>
+						</p>
+						<p>The class pzlPort is the core of the VpPuzzle system and supports the use of 
+							pzl-components. This class must be included to the project, which generates the 
+							main executable applicaion(.EXE).
+						</p>
+						<p>The calls of the predicates of the class PzlPort are possible only from the 
+							classes of the main executable applicaion project. Components placed to the 
+							dll-containers can not make a calls of the predicats of the class PzlPort. <span class="mw-headline">
+								Predicate summary</span></p>
+						<table id="Table1" style="background: rgb(249, 249, 249) none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: black;" border="1" cellspacing="0">
+							<tbody>
+							<tr>
+								<td><a title="" href="#pzlPort::init.2F0">init:()</a>.
+									<p>Initialization of the VpPuZzle system
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td><a title="" href="#pzlPort::setComponentRegisterFileName.2F1">setComponentRegisterFileName:(string 
+										ComponentRegisterFileName)</a>.
+									<p>Set the name of the component registry file
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td><a title="" href="#pzlPort::isInitialized.2F0">isInitialized:() determ</a>.
+									<p>Checking of the initialization status of the VpPuZzle system
+									</p>
+								</td>
+							</tr>
+						</tbody></table>
+						<a name="Additionally_used_resources"></a>
+						<h1><span class="mw-headline">Additionally used resources</span></h1>
+						<p>The mandatory use:
+						</p>
+						<ul>
+							<li>
+								the pzlPort_XX.lib library must be used, where XX - license qualifier. The 
+								library in fact contains the implementation of the class PzlPort and also the 
+								library includes the implementation of the handling of the pzl-container of the 
+								main executable application.
+							</li>
+							<li>
+								the package pzlConfig must be used. The package PzlConfig participates in the 
+								initialization procedure.
+							</li>
+						</ul>
+						<a name="Predicate_details"></a>
+						<h1><span class="mw-headline">Predicate details</span></h1>
+						<h2><span class="mw-headline"><a name="pzlPort::init.2F0"></a>pzlPort::init/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">init:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Initialization of the VpPuZzle system
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The predicate must be the first predicate, which is used while the accessing to 
+							the Pzl-system. It must be called only once. After initialization the calls to 
+							other classes of the Pzl system become possible.
+						</p>
+						<p>The initialization of the pzl-system may be performed immidiately after the main 
+							applicaion start. It also may be performed at any moment when the pzl-system is 
+							expected to be used. The deinitialization of the pzl-system is impossible.
+						</p>
+						<p>The repetitions of the initialization are ignored.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">clauses</span>
+  run<span class="br0">(</span><span class="br0">)</span>:-<br>    pzlPort::<span class="me1">init</span><span class="br0">(</span><span class="br0">)</span>,<br>    <span class="re0">TaskWindow</span> = taskWindow::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>,<br>    ...</pre>
+						</div>
+						<h2><a name="pzlPort::setComponentRegisterFileName.2F1"></a><span class="mw-headline">pzlPort::setComponentRegisterFileName/1</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">setComponentRegisterFileName:<span class="me1"><span class="br0">(</span>string</span> <span class="re0">ComponentRegisterFileName</span><span class="br0">)</span>.</pre>
+						</div>
+						<p>Set the name of the component registry file
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>The file ComponentRegisterFileName is one of the places, where the information 
+							regarding the pzl-components at the given computer is stored. The other place 
+							of store is the Windows registry. When the siarching process runs the component 
+							registry file is used first. If the file dosn't exist or the component is not 
+							registered there, then the search process continued in the Windows registry.
+						</p>
+						<p>The information in the component registry file is stored in the Visual Prolog 
+							term format (save-consult data format). Before the component may be used at the 
+							given computer, it must be registered at this computer. The applicaion, which 
+							uses the pzl-technology may avoid the use of the component registry file or the 
+							applicaion may assign the use of the file by using the predicate 
+							setComponentRegisterFileName/1.
+						</p>
+						<p>The parameter <i>ComponentRegisterFileName</i> must be the full path to the 
+							file, or it may be relative to the directory, where the main applicaion is 
+							placed. The file extension is not strongly defined in the pzl-system. The 
+							recommended file extension is - <b>.PZR</b>.
+						</p>
+						<p>The component registration file of the applicaion may be assigned only once. 
+							While the repetitive assignement the existence of the previous assignment is 
+							not checked.
+						</p>
+						<p>The component registration data is load only once while the first access to an 
+							any pzl-component. Thus the second (and further) file assignment is not make 
+							influence on the component registration.
+						</p>
+						<p>The content validation of the file <i>ComponentRegisterFileName</i> while the 
+							predicate <i><b>setComponentRegisterFileName</b></i> performing is not used. 
+							But the file must exist.
+						</p>
+						It is possible to get the name of the component registration file, assigned at 
+						the pzl-system by the use of the predicate call
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re0">RegistryFileStatus</span>=pzl::<span class="me1">getComponentRegisterFileName</span><span class="br0">(</span><span class="br0">)</span></pre>
+						</div>
+						The predicate pzl::getComponentRegisterFileName() returns the term, which 
+						reflects the status of the assignment of the file. If the file name has been 
+						assigned successfully, then the name will be returned as the parameter of the 
+						term.
+						<p><b>Exceptions</b>
+						</p>
+						<p>If there is no file with the given name <i>ComponentRegisterFileName</i>, then 
+							the exception is genereated with the text
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="st0">"The file &lt;ComponentRegisterFileName&gt; can not be found"</span></pre>
+						</div>
+						While checking the file existence the system exception are possible and they 
+						are stored with the message
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="st0">"System Error while checking the file &lt;ComponentRegisterFileName&gt; existence"</span></pre>
+						</div>
+						<p>The error code will be stored also.
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="re1">class</span> <span class="kw1">predicates</span>
+  runProfile:<span class="me1"><span class="br0">(</span>window</span> <span class="re0">TaskWindow</span>,string <span class="re0">RegistryFileName</span>,string <span class="re0">InitialComponent</span><span class="br0">)</span>.<br><span class="kw1">clauses</span>
+  runProfile<span class="br0">(</span><span class="re0">_TaskWindow</span>,<span class="re0">RegistryFileName</span>,<span class="re0">_InitialComponent</span><span class="br0">)</span>:-<br>    not<span class="br0">(</span><span class="re0">RegistryFileName</span>=<span class="st0">""</span><span class="br0">)</span>,<br>    trap<span class="br0">(</span>pzlPort::<span class="me1">setComponentRegisterFileName</span><span class="br0">(</span><span class="re0">RegistryFileName</span><span class="br0">)</span>,<span class="re0">_Err</span>,fail<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>,<br>    fail.<br>  runProfile<span class="br0">(</span><span class="re0">TaskWindow</span>,<span class="re0">RegistryFileName</span>,<span class="re0">InitialComponent</span><span class="br0">)</span>:-<br>    <span class="re0">RegistryFileStatus</span>=pzl::<span class="me1">getComponentRegisterFileName</span><span class="br0">(</span><span class="br0">)</span>,<br>    notifyUser<span class="br0">(</span><span class="re0">TaskWindow</span>,<span class="re0">RegistryFileStatus</span>,<span class="re0">RegistryFileName</span><span class="br0">)</span>,<br>    runStudioStarter<span class="br0">(</span><span class="re0">TaskWindow</span>,<span class="re0">InitialComponent</span><span class="br0">)</span>.</pre>
+						</div>
+						<a name="pzlPort::isInitialized.2F0"></a>
+						<h2><span class="mw-headline">pzlPort::isInitialized/0</span></h2>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;">isInitialized:<span class="me1"><span class="br0">(</span></span><span class="br0">)</span>  <span class="kw2">determ</span>.</pre>
+						</div>
+						<p>Checking of the initialization status of the VpPuZzle system
+						</p>
+						<p><b>Description</b>
+						</p>
+						<p>Makes it possible to check whether the initialization of the pzl-system was 
+							performed. If the result of the check is positive, then predicate succeeds.
+						</p>
+						<p><b>Exceptions</b>
+						</p>
+						<p>No
+						</p>
+						<p><b>Example</b>
+						</p>
+						<div dir="ltr"><pre class="source-vip" style="font-size: 95%; color: black; font-family: Verdana,Arial,sans-serif;"><span class="kw1">clauses</span>
+  run<span class="br0">(</span><span class="br0">)</span>:-<br>    not<span class="br0">(</span>isInitialazed<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>,<br>    pzlPort::<span class="me1">init</span><span class="br0">(</span><span class="br0">)</span>,<br>    fail.<br>  run<span class="br0">(</span><span class="br0">)</span>:-<br>    <span class="re0">TaskWindow</span> = taskWindow::<span class="me1">new</span><span class="br0">(</span><span class="br0">)</span>,<br>    ...</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body></html>

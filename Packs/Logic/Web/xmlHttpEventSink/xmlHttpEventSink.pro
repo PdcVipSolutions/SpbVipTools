@@ -3,22 +3,12 @@
 implement xmlHttpEventSink
 
 facts
-    refCount_V : integer := 1.
-    completedEvent_V : event := erroneous.
-    xmlHttpRequest_V:serverXmlHTTP60:=erroneous.
-    continuation_V : core::predicate := erroneous.
+    refCount_V : integer := 0.
+    onResponse : core::predicate := erroneous.
 
 clauses
-    new(XMLHttpRequest, invokeEvent(Event)) :-
-        !,
-        xmlHttpRequest_V := XMLHttpRequest,
-        completedEvent_V := Event.
-    new(XMLHttpRequest, invokePredicate(Predicate)) :-
-        !,
-        xmlHttpRequest_V := XMLHttpRequest,
-        continuation_V := Predicate.
-    new(_XMLHttpRequest, _Invoker) :-
-        exception::raise_User("Unexpected alternative").
+    new(Predicate) :-
+        onResponse := Predicate.
 
 clauses
     queryInterface(iUnknown::iid, uncheckedConvert(iUnknown, This)) = winErrors::s_ok :-
@@ -31,18 +21,14 @@ clauses
 
 clauses
     addRef() = uncheckedConvert(unsigned, Counter) :-
-        memory::threadAttachCurrent(),
         Counter = multiThread_native::interlockedIncrement(fact_address(refCount_V)).
 
 clauses
     release() = Counter :-
-        memory::threadAttachCurrent(),
         C = multiThread_native::interlockedDecrement(fact_address(refCount_V)),
         Counter = uncheckedConvert(unsigned, C),
         if 0 = refCount_V then
-            completedEvent_V := erroneous,
-            continuation_V := erroneous,
-            xmlHttpRequest_V := erroneous
+            onResponse := erroneous
         end if.
 
 clauses
@@ -56,22 +42,6 @@ clauses
 
 clauses
     invoke(_DispIdMember, _InterfaceID, _LocaleID, _Flags, _DispParams, _VarResult, _ExcepInfo, _ArgumentError) = winErrors::s_ok :-
-        memory::threadAttachCurrent(),
-        onReadyStateChange().
-
-predicates
-    onReadyStateChange: ().
-clauses
-    onReadyStateChange():-
-        ReadyState = xmlHttpRequest_V:readyState,
-        if ReadyState = 4 then
-            if not(isErroneous(completedEvent_V)) then
-                completedEvent_V:setSignaled(true)
-            elseif not(isErroneous(continuation_V)) then
-                continuation_V()
-            else
-                exception::raise_User("The reactor is not set")
-            end if
-        end if.
+       onResponse().
 
 end implement xmlHttpEventSink

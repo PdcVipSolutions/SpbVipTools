@@ -1,0 +1,24 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\fe_CreateOrModifyRbnDictionary\fe_CreateOrModifyRbnDictionary.ph"
+
+#requires @"..\Common\AppFrontEnd\fe_Core\fe_CreateOrModifyRbnDictionary\createOrModifyRbnDictionaryDlg.dlg"
+% privately used packages
+#include @"..\Common\createRbnDictionaryDlg_Dictionary\createRbnDictionaryDlg_Dictionary.ph"
+#include @"pfc\gui\controls\checkButton\checkButton.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\gui\controls\button\button.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\fe_CreateOrModifyRbnDictionary\createOrModifyRbnDictionaryDlg.pro"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_CreateOrModifyRbnDictionary\fe_CreateOrModifyRbnDictionary.pro"

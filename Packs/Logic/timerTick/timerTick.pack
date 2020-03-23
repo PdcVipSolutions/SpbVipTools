@@ -1,0 +1,16 @@
+﻿#include @"Packs\Logic\timerTick\timerTick.ph"
+
+% privately used packages
+#include @"pfc\stream\stream.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\windowsApi\multiThread_api\multiThread_api.ph"
+#include @"pfc\time\time.ph"
+#include @"pfc\multiThread\multiThread.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\timerTick\timerTick.pro"

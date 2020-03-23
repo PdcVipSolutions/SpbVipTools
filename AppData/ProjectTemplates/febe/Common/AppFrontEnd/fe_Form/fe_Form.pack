@@ -1,0 +1,54 @@
+﻿#requires @"..\Common\AppFrontEnd\fe_Form\fe_Form.frm"
+
+% own pack
+#include @"..\Common\AppFrontEnd\fe_Form\fe_Form.ph"
+
+% privately used packages
+#include @"Packs\Gui\CircleIndicator\CircleIndicator.ph"
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\log\Log.ph"
+#include @"appHead\appHead.ph"
+#include @"pfc\gui\commands\checkCommand\checkCommand.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"pfc\gui\controls\groupBox\groupBox.ph"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Command\fe_Command.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"packs\gui\FormSplittedLayout\FormSplittedLayout.ph"
+#include @"pfc\gui\controls\splitterControl\splitterControl.ph"
+#include @"pfc\gui\controls\TreeControl\treeModel_std\treeModel_std.ph"
+#include @"pfc\gui\controls\TreeControl\TreeControl.ph"
+#include @"Packs\Gui\AboutDialog\AboutDialog.ph"
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\boolean\boolean.ph"
+#include @"pfc\core.ph"
+#include @"pfc\event\event.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\gui\controls\messageControl\messageControl.ph"
+#include @"pfc\gui\controls\progressBarControl\progressBarControl.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+#include @"pfc\gui\controls\statusBarControl\statusBarControl.ph"
+#include @"pfc\gui\gdiplus\gdiplus.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\gui\ImageList\ImageList.ph"
+#include @"pfc\gui\toolTip\toolTip.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\memory\memory.ph"
+#include @"pfc\resourceIdentifiers.ph"
+#include @"pfc\stream\stream.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"pfc\vpi\vpiDomains\vpiDomains.ph"
+#include @"pfc\windowsApi\fileSystem_api\fileSystem_api.ph"
+#include @"pfc\windowsApi\gui_api\gui_api.ph"
+#include @"pfc\windowsApi\Shell_api\Shell_api.ph"
+
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Form\fe_Form.pro"
+

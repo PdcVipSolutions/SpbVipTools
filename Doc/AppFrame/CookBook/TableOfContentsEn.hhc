@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+<param name="Font" value="Arial,8,77">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Applicaion Frame">
+		<param name="Local" value="CookBookIndexEn.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ApplicationFrame. Introduction">
+			<param name="Local" value="AppFrameIntroductionEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AppFrame Demo">
+			<param name="Local" value="AppFrameDemoEn.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Demo Projects">
+				<param name="Local" value="AppFrameDemoEn.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PlugIns">
+				<param name="Local" value="AppFrameDemoEn.html#plugin_demo">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="How to Involke Applicaion">
+				<param name="Local" value="AppFrameDemoEn.html#febe_runDemo">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fe-Be. Data Exchange">
+			<param name="Local" value="FE_BE_DataExchangeEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="InterModule Communication">
+			<param name="Local" value="InterModuleCommunicationEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dictionaries Support">
+			<param name="Local" value="DictionariesSupportEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ribbons">
+			<param name="Local" value="RibbonsEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ribbon as XML">
+			<param name="Local" value="RibbonScriptEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Plugins">
+			<param name="Local" value="PlugInsEn.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Built-In Fuctions">
+			<param name="Local" value="EmbeddedFeaturesEn.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application Language">
+				<param name="Local" value="EmbeddedFeaturesEn.html#app_language">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Xml-ribbon. Dectionary Creation">
+				<param name="Local" value="EmbeddedFeaturesEn.html#gen_dictionary">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Ribbon Extension">
+				<param name="Local" value="EmbeddedFeaturesEn.html#expand_ribbon">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Ribbon Layout">
+				<param name="Local" value="EmbeddedFeaturesEn.html#design_ribbon">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VpPuzzle">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VpPuzzle. Introduction">
+			<param name="Local" value="VpPuzzle\VpPuZzle Introduction.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VpPuzzle. Concept">
+			<param name="Local" value="VpPuzzle\VpPuZzle Observe.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

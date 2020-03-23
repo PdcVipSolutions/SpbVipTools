@@ -1,0 +1,26 @@
+﻿#include @"..\Common\AppBackEnd\be_Connector\be_Connector.ph"
+
+% privately used packages
+#include @"..\Common\AppBackEnd\be_Core\be_Tests\be_Tests.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"..\Common\AppBackEnd\be_Core\be_Dictionary\be_Dictionary.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\multiThread\monitorQueue\monitorQueue.ph"
+#include @"appHead\appHead.ph"
+#include @"pfc\multiThread\multiThread.ph"
+#if appHead::isMonoApplicaion = false #then
+    #include @"pfc\com\exceptionHandling\exceptionHandling.ph"
+    #include @"pfc\web\json\jsonRpc\jsonRpc.ph"
+    #include @"pfc\windowsApi\msXML_api\msXML_HTTP_api\msxml_HTTP_api.ph"
+    #include @"pfc\web\json\json.ph"
+#endif
+#include @"pfc\string\string.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppBackEnd\be_Connector\be_Connector.pro"

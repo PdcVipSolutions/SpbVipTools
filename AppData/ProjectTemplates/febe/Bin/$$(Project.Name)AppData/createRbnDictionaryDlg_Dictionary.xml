@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="createNewRibbonDlg" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="newRibbonDictionary.scriptFilename_STT" meaning="newRibbonDictionary.scriptFilename_STT">
+    <rus>Имя Файла Определения Панели</rus>
+    <eng>RibbonScript FileName</eng>
+  </row>
+  <row id="newRibbonDictionary.namespace_STT" meaning="newRibbonDictionary.namespace_STT">
+    <rus>NameSpace словаря</rus>
+    <eng>Dictionary NameSpace</eng>
+  </row>
+  <row id="newRibbonDictionary.dictionaryFileName_STT" meaning="newRibbonDictionary.dictionaryFileName_STT">
+    <rus>Имя Файла Словаря</rus>
+    <eng>Dictionary FileName</eng>
+  </row>
+  <row id="newRibbonDictionary.browse_PB" meaning="newRibbonDictionary.browse_PB">
+    <rus>Обзор...</rus>
+    <eng>Browse...</eng>
+  </row>
+  <row id="newRibbonDictionary.modifySourceScript_CHB" meaning="newRibbonDictionary.modifySourceScript_CHB">
+    <rus> Модифицировать файл определения панели</rus>
+    <eng> Modify Source Script</eng>
+  </row>
+  <row id="newRibbonDictionary.dialogTitle" meaning="New Ribbon Dictionary Dialog. DialogTitle">
+    <rus>Create New Ribbon Dictionary</rus>
+    <eng>Create New Ribbon Dictionary</eng>
+  </row>
+</language>

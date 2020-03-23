@@ -1,0 +1,24 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Options\fe_Options.ph"
+
+#requires @"..\Common\AppFrontEnd\fe_Options\fe_Options.dlg"
+
+% privately used packages
+#include @"..\Common\optionsDlg_Dictionary\optionsDlg_Dictionary.ph"
+#include @"pfc\string\string.ph"
+#include @"Packs\Logic\edf\edf.ph"
+#include @"..\Common\defaultDictionary\defaultDictionary.ph"
+#include @"..\Common\AppFrontEnd\frontEnd\frontEnd.ph"
+#include @"pfc\gui\controls\tabControl\tabControl.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"packs\logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\gui\controls\button\button.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\resourceIdentifiers.ph"
+% private interfaces
+#include @"Interfaces\Logic\coreDictionary.i"
+#include @"..\Common\dataExchangeIdentifiers.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Options\fe_Options.pro"

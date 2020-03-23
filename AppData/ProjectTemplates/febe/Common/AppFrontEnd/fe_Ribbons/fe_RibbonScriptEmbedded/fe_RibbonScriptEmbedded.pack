@@ -1,0 +1,23 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptEmbedded\fe_RibbonScriptEmbedded.ph"
+
+% privately used packages
+#include @"Packs\Logic\appFrameSupport\dictionarySupport\dictionarySupport.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+#include @"pfc\binary\binary.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"Packs\Gui\ribbonLoader\ribbonLoader.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\gui\commands\command\Command.ph"
+#include @"packs\logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+% private interfaces
+#include @"Interfaces\Logic\coreDictionary.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptEmbedded\fe_RibbonScriptEmbedded.pro"

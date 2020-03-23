@@ -1,0 +1,18 @@
+﻿#include @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.ph"
+
+#requires @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.dlg"
+
+% privately used packages
+#include @"pfc\gui\controls\editControl\editControl.ph"
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+#include @"pfc\exception\exceptionDump\exceptionDump.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\gui\controls\button\button.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\resourceIdentifiers.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.pro"

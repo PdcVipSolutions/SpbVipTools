@@ -1,0 +1,14 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\fe_chooseRibbonScriptFileDlg\chooseRibbonScriptFileDlg.ph"
+
+#requires @"..\Common\AppFrontEnd\fe_Core\fe_chooseRibbonScriptFileDlg\chooseRibbonScriptFileDlg.dlg"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_CoreTasks\fe_CoreTasks.ph"
+#include @"..\Common\chooseRbnScriptDlg_Dictionary\chooseRbnScriptDlg_Dictionary.ph"
+% privately used packages
+#include @"pfc\string\string.ph"
+#include @"pfc\gui\controls\groupbox\groupbox.ph"
+#include @"pfc\filesystem\filesystem.ph"
+#include @"pfc\resourceIdentifiers.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\fe_chooseRibbonScriptFileDlg\chooseRibbonScriptFileDlg.pro"

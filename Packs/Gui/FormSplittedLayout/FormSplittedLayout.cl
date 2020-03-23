@@ -1,9 +1,9 @@
 ﻿%
 
-class formSplittedLayout {@CellID} : formSplittedLayout {@CellID}
+class formSplittedLayout{@CellID} : formSplittedLayout{@CellID}
     open core
 
 constructors
-    new:(splitForm{@CellID} Form).
+    new : (splitForm{@CellID} Form).
 
 end class formSplittedLayout

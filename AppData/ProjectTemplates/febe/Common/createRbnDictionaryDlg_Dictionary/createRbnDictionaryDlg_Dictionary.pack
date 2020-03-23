@@ -1,0 +1,10 @@
+﻿#include @"..\Common\createRbnDictionaryDlg_Dictionary\createRbnDictionaryDlg_Dictionary.ph"
+
+% privately used packages
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+% implementations
+#include @"..\Common\createRbnDictionaryDlg_Dictionary\createRbnDictionaryDlg_Dictionary.pro"

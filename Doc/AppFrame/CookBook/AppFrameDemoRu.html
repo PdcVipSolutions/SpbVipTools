@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-5" /><title>AppFrameDemoRu</title>
+
+</head>
+<body>
+<span style="font-weight: bold; font-family: Arial;">Copyright
+(c) Prolog Development Center SPb</span>
+<h1 style="font-family: Arial;">AppFrame CookBook<br />
+</h1>
+<h2 style="font-family: Arial;"><span style="font-weight: bold;"></span>AppFrame. Набор
+Демонстрационных проектов.</h2>
+<span style="font-family: Arial;">Список
+&nbsp;проектов, которые можно построить с помощью набора
+шаблонов&nbsp; AppFrame представлен во </span><a style="font-family: Arial;" href="AppFrameIntroductionRu.html#set_of_templates">введении</a><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Полный список проектов
+демонстрационной версии приведен в директории &nbsp;</span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\Febe</span><span style="font-style: italic; font-family: Arial;">.<br />
+</span><span style="font-family: Arial;">Каждый из
+проектов, кроме исходных кодов, представлен исполняемыми программами в
+директории </span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\Febe</span><span style="font-weight: bold; font-family: Arial;">\Bin</span><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-family: Arial;">Построение исполняемых
+программ удобно выполнить с использоваием программы </span><span style="font-weight: bold; font-family: Arial;">SpbVipTools\Bin\WorkSpaceManager.exe</span><span style="font-family: Arial;"> - файл данных&nbsp; </span><span style="font-weight: bold; font-family: Arial;">DemoWorkSpace.wsm?<br />
+</span><span style="font-weight: bold; font-family: Arial;"><img style="width: 695px; height: 596px;" alt="" src="Pictures/AppFrameInWSM.PNG" /></span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Проекты
+следует построить с использованием последней коммерческой версии VIP.</span><span style="font-style: italic; font-family: Arial;"><br />
+</span><span style="font-weight: bold; font-family: Arial;"><img style="width: 174px; height: 168px;" alt="" src="Pictures/DemoWsmStructure.PNG" /></span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-family: Arial;">Исполняемыми
+программами, представленными своими пользовательскими интерфейсами,
+являются:</span><br style="font-family: Arial;" />
+<ul style="font-family: Arial;">
+<li>febe_MonoMdi.exe</li>
+<li>febe_MonoSdi.exe</li>
+<li>febe_pzlMonoSdi.pzl</li>
+<li>febe_httpFrontendSdi.exe</li>
+<li>febe_httpFrontendMdi.exe</li>
+<li>febe_pzlHttpFrontendSdi.pzl</li>
+</ul>
+<span style="font-family: Arial;">Все
+программы с точки зрения функций ядра AppFrame&nbsp; полностью
+идентичны,
+их отличает только либо свойство Mdi/Sdi либо способ запуска (программы
+с расширением .pzl являются DLL). Поэтому функциональные свойства будут
+показаны на программе </span><span style="font-weight: bold; font-family: Arial;">febe_MonoMdi.exe</span><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<h3 style="font-family: Arial;">Первый пуск</h3>
+<span style="font-family: Arial;">Первый&nbsp;пуск
+программы febe_MonoMdi.exe производится при отсутствии файла
+конфигурации, что соответствует стартовому&nbsp;варианту
+&nbsp;панели &nbsp;- &nbsp;default</span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<img style="width: 479px; height: 288px;" alt="" src="Pictures/FebeDemo_1_FirstStart.PNG" /><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-family: Arial;">Конфигурация поля окна
+условная. Нижняя часть используется как MessageWindow. </span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Команды</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Help</span><span style="font-family: Arial;"> &nbsp;- &nbsp;вызывает
+к показу пустую заготовку Help_xx.html любым установленным браузером</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">About</span><span style="font-family: Arial;"> - стандартная информация о
+приложении</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Options</span><span style="font-family: Arial;"> - &nbsp;вызывает диалог
+установки свойств приложения</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Design</span><span style="font-family: Arial;"> - &nbsp;вызывает редактор
+расположения панели</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Expand</span><span style="font-family: Arial;"> - вызывает диалог выбора
+xml-файла&nbsp; расширения панели и подключает новый фрагмент панели</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Reload</span><span style="font-family: Arial;"> - &nbsp;восстанавливает
+расположение панели с участием&nbsp;всех подключенных фрагментов
+панелей</span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-family: Arial;">Среди этих
+команд&nbsp; отметим следующие три (остальные интуитивно понятны):</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Options</span><span style="font-family: Arial;">, </span><span style="font-weight: bold; font-family: Arial;">Expand,&nbsp;Reload</span><br style="font-family: Arial;" />
+<h3 style="font-family: Arial;">Команда <span style="font-weight: bold;">Options</span></h3>
+<span style="font-weight: bold; font-family: Arial;"></span><span style="font-family: Arial;">Команда </span><span style="font-weight: bold; font-family: Arial;">Options</span><span style="font-family: Arial;"> &nbsp;<span style="color: rgb(160, 0, 0);"><span style="color: black;">в
+объекте класса fe_Comand </span></span>вызывает предикат
+&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: Arial;">fe_CoreTasks</span><span style="color: rgb(160, 0, 0); font-family: Arial;">():</span><span style="color: rgb(0, 0, 0); font-family: Arial;">editOptions</span><span style="font-family: Arial;">(),
+что приводит к появлению диалога редактирования любых свойств элементов
+приложения или конфигурации. Этот диалог пустой и лишь задает
+возможность поместить туда любой из доступных редакторов.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;"><span style="color: rgb(160, 0, 0);"><span style="color: black;">Возможно,
+было бы правильно поместить вызов этого диалога в произвольный
+пользовательский класс, но лучшего места в демонстрационном проекте
+пока не нашлось. <br />
+С этим диалогом связан словарь </span></span></span><span style="font-weight: bold; font-family: Arial;"><span style="color: rgb(0, 0, 0);">optionsDlg_Dictionary</span></span><span style="font-family: Arial;"><span style="color: rgb(160, 0, 0);"><span style="color: black;">
+и соответствующий xml-словарь, которые должны быть наполнены смыслом
+конкретного приложения.<br />
+</span></span></span>
+<h3 style="font-family: Arial;">Команда Expand</h3>
+<span style="font-family: Arial;">Команда Expand
+&nbsp;вызывает предикат &nbsp;</span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;">addExtension</span><span style="font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; color: rgb(160, 0, 0); font-weight: bold; font-family: Arial;">()</span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none; font-family: Arial;"><span>&nbsp;</span>объекта
+класса&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;">fe_CoreTasks</span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">,
+результат исполнения которого описан на странице <a href="EmbeddedFeaturesRu.html#expand_ribbon">Встроенные
+функции.</a></span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Список
+&nbsp;фрагментов xml-панелей включает из директории febe_AppData</span><br style="font-family: Arial;" />
+<ul style="font-family: Arial;">
+<li>ribbon_Basic.xml</li>
+<li>ribbonConfig.xml</li>
+<li>ribbonFile.xml</li>
+<li>ribbonEdit.xml</li>
+<li>ribbonHelpAbout.xml</li>
+<li>ribbonLanguageRender.xml</li>
+<li>ribbonLanguageStatic.xml</li>
+<li>ribbonPlugins.xml</li>
+<li>ribbonTests.xml</li>
+</ul>
+<span style="font-family: Arial;">Не
+каждый из этих фрагментов выполняет&nbsp;конкретную функцию, но
+каждый
+из них может быть либо&nbsp;примером, либо основой для дальнейшего
+расширения.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Следующие фрагменты
+панелей наполнены реальным смыслом</span><br style="font-family: Arial;" />
+<ul style="font-family: Arial;">
+<li><span style="font-weight: bold;">ribbon_Basic.xml</span>
+- повторяет hardcoded панель <span style="font-weight: bold;">default</span>
+и может быть использована как стартовая для <span style="font-weight: bold;">embedded</span> и <span style="font-weight: bold;">loadable</span> вариантов <a href="RibbonsRu.html">старта приложения</a> </li>
+<li><span style="font-weight: bold;">ribbonConfig.xml</span>
+- &nbsp;содержит вызов команды <a href="EmbeddedFeaturesRu.html#gen_dictionary">создания
+словаря</a></li>
+<li><span style="font-weight: bold;">ribbonLanguageRender.xml</span>
+- содержит вызов команды <a href="EmbeddedFeaturesRu.html#app_language">выбора языка</a></li>
+<li><span style="font-weight: bold;">ribbonPlugins.xml</span>
+- содержит команды &nbsp;<a href="PlugInsRu.html">активации
+plugin</a></li>
+<li><span style="font-weight: bold;">ribbonTests.xml</span>
+- содержит команды тестирования взаимодействия &nbsp;FrontEnd и
+BackEnd</li>
+</ul>
+<h3 style="font-family: Arial;"><a name="plugin_demo"></a>Демонстрация
+вызова plugin</h3>
+<span style="font-family: Arial;">Для демонстрации вызова
+PlugIn должен быть подключен фрагмент панели </span><span style="font-weight: bold; font-family: Arial;">ribbonPlugins.xml.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">При
+демонстрационной&nbsp;активации plugin используются результаты
+построения проектов в директориях </span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\PolyLine\Polyline14</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\vpPuzzle\WinTimer<br />
+SpbExamples\Febe\febe_PzlMono.vipprj<br />
+SpbExamples\Febe\febe_pzlHttpFroneEnd.vipprj</span><span style="font-weight: bold; font-family: Arial;"></span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="font-family: Arial;">Проекты&nbsp; </span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\PolyLine\Polyline14</span><span style="font-weight: bold; font-family: Arial;"></span><span style="font-family: Arial;"> &nbsp;и &nbsp;</span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\vpPuzzle\WinTimer&nbsp;</span><span style="font-family: Arial;"> являются агрегацией
+нескольких &nbsp;pzl-компонент, размещенных в нескольких
+pzl-контейнерах.</span><span style="font-weight: bold; font-style: italic; font-family: Arial;"><br />
+</span><span style="font-family: Arial;">Для
+удобства построения и активации проектов </span><span style="font-weight: bold; font-family: Arial;">Polyline14</span><span style="font-family: Arial;"> и </span><span style="font-weight: bold; font-family: Arial;">WinTimer</span><span style="font-family: Arial;"> рекомендуется использовать
+приложение </span><span style="font-weight: bold; font-family: Arial;">WorkSpace
+Manager - файл DemoWorkSpace.wsm<br />
+<br />
+&nbsp;&nbsp; &nbsp; &nbsp; <img style="width: 184px; height: 150px;" alt="" src="Pictures/Polyline14.PNG" /><img style="width: 180px; height: 109px;" alt="" src="Pictures/WinTimer_3_4.PNG" /><br />
+<br />
+</span><span style="font-family: Arial;">Все
+компоненты, вызываемые из фрагмента панели </span><span style="font-weight: bold; font-family: Arial;">ribbonPlugins.xml
+</span><span style="font-family: Arial;">уже
+зарегистрированы в файле </span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\</span><span style="font-weight: bold; font-family: Arial;">Febe\Bin\pzlRegistry.pzr</span><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;">Внимание!
+Комоненты </span><span style="font-style: italic; font-weight: bold; font-family: Arial;">febe_PzlMono.vipprj</span><span style="font-weight: bold; font-family: Arial;"> и </span><span style="font-style: italic; font-weight: bold; font-family: Arial;">febe_pzlHttpFrontEndSdi.vipprj
+</span><span style="font-weight: bold; font-family: Arial;">являются
+SDI-компонентами и должны вызываться только из MDI приложения </span><span style="font-style: italic; font-weight: bold; font-family: Arial;">SpbExamples\</span><span style="font-weight: bold; font-family: Arial;">Febe\Bin\Febe_MonoMdi.exe</span><span style="font-family: Arial;">.</span><br style="font-weight: bold; font-family: Arial;" />
+<span style="font-weight: bold; font-family: Arial;"><br />
+<img style="width: 841px; height: 569px;" alt="" src="Pictures/Polyline14andWinTimer_plugin.PNG" /><br />
+<br />
+<img style="width: 526px; height: 528px;" alt="" src="Pictures/febe_MonoAsPlugin.PNG" /><br />
+<br />
+</span>
+<h3 style="font-family: Arial;"><a name="febe_runDemo"></a>Порядок
+запуска демонстрационных приложений<span style="font-weight: bold;"></span></h3>
+<p style="font-family: Arial;"><span style="font-weight: bold;"></span>Приложения <span style="font-weight: bold;">febe_MonoMdi.exe</span> и <span style="font-weight: bold;">febe_MonoSdi.exe</span>
+запускаются как обычные исполняемые программы и обладают всей полнотой
+функций, выполняющих задачи назначения.</p>
+<p style="font-family: Arial;">Приложение <span style="font-weight: bold;">febe_pzlMonoSdi.pzl </span>обладает
+всей полнотой функций, выполняющих задачи назначения, однако, являясь
+по своей сути DLL, может быть вызвано: <br />
+</p>
+<ul style="font-family: Arial;">
+<li>из любого &nbsp;MDI-приложения,&nbsp;
+поддерживающего соглашения pzl-технологии (<a href="#plugin_demo">см.
+пример</a>)&nbsp; </li>
+<li>из любого объекта класса, являющегося pzl-компонентой,
+вызванного из MDI-приложения</li>
+</ul>
+<p style="font-family: Arial;">Приложения <span style="font-weight: bold;"></span></p>
+<ul style="font-family: Arial;">
+<li><span style="font-weight: bold;">febe_httpFrontendSdi.exe</span></li>
+<li><span style="font-weight: bold;">febe_httpFrontendMdi.exe</span></li>
+<li><span style="font-weight: bold;">febe_pzlHttpFrontEnd.pzl</span></li>
+</ul>
+<span style="font-family: Arial;">Являются http-клиентами
+и не&nbsp;могут выполнять задачи назначения без http-сервера.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Все перечисленные
+клиенты обращаются к http-серверу с ip-адресом&nbsp;<span style="color: rgb(39, 143, 173);">http://localhost:5558 </span>,
+в качестве которого должно быть использовано либо приложение&nbsp; </span><span style="font-weight: bold; font-family: Arial;">febe_httpBackEnd.exe,
+</span><span style="font-family: Arial;">либо
+pzl-компонент </span><span style="font-weight: bold; font-family: Arial;">febe_pzlHttpBackEnd.pzl,
+</span><span style="font-family: Arial;">подключенный
+к &nbsp;любому приложению, поддерживающему pzl-технологию.</span><span style="font-weight: bold; font-family: Arial;"><br />
+</span>
+<p style="font-family: Arial;"><span style="font-weight: bold;"></span>Для проверки работы
+такой пары клиент-сервер достаточно сначала запустить <span style="font-weight: bold;">febe_httpBackEnd.exe</span>
+(в режиме администратора), а затем, например, приложение&nbsp;<span style="font-weight: bold;">febe_httpFrontendMdi.exe</span>.</p>
+<p style="font-family: Arial;">Как можно видеть,
+функционирование такой пары ничем не отличается от работы приложения <span style="font-weight: bold;">febe_MonoMdi.exe</span>.
+единственное отличие - появление зеленого индикаторв в правом нижнем
+углу, который показывает активность http-сервера.</p>
+<p style="font-family: Arial;">Если приложение <span style="font-weight: bold;">SpbVipTools\Bin\WorkSpaceManager.exe
+</span>запустить в режиме администратора, то вызов любого
+приложения достаточно тривиален.</p>
+<p style="font-family: Arial;">У нас нет пока примера
+запуска pzl-компоненты <span style="font-weight: bold;">febe_pzlHttpFrontEnd.pzl&nbsp;</span>,
+однако его несложно сделать по аналогии с запуском <span style="font-weight: bold;">febe_pzlMonoSdi.pzl.</span></p>
+<p style="font-family: Arial;"><br />
+</p>
+<p style="font-family: Arial;"><span style="font-weight: bold;"></span></p>
+<span style="font-weight: bold; font-family: Arial;"><br />
+</span><span style="font-family: Arial;">&nbsp;</span><br style="font-family: Arial;" />
+<br style="font-family: Arial;" />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span></span></span>
+</body></html>

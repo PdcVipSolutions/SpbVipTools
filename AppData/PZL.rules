@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rules-map>
+   <linker_rule-list>
+     <linker_rule-map name="PDC Linker" rule="&quot;$(ProDir)Bin\vipLink.exe&quot; -base:$(Target.BaseDll) -machine:$(Target.Machine) -stack:$(Target.StackSize) -F&lt;&lt; -Entry:_VIPDllMain@12 -d -TPD -SCUI -o&quot;$(ExeDir)$*.pzl&quot; -l&quot;$(LibDir)$*.lib&quot; -map:&quot;$(ObjDir)$*.map&quot; $(PROJECT_OBJ) $(DEF_FILE) &quot;$(ObjDir)$*.res&quot; $(PROJECT_LIB)&lt;&lt;" />
+     <linker_rule-map extra="/coffext:off" name="MS Linker" rule="&quot;$(MSLinker)&quot; @&lt;&lt; /entry:VIPDllMain@12 /subsystem:console /dll -stack:$(Target.StackSize) /debug /incremental:no /nodefaultlib /MAP:&quot;$(ObjDir)$*.map&quot; /IMPLIB:&quot;$(LibDir)$*.lib&quot; /OUT:&quot;$(ExeDir)$*.pzl&quot; $(PROJECT_OBJ) &quot;$(ObjDir)$*.res&quot; $(PROJECT_LIB)&lt;&lt; /base:$(Target.BaseDll)" />
+   </linker_rule-list>
+   <make_rule-list>
+     <make_rule-map rule="$(Compiler) /L:R /L:I $(IncDir) &quot;$**.pack&quot; /objectdir:&quot;$(ObjDir)&quot; /debugdir:&quot;$(DebDir)&quot; /debug:full /machine:$(Target.Machine) /readonlyterm" src="pack" tgt="obj" />
+   </make_rule-list>
+</rules-map>

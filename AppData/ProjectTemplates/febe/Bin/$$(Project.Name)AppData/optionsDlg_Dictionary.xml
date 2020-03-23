@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="optionsDlg" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="dialog.options.title" meaning="Dialog title">
+    <eng>Application Settings</eng>
+    <rus>Свойства приложения и его подсистем</rus>
+  </row>
+  <row id="dialog.options.tab.misc" meaning="Title Misc Tab of Options dialog">
+    <eng>Misc</eng>
+    <rus>Разное</rus>
+  </row>
+  <row id="dialog.options.pb.Cancel" meaning="Option Dialog button &quot;Cancel&quot;">
+    <eng>Cancel</eng>
+    <rus>Отмена</rus>
+  </row>
+  <row id="dialog.options.tab.appconfig" meaning="Title of Application Config Tab of Options dialog">
+    <eng>AppConfig</eng>
+    <rus>Конфигурация</rus>
+  </row>
+</language>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="chooseRbnScriptDlg" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="extensions.dlg.choose-ribbon.gbx-name" meaning="Expand Ribbon - Choose RibbonScript file Dialog: groupBox Name">
+    <rus>BackEnd: Доступные Файлы Расширения Панели</rus>
+    <eng>BackEnd Ribbon Script Files Available</eng>
+  </row>
+  <row id="extensions.dlg.choose-ribbon.dlg-title" meaning="Expand Ribbon - Choose RibbonScript file Dialog: Dialog Title">
+    <rus>Выбрать Файл Расширения Панели</rus>
+    <eng>Choose Ribbon Script File</eng>
+  </row>
+</language>

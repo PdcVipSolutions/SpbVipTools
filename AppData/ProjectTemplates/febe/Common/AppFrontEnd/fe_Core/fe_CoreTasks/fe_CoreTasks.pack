@@ -1,0 +1,40 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\fe_CoreTasks\fe_CoreTasks.ph"
+
+% privately used packages
+#include @"..\Common\appfrontend\fe_ribbons\fe_ribbonscriptloadable\fe_ribbonscriptloadable.ph"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_CreateOrModifyRbnDictionary\fe_CreateOrModifyRbnDictionary.ph"
+#include @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"Packs\Logic\timerTick\timerTick.ph"
+#include @"..\Common\defaultDictionary\defaultDictionary.ph"
+#include @"..\Common\AppFrontEnd\fe_Options\fe_Options.ph"
+#include @"pfc\windowsApi\Shell_api\Shell_api.ph"
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\registry\registry.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\multiThread\monitorQueue\monitorQueue.ph"
+#include @"pfc\application\useExe\useExe.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\vpi\vpiDlgDir\vpiDlgDir.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\log\streamAppender\streamAppender.ph"
+#include @"pfc\application\useDll\usedll.ph"
+#include @"pfc\resourceIdentifiers.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"packs\gui\AboutDialog\AboutDialog.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+
+#include @"pfc\core.ph"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_ChooseRibbonScriptFileDlg\chooseRibbonScriptFileDlg.ph"
+% private interfaces
+#include @"Interfaces\Logic\coreDictionary.i"
+#include @"..\Common\dataExchangeIdentifiers.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\fe_CoreTasks\fe_CoreTasks.pro"

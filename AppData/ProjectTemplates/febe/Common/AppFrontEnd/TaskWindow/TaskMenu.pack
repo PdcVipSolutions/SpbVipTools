@@ -1,0 +1,8 @@
+﻿#include @"..\Common\AppFrontEnd\TaskWindow\TaskMenu.ph"
+#requires @"..\Common\AppFrontEnd\TaskWindow\TaskMenu.mnu"
+% privately used packages
+#include @"pfc\resourceIdentifiers.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\TaskWindow\TaskMenu.pro"

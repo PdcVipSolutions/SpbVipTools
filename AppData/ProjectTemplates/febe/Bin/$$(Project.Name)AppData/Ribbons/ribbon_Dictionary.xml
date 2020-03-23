@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="ribbon_general" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="ribbon.section.file" meaning="Ribbon.Section.File title">
+    <eng>File</eng>
+    <rus>Файл</rus>
+  </row>
+  <row id="ribbon.section.edit" meaning="Ribbon.Section.Edit title">
+    <eng>Edit</eng>
+    <rus>Изменить</rus>
+  </row>
+  <row id="ribbon.section.standard" meaning="Ribbon.Section.Standard title">
+    <eng>Help About</eng>
+    <rus>Помощь</rus>
+  </row>
+  <row id="ribbon.section.file.tooltip" meaning="Ribbon.Section.File tooltip">
+    <eng>File</eng>
+    <rus>Файловые операции</rus>
+  </row>
+  <row id="ribbon.section.edit.tooltip" meaning="Ribbon.Section.Edit tooltip">
+    <eng>Edit</eng>
+    <rus>Операции редактирования</rus>
+  </row>
+  <row id="ribbon.section.standard.tooltip" meaning="Ribbon.Section.Standard tooltip">
+    <eng>Standard</eng>
+    <rus>Стандартные операции</rus>
+  </row>
+  <row id="ribbon.cmd.open" meaning="ribbon.cmd.open">
+    <eng>Open</eng>
+    <rus>Открыть</rus>
+  </row>
+  <row id="ribbon.cmd.open.tooltip" meaning="ribbon.cmd.open.tooltip">
+    <eng>Open Entity</eng>
+    <rus>Открыть Сущность</rus>
+  </row>
+  <row id="ribbon.cmd.new" meaning="ribbon.cmd.new">
+    <eng>New</eng>
+    <rus>Новый</rus>
+  </row>
+  <row id="ribbon.cmd.new.tooltip" meaning="ribbon.cmd.new.tooltip">
+    <eng>New Entity</eng>
+    <rus>Новая Сущность</rus>
+  </row>
+  <row id="ribbon.cmd.save" meaning="ribbon.cmd.save">
+    <eng>Save</eng>
+    <rus>Сохранить</rus>
+  </row>
+  <row id="ribbon.cmd.save.tooltip" meaning="ribbon.cmd.save.tooltip">
+    <eng>Save Entity</eng>
+    <rus>Сохранить Сущность</rus>
+  </row>
+  <row id="ribbon.cmd.undo" meaning="ribbon.cmd.undo">
+    <eng>Undo</eng>
+    <rus>Вернуть</rus>
+  </row>
+  <row id="ribbon.cmd.undo.tooltip" meaning="ribbon.cmd.undo.tooltip">
+    <eng>Undo Previous operation with Entity</eng>
+    <rus>Отмена предыдущего действия над Сущностью</rus>
+  </row>
+  <row id="ribbon.cmd.redo" meaning="ribbon.cmd.redo">
+    <eng>Redo</eng>
+    <rus>Повторить</rus>
+  </row>
+  <row id="ribbon.cmd.redo.tooltip" meaning="ribbon.cmd.redo.tooltip">
+    <eng>Redo Last Operation</eng>
+    <rus>Повторить предыдущую операцию над Сущностью</rus>
+  </row>
+  <row id="ribbon.cmd.copy" meaning="ribbon.cmd.copy">
+    <eng>Copy</eng>
+    <rus>Копировать</rus>
+  </row>
+  <row id="ribbon.cmd.copy.tooltip" meaning="ribbon.cmd.copy.tooltip">
+    <eng>Copy Entity</eng>
+    <rus>Копировать Сущность в Буфер</rus>
+  </row>
+  <row id="ribbon.cmd.info" meaning="ribbon.cmd.info">
+    <eng>Info</eng>
+    <rus>Информация</rus>
+  </row>
+  <row id="ribbon.cmd.info.tooltip" meaning="ribbon.cmd.info.tooltip">
+    <eng>Info Service</eng>
+    <rus>Сервис информирования</rus>
+  </row>
+  <row id="ribbon.cmd.help" meaning="ribbon.cmd.help">
+    <eng>Help</eng>
+    <rus>Помощь</rus>
+  </row>
+  <row id="ribbon.cmd.help.tooltip" meaning="ribbon.cmd.help.tooltip">
+    <eng>Help Entity</eng>
+    <rus>Помощь в использовании приложения</rus>
+  </row>
+  <row id="ribbon.cmd.about" meaning="ribbon.cmd.about">
+    <eng>About</eng>
+    <rus>Информация</rus>
+  </row>
+  <row id="ribbon.cmd.about.tooltip" meaning="ribbon.cmd.about.tooltip">
+    <eng>About Applicaion</eng>
+    <rus>О приложении</rus>
+  </row>
+  <row id="ribbon.cmd.design-ribbon" meaning="ribbon.cmd.design">
+    <eng>Design</eng>
+    <rus>Редактировать</rus>
+  </row>
+  <row id="ribbon.cmd.design-ribbon.tooltip" meaning="ribbon.cmd.design.tooltip">
+    <eng>Design Ribbon</eng>
+    <rus>Редактировать конфигурацию панели</rus>
+  </row>
+  <row id="ribbon.cmd.restore-ribbon-layout" meaning="ribbon.cmd.reload">
+    <eng>Restore Ribbon</eng>
+    <rus>Восстановить панель</rus>
+  </row>
+  <row id="ribbon.cmd.restore-ribbon-layout.tooltip" meaning="ribbon.cmd.reload.tooltip">
+    <eng>Restore source Ribbon configuration</eng>
+    <rus>Восстановить исходное состояние панели</rus>
+  </row>
+  <row id="ribbon.cmd.options" meaning="ribbon.cmd.options">
+    <eng>Options</eng>
+    <rus>Свойства</rus>
+  </row>
+  <row id="ribbon.cmd.options.tooltip" meaning="ribbon.cmd.options.tooltip">
+    <eng>Edit features of the application</eng>
+    <rus>Редактировать свойства приложения</rus>
+  </row>
+  <row id="help_file" meaning="Help FileName">
+    <eng>$$(Project.Name)AppData\helpEn.html</eng>
+    <rus>$$(Project.Name)AppData\helpRu.html</rus>
+  </row>
+  <row id="ribbon.menu.language-list" meaning="ribbon.menu.language-list">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language-list.tooltip" meaning="ribbon.menu.language-list.tooltip">
+    <eng>Change UI Language</eng>
+    <rus>Выбрать язык приложения</rus>
+  </row>
+  <row id="ribbon.menu.language-list.menulabel" meaning="ribbon_menu_language_list.menulabel">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.cmd.open.menulabel" meaning="ToBeDefined">
+    <rus>Open File</rus>
+    <eng>Open File</eng>
+  </row>
+  <row id="ribbon.cmd.new.menulabel" meaning="ToBeDefined">
+    <rus>New File</rus>
+    <eng>New File</eng>
+  </row>
+  <row id="ribbon.cmd.save.menulabel" meaning="ToBeDefined">
+    <rus>Save File</rus>
+    <eng>Save File</eng>
+  </row>
+  <row id="ribbon.cmd.undo.menulabel" meaning="ToBeDefined">
+    <rus>Undo cmd</rus>
+    <eng>Undo cmd</eng>
+  </row>
+  <row id="ribbon.cmd.redo.menulabel" meaning="ToBeDefined">
+    <rus>Redo cmd</rus>
+    <eng>Redo cmd</eng>
+  </row>
+  <row id="ribbon.cmd.copy.menulabel" meaning="ToBeDefined">
+    <rus>Copy cmd</rus>
+    <eng>Copy cmd</eng>
+  </row>
+  <row id="ribbon.cmd.options.menulabel" meaning="ToBeDefined">
+    <rus>Options</rus>
+    <eng>Options</eng>
+  </row>
+  <row id="ribbon.cmd.help.menulabel" meaning="ToBeDefined">
+    <rus>Help</rus>
+    <eng>Help</eng>
+  </row>
+  <row id="ribbon.cmd.about.menulabel" meaning="ToBeDefined">
+    <rus>About</rus>
+    <eng>About</eng>
+  </row>
+  <row id="ribbon.cmd.design-ribbon.menulabel" meaning="ToBeDefined">
+    <rus>Design Ribbon</rus>
+    <eng>Design Ribbon</eng>
+  </row>
+  <row id="ribbon.cmd.add-ribbon-extension" meaning="ToBeDefined">
+    <rus>Добавить расширение</rus>
+    <eng>Add Extension</eng>
+  </row>
+  <row id="ribbon.cmd.add-ribbon-extension.menulabel" meaning="ToBeDefined">
+    <rus>Добавить расширение</rus>
+    <eng>Add Extension</eng>
+  </row>
+  <row id="ribbon.cmd.add-ribbon-extension.tooltip" meaning="ToBeDefined">
+    <rus>Расширить панель путем выбора файла описания новой панели.</rus>
+    <eng>Expand the Ribbon by choosing the Ribbon Script file</eng>
+  </row>
+  <row id="ribbon.cmd.restore-ribbon-layout.menulabel" meaning="ToBeDefined">
+    <rus>Restore</rus>
+    <eng>Restore</eng>
+  </row>
+  <row id="ribbon.cmd.test1.menulabel" meaning="ToBeDefined">
+    <rus>RunTest1</rus>
+    <eng>RunTest1</eng>
+  </row>
+  <row id="ribbon.cmd.test2.menulabel" meaning="ToBeDefined">
+    <rus>RunTest2</rus>
+    <eng>RunTest2</eng>
+  </row>
+  <row id="ribbon.section.help-about" meaning="ribbon.section.help-about">
+    <rus>Помощь</rus>
+    <eng>Help About</eng>
+  </row>
+  <row id="ribbon.section.panel" meaning="ribbon.section.panel">
+    <rus>Панель</rus>
+    <eng>Ribbon</eng>
+  </row>
+</language>

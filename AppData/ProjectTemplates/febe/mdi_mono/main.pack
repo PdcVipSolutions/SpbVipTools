@@ -1,0 +1,23 @@
+﻿% own pack
+#include @"main.ph"
+
+% privately used packages
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.ph"
+#include @"pfc\gui\messageLoop\messageLoop.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"appHead\appHead.ph"
+#include @"..\Common\AppFrontEnd\frontEnd\frontEnd.ph"
+#include @"..\Common\AppBackEnd\backEnd\backEnd.ph"
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\core.ph"
+#include @"pfc\gui\gui.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"
+

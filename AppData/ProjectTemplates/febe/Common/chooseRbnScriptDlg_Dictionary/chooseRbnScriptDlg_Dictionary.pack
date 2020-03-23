@@ -1,0 +1,9 @@
+#include @"..\Common\chooseRbnScriptDlg_Dictionary\chooseRbnScriptDlg_Dictionary.ph"
+
+% privately used packages
+#include @"pfc\string\string.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\chooseRbnScriptDlg_Dictionary\chooseRbnScriptDlg_Dictionary.pro"

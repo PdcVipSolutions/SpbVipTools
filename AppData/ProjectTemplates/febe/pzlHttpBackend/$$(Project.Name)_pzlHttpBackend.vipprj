@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectData-map final_directory="..\..\Bin" intermediate_directory="Obj" pattern="PZL" rules="PZL" version="6">
+  <include_directory-list>
+    <include_directory>.</include_directory>
+    <include_directory>$(ProDir)</include_directory>
+    <include_directory>$(SpbVipTools)</include_directory>
+    <include_directory>..\http_Backend\</include_directory>
+  </include_directory-list>
+  <item-set key="filename">
+    <item-map filename="$(ProDir)lib\boostRegex.lib" />
+    <item-map filename="$(ProDir)lib\SciLexer.lib" />
+    <item-map filename="$(ProDir)Lib\vipInit.lib" />
+    <item-map filename="$(ProDir)Lib\vipKernel.lib" />
+    <item-map filename="$(ProDir)Lib\vipRun.lib" />
+    <item-map filename="$(ProDir)lib\vipVpi.lib" />
+    <item-map filename="$(ProDir)lib\win32.lib" />
+    <item-map filename="$(ProDir)pfc\action\action.pack" />
+    <item-map filename="$(ProDir)pfc\application\Dll\dll.pack" />
+    <item-map filename="$(ProDir)pfc\application\Exe\exe.pack" />
+    <item-map filename="$(ProDir)pfc\application\usedll\useDll.pack" />
+    <item-map filename="$(ProDir)pfc\application\useExe\useExe.pack" />
+    <item-map filename="$(ProDir)pfc\asynchronous\future\executionContext\executionContext.pack" />
+    <item-map filename="$(ProDir)pfc\asynchronous\future\future.pack" />
+    <item-map filename="$(ProDir)pfc\asynchronous\future\futureSupport\futureSupport.pack" />
+    <item-map filename="$(ProDir)pfc\basis\cancelable\cancelable.pack" />
+    <item-map filename="$(ProDir)pfc\basis\disposable\disposable.pack" />
+    <item-map filename="$(ProDir)pfc\basis\disposable\disposeRetract\disposeRetract.pack" />
+    <item-map filename="$(ProDir)pfc\basis\disposable\uncollectable\uncollectable.pack" />
+    <item-map filename="$(ProDir)pfc\basis\iterator\iterator.pack" />
+    <item-map filename="$(ProDir)pfc\binary\binary.pack" />
+    <item-map filename="$(ProDir)pfc\boolean\boolean.pack" />
+    <item-map filename="$(ProDir)pfc\codePageId\codePageId.pack" />
+    <item-map filename="$(ProDir)pfc\collection\algebraic\redBlackSet\redBlackSet.pack" />
+    <item-map filename="$(ProDir)pfc\collection\algebraic\redBlackTree\redBlackTree.pack" />
+    <item-map filename="$(ProDir)pfc\collection\algebraic\redBlackTree\redBlackTreeRep\redBlackTreeRep.pack" />
+    <item-map filename="$(ProDir)pfc\collection\collection.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\arrayM_inline\arrayM_inline.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\mapM_redBlack\mapM_redBlack.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\queueM_fact\queueM_fact.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\setM_redBlack\setM_redBlack.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\setM_redBlack_cas\setM_redBlack_cas.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\varM\varM.pack" />
+    <item-map filename="$(ProDir)pfc\collection\support\collectionMsupport\collectionMsupport.pack" />
+    <item-map filename="$(ProDir)pfc\collection\support\collectionSupport\collectionSupport.pack" />
+    <item-map filename="$(ProDir)pfc\collection\support\mapMSupport\mapMSupport.pack" />
+    <item-map filename="$(ProDir)pfc\collection\support\mapSupport\mapSupport.pack" />
+    <item-map filename="$(ProDir)pfc\collection\support\modifiableSupport\modifiableSupport.pack" />
+    <item-map filename="$(ProDir)pfc\com\com.pack" />
+    <item-map filename="$(ProDir)pfc\com\comSupport\comSupport.pack" />
+    <item-map filename="$(ProDir)pfc\com\exceptionHandling\exceptionHandling.pack" />
+    <item-map filename="$(ProDir)pfc\core.pack" />
+    <item-map filename="$(ProDir)pfc\cryptography\cryptography.pack" />
+    <item-map filename="$(ProDir)pfc\environment\environment.pack" />
+    <item-map filename="$(ProDir)pfc\event\event.pack" />
+    <item-map filename="$(ProDir)pfc\exception\exception.pack" />
+    <item-map filename="$(ProDir)pfc\exception\exceptionDump\exceptionDump.pack" />
+    <item-map filename="$(ProDir)pfc\fileSystem\fileSystem.pack" />
+    <item-map filename="$(ProDir)pfc\gui\applicationWindow\applicationWindow.pack" />
+    <item-map filename="$(ProDir)pfc\gui\clipboard\clipboard.pack" />
+    <item-map filename="$(ProDir)pfc\gui\Commands\checkCommand\checkCommand.pack" />
+    <item-map filename="$(ProDir)pfc\gui\commands\command\Command.pack" />
+    <item-map filename="$(ProDir)pfc\gui\Commands\customCommand\customCommand.pack" />
+    <item-map filename="$(ProDir)pfc\gui\commands\menucommand\menucommand.pack" />
+    <item-map filename="$(ProDir)pfc\gui\commonDialogs\commonDialogs.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\button\button.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\checkButton\checkButton.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\containerControl\containerControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\controls.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\controlSupport\controlSupport.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\dateControl\dateControl.ctl" resource_id="dateControl" />
+    <item-map filename="$(ProDir)pfc\gui\Controls\dateControl\dateControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\editControl\editControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\groupBox\groupBox.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\iconControl\iconControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\imageControl\imageControl.ctl" resource_id="imageControl" />
+    <item-map filename="$(ProDir)pfc\gui\Controls\imageControl\imageControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\integerControl\integerControl.ctl" resource_id="integerControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\integerControl\integerControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\listControl\listControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\listViewControl\listViewControl.ctl" resource_id="listViewControl" />
+    <item-map filename="$(ProDir)pfc\gui\Controls\listViewControl\listViewControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\messageControl\messageControl.ctl" resource_id="messageControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\messageControl\messageControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\navigationOverlay\navigationOverlay.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\progressbarcontrol\progressbarcontrol.ctl" resource_id="progressbarcontrol" />
+    <item-map filename="$(ProDir)pfc\gui\Controls\progressBarControl\progressBarControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\radioButton\radioButton.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\realControl\realControl.ctl" resource_id="realControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\realControl\realControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\ribbonControl\ribbonControl.ctl" resource_id="ribbonControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\ribbonControl\ribbonControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\ribbonControl\ribbonDesignerDlg\ribbonDesignerDlg.dlg" resource_id="ribbonDesignerDlg" />
+    <item-map filename="$(ProDir)pfc\gui\controls\ribbonControl\ribbonDesignerDlg\ribbonDesignerDlg.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\ribbonControl\ribbonDesignerDlg\ribbonRemoveElem.cur" resource_id="idp_ribbonRemoveElem" />
+    <item-map filename="$(ProDir)pfc\gui\controls\sciLexer\sciLexer.ctl" resource_id="sciLexer" />
+    <item-map filename="$(ProDir)pfc\gui\controls\sciLexer\sciLexer.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\sciLexer\sciLexerSupport\findAndReplaceControl.ctl" resource_id="findAndReplaceControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\sciLexer\sciLexerSupport\sciLexerSupport.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\splitterControl\splitterControl.ctl" resource_id="splitterControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\splitterControl\splitterControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\statusBarControl\statusBarControl.ctl" resource_id="statusBarControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\statusBarControl\statusBarControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\tabControl\tabControl.ctl" resource_id="tabControl" />
+    <item-map filename="$(ProDir)pfc\gui\Controls\tabControl\tabControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\textControl\textControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\TreeControl\TreeControl.ctl" resource_id="TreeControl" />
+    <item-map filename="$(ProDir)pfc\gui\controls\TreeControl\TreeControl.pack" />
+    <item-map filename="$(ProDir)pfc\gui\controls\treeControl\treeModel_std\treeModel_std.pack" />
+    <item-map filename="$(ProDir)pfc\gui\documentWindow\documentWindow.pack" />
+    <item-map filename="$(ProDir)pfc\gui\dragNdrop\dragNdrop.pack" />
+    <item-map filename="$(ProDir)pfc\gui\errorPresentationDialog\errorPresentationDialog.pack" />
+    <item-map filename="$(ProDir)pfc\gui\gdiplus\gdiplus.pack" />
+    <item-map filename="$(ProDir)pfc\gui\gui.pack" />
+    <item-map filename="$(ProDir)pfc\gui\guiSupport\guiSupport.pack" />
+    <item-map filename="$(ProDir)pfc\gui\ImageList\ImageList.pack" />
+    <item-map filename="$(ProDir)pfc\gui\messageBox\messageBox.pack" />
+    <item-map filename="$(ProDir)pfc\gui\messageLoop\messageLoop.pack" />
+    <item-map filename="$(ProDir)pfc\gui\toolTip\toolTip.pack" />
+    <item-map filename="$(ProDir)pfc\gui\toolTip\tooltipSupport\tooltipSupport.pack" />
+    <item-map filename="$(ProDir)pfc\guid\guid.pack" />
+    <item-map filename="$(ProDir)pfc\list\list.pack" />
+    <item-map filename="$(ProDir)pfc\log\Log.pack" />
+    <item-map filename="$(ProDir)pfc\log\logAppenderSupport\logAppenderSupport.pack" />
+    <item-map filename="$(ProDir)pfc\log\LogConfig\LogConfig.pack" />
+    <item-map filename="$(ProDir)pfc\log\streamAppender\streamAppender.pack" />
+    <item-map filename="$(ProDir)pfc\math\math.pack" />
+    <item-map filename="$(ProDir)pfc\memory\memory.pack" />
+    <item-map filename="$(ProDir)pfc\memory\segmented\segmented.pack" />
+    <item-map filename="$(ProDir)pfc\memory\segmented\segmented_binary\segmented_binary.pack" />
+    <item-map filename="$(ProDir)pfc\memory\segmented\segmented_utf16\segmented_utf16.pack" />
+    <item-map filename="$(ProDir)pfc\memory\segmented\segmented_utf8\segmented_utf8.pack" />
+    <item-map filename="$(ProDir)pfc\memory\segmented\segmentedSupport\segmentedSupport.pack" />
+    <item-map filename="$(ProDir)pfc\memory\weakPointer\weakPointer.pack" />
+    <item-map filename="$(ProDir)pfc\memory\weakReference\weakReference.pack" />
+    <item-map filename="$(ProDir)pfc\multiThread\compareAndSwap\compareAndSwap.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\criticalSectionSupport\criticalSectionSupport.pack" />
+    <item-map filename="$(ProDir)pfc\multiThread\monitorQueue\monitorQueue.pack" />
+    <item-map filename="$(ProDir)pfc\multiThread\multiThread.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\threadpool\threadpool.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\threadpool\threadpoolSupport\threadpoolSupport.pack" />
+    <item-map filename="$(ProDir)pfc\namedValue\namedValue.pack" />
+    <item-map filename="$(ProDir)pfc\presenter\presenter.pack" />
+    <item-map filename="$(ProDir)pfc\profile\performanceCounter\performanceCounter.pack" />
+    <item-map filename="$(ProDir)pfc\profile\profileTime\profileTime.pack" />
+    <item-map filename="$(ProDir)pfc\profile\profileTime\profileTimeCostCenter\profileTimeCostCenter.pack" />
+    <item-map filename="$(ProDir)pfc\programControl\programControl.pack" />
+    <item-map filename="$(ProDir)pfc\reflection\reflection.pack" />
+    <item-map filename="$(ProDir)pfc\reflection\typeLibrary\typeLibrary.pack" />
+    <item-map filename="$(ProDir)pfc\regEx\regEx.pack" />
+    <item-map filename="$(ProDir)pfc\registry\registry.pack" />
+    <item-map filename="$(ProDir)pfc\std\std.pack" />
+    <item-map filename="$(ProDir)pfc\stream\inputStreamSupport\inputStreamSupport.pack" />
+    <item-map filename="$(ProDir)pfc\stream\inputSupport_mode\inputSupport_mode.pack" />
+    <item-map filename="$(ProDir)pfc\stream\outputStreamSupport\outputStreamSupport.pack" />
+    <item-map filename="$(ProDir)pfc\stream\stream.pack" />
+    <item-map filename="$(ProDir)pfc\string\string.pack" />
+    <item-map filename="$(ProDir)pfc\string8\string8.pack" />
+    <item-map filename="$(ProDir)pfc\syntax\lexer\lexer_stringSupport\lexer_stringSupport.pack" />
+    <item-map filename="$(ProDir)pfc\syntax\scannerSupport\scannerSupport.pack" />
+    <item-map filename="$(ProDir)pfc\time\time.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpi.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpi_native\vpi_native.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpidlgDir\vpidlgDir.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpiDomains\vpiDomains.pack" />
+    <item-map filename="$(ProDir)pfc\vpi\vpitreeView\vpitreeView.pack" />
+    <item-map filename="$(ProDir)pfc\web\http\http.pack" />
+    <item-map filename="$(ProDir)pfc\web\http\httpRequestSupport\httpRequestSupport.pack" />
+    <item-map filename="$(ProDir)pfc\web\http\httpServerApi\httpServerApi.pack" />
+    <item-map filename="$(ProDir)pfc\web\http\httpServerApi\requestQueue_rpc\requestQueue_rpc.pack" />
+    <item-map filename="$(ProDir)pfc\web\json\json.pack" />
+    <item-map filename="$(ProDir)pfc\web\json\jsonRpc\jsonRpc.pack" />
+    <item-map filename="$(ProDir)pfc\web\json\jsonRpc\jsonRpcSupport\jsonRpcSupport.pack" />
+    <item-map filename="$(ProDir)pfc\web\json\jsonRpcService\jsonRpcService.pack" />
+    <item-map filename="$(ProDir)pfc\web\json\jsonSupport\jsonSupport.pack" />
+    <item-map filename="$(ProDir)pfc\web\rpcService\rpcService.pack" />
+    <item-map filename="$(ProDir)pfc\web\webQueryString\webQueryString.pack" />
+    <item-map filename="$(ProDir)pfc\web\xmlLite\xmlLite.pack" />
+    <item-map filename="$(ProDir)pfc\web\xmlLite\xmlLiteSupport\xmlLiteSupport.pack" />
+    <item-map filename="$(ProDir)pfc\web\xmlSupport\xmlSupport.pack" />
+    <item-map filename="$(ProDir)pfc\web\xmlSupport2\xmlSupport.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\bCrypt_api\bCrypt_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\clipboard_api\clipboard_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\basicInterfaces\basicInterfaces.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\com_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\comDomains\comDomains.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\iStream_api\iStream_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\safeArray_api\safeArray_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\standardInterfaces\IEnumXXXX\iEnumXXXX.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\standardInterfaces\import\standardInterfaces_import.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\com_api\standardInterfaces\standardInterfaces.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\commonControls_api\commonControls_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\crypt_api\crypt_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsapi\environment_api\environment_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\exe_api\exe_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\fileSystem_api\fileSystem_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\gdiplus_api\gdiplus_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\gui_api\gui_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\guid_api\guid_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\hash_api\hash_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\header_api\header_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\httpServer_api\httpServer_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\iconDirectory_api\iconDirectory_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\ImageList_api\ImageList_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\locale_api\locale_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\memory_api\memory_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msxml_dom_api\import\msxml_dom_api_import.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msxml_dom_api\msxml_dom_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msxml_dom_api\native\msxml_dom_api_native.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_HTTP_api\import\msxml_HTTP_api_import.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_HTTP_api\msxml_HTTP_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_HTTP_api\native\msxml_HTTP_api_native.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_xsd_api\import\msxml_xsd_api_import.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_xsd_api\msxml_xsd_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\msXML_api\msXML_xsd_api\native\msxml_xsd_api_native.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\multiThread_api\multiThread_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\ntStatus\ntStatus.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\pipe_api\pipe_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\registry_api\registry_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\runTime_api\runTime_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\sciLexer_api\sciLexer_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\Shell_api\Shell_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\string_api\string_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\string8_api\string8_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\systemInformation_api\systemInformation_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\TaskbarList\TaskbarList.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\threadPool_api\threadPool_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\time_api\time_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsapi\treeView_api\treeView_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsapi\useDll_api\useDll_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\uxTheme_api\uxTheme_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\windowsAPI.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\WinErrors\winErrors.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\winSock2_api\winSock2_api.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\xmlLite_api\xmlLite_api.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\appFrameSupport\dictionarySupport\dictionarySupport.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\appFrameSupport\eventManager\eventManager.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\appFrameSupport\http_Client\http_Client.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\cancelableInterval\cancelableInterval.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\edf\edf.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\EntityRegistry\EntityRegistry.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\NotificationAgency\NotificationAgency.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\promiseExt\promiseExt.pack" />
+    <item-map filename="$(SpbVipTools)packs\logic\pzlSystem\OpenPzl\Packs\pzlComponent\pzlComponent.pack" />
+    <item-map filename="$(SpbVipTools)packs\logic\pzlSystem\OpenPzl\Packs\PzlContainerSrc\PzlContainerSrc.pack" />
+    <item-map filename="$(SpbVipTools)packs\logic\pzlSystem\OpenPzl\PzlSupport\Pzl.pack" />
+    <item-map filename="$(SpbVipTools)packs\logic\pzlSystem\OpenPzl\PzlSupport\PzlDll.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\pzlSystem\OpenPzl\PzlSupport\pzlLog\pzlLog.pack" />
+    <item-map filename="$(SpbVipTools)packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\spbAbstracts\spbAbstracts.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\spbTree\spbTree.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\timerTick\timerTick.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\trace\trace.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\Web\tsMapM_redBlack\tsMapM_redBlack.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\Web\xmlHttpEventSink\xmlHttpEventSink.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\XmlDocument\XmlDocument.pack" />
+    <item-map filename="..\Common\AppBackEnd\backend\backend.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Connector\be_Connector.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Core\be_CoreTasks\be_CoreTasks.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Core\be_Dictionary\be_Dictionary.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Core\be_Tests\be_Tests.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Core\fe_Requests\fe_Requests.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Options\be_Options.pack" />
+    <item-map filename="..\Common\AppBackEnd\be_Tasks\be_Tasks.pack" />
+    <item-map filename="..\Common\chooseRbnScriptDlg_Dictionary\chooseRbnScriptDlg_Dictionary.pack" />
+    <item-map filename="..\Common\createRbnDictionaryDlg_Dictionary\createRbnDictionaryDlg_Dictionary.pack" />
+    <item-map filename="..\Common\defaultDictionary\defaultDictionary.pack" />
+    <item-map filename="..\Common\optionsDlg_Dictionary\optionsDlg_Dictionary.pack" />
+    <item-map filename="..\Components\bePzlHttp_$$(Project.Name)\bePzlHttp_$$(Project.Name).pack" />
+    <item-map filename="..\http_Backend\appHead\appHead.pack" />
+    <item-map filename="main.manifest" />
+    <item-map filename="PzlConfig\pzlConfig.pack" />
+  </item-set>
+  <setting-set key="target">
+    <setting-map target="Win32">
+      <var-list>
+        <var-map name="Target.Machine" value="x86" />
+        <var-map name="Target.BaseDll" value="0x10000000" />
+      </var-list>
+    </setting-map>
+    <setting-map hidden="true" target="x64">
+      <var-list>
+        <var-map name="Target.DirPrefix" value="64" />
+        <var-map name="Target.Machine" value="x64" />
+        <var-map name="Target.BaseDll" value="0x10000000" />
+      </var-list>
+    </setting-map>
+  </setting-set>
+</projectData-map>

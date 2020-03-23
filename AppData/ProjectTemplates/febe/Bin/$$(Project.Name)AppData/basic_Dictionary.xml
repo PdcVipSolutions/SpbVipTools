@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="basic" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="ribbon.default.section.basic" meaning="Help Section with About and Features commands">
+    <rus>Помощь</rus>
+    <eng>Help</eng>
+  </row>
+  <row id="ribbon.default.section.basic.tooltip" meaning="Ribbon.Section.Default tooltip, when no ribbon file exists">
+    <rus>Помощь</rus>
+    <eng>Help</eng>
+  </row>
+  <row id="ribbon.default.section" meaning="Ribbon.Section.Default, when no ribbon file exists">
+    <eng>Ribbon</eng>
+    <rus>Панель</rus>
+  </row>
+  <row id="ribbon.default.section.tooltip" meaning="Ribbon.Section.Default tooltip, when no ribbon file exists">
+    <eng>Initial set of operation</eng>
+    <rus>Начальный набор операций</rus>
+  </row>
+  <row id="ribbon.default.cmd.about" meaning="Title Ribbon default button About">
+    <eng>About</eng>
+    <rus>О приложении</rus>
+  </row>
+  <row id="ribbon.default.cmd.about.tooltip" meaning="Tooltip of default Ribbon button About">
+    <eng>About This Application</eng>
+    <rus>Об этом приложении</rus>
+  </row>
+  <row id="ribbon.cmd.design-ribbon" meaning="Title Ribbon default button design, when no ribbon script file exists">
+    <eng>Design</eng>
+    <rus>Настройка</rus>
+  </row>
+  <row id="ribbon.cmd.design-ribbon.tooltip" meaning="Tooltip of default Ribbon button design, when no ribbon script file exists">
+    <eng>Design the ribbon layout, when no ribbon script file exists</eng>
+    <rus>Настроить конфигурацию панели, файл конфигурации панели отстутствует</rus>
+  </row>
+  <row id="ribbon.default.cmd.help" meaning="Menu label of Ribbon Help button">
+    <eng>Help</eng>
+    <rus>Помощь</rus>
+  </row>
+  <row id="ribbon.default.cmd.help.tooltip" meaning="Tooltip of Ribbon button">
+    <eng>Help Regarding This application</eng>
+    <rus>Как пользоваться этим приложением</rus>
+  </row>
+  <row id="help_file" meaning="Help FileName">
+    <eng>$$(Project.Name)AppData\helpEn.html</eng>
+    <rus>$$(Project.Name)AppData\helpRu.html</rus>
+  </row>
+  <row id="ribbon.default.cmd.options" meaning="Label of default Ribbon Options button">
+    <eng>Options</eng>
+    <rus>Свойства</rus>
+  </row>
+  <row id="ribbon.default.cmd.options.tooltip" meaning="Tooltip of default Ribbon Options button">
+    <eng>Options Regarding This application</eng>
+    <rus>Свойства данного приложения</rus>
+  </row>
+  <row id="ribbon.cmd.add-ribbon-extension" meaning="Title Ribbon default button expand, when no ribbon script file exists">
+    <eng>Expand</eng>
+    <rus>Расширить</rus>
+  </row>
+  <row id="ribbon.cmd.add-ribbon-extension.tooltip" meaning="Tooltip of default Ribbon button expand, when no ribbon script file exists">
+    <eng>Expand the content of the ribbon</eng>
+    <rus>Расширить набор инструментов панели</rus>
+  </row>
+  <row id="ribbon.cmd.restore-ribbon-layout" meaning="Title Ribbon default button reload, when no ribbon script file exists">
+    <eng>Reload</eng>
+    <rus>Восстановить</rus>
+  </row>
+  <row id="ribbon.cmd.restore-ribbon-layout.tooltip" meaning="Tooltip of default Ribbon button design, when no ribbon script file exists">
+    <eng>Reload the ribbon layout</eng>
+    <rus>Восстановить содержимое панели</rus>
+  </row>
+  <row id="ribbon.menu.language" meaning="ribbon.menu.language">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.tooltip" meaning="ribbon.menu.language.tooltip">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.menulabel" meaning="ribbon.menu.language.menulabel">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.section.language" meaning="Ribbon.Section.Language title">
+    <eng>Language</eng>
+    <rus>Язык</rus>
+  </row>
+  <row id="ribbon.section.language.tooltip" meaning="Ribbon.Section.Language tooltip">
+    <eng>Change UI Language</eng>
+    <rus>Изменить язык интерфейса</rus>
+  </row>
+  <row id="ribbon.menu.language" meaning="ribbon.menu.language">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.tooltip" meaning="ribbon.menu.language.tooltip">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.menulabel" meaning="ribbon.menu.language.menulabel">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng" meaning="ribbon.menu.language.cmd.eng">
+    <eng>English</eng>
+    <rus>Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng.tooltip" meaning="ribbon.menu.language.cmd.eng.tooltip">
+    <eng>Switch to English</eng>
+    <rus>Переключиться на Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng.menulabel" meaning="ribbon.menu.language.cmd.eng.menulabel">
+    <eng>English</eng>
+    <rus>Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus" meaning="ribbon.menu.language.cmd.rus">
+    <eng>Russian</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus.tooltip" meaning="ribbon.menu.language.cmd.rus.tooltip">
+    <eng>Switch to Russian_c</eng>
+    <rus>Переключиться на Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus.menulabel" meaning="ribbon.menu.language.cmd.rus.menulabel">
+    <eng>Russian</eng>
+    <rus>Русский</rus>
+  </row>
+</language>

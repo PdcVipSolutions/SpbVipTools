@@ -1,0 +1,23 @@
+#include @"..\Common\AppBackEnd\backEnd\backEnd.ph"
+
+% privately used packages
+#include @"..\Common\AppBackEnd\be_Core\be_Tests\be_Tests.ph"
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"..\Common\AppBackEnd\be_Core\be_Dictionary\be_Dictionary.ph"
+#include @"..\Common\AppBackEnd\be_Options\be_Options.ph"
+#include @"..\Common\AppBackEnd\be_Core\be_CoreTasks\be_CoreTasks.ph"
+#include @"..\Common\AppBackEnd\be_Tasks\be_Tasks.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"..\Common\AppBackEnd\be_Core\fe_Requests\fe_Requests.ph"
+#include @"packs\logic\XmlDocument\XmlDocument.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppBackEnd\backEnd\backEnd.pro"

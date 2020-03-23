@@ -1,0 +1,21 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\fe_Dictionary\fe_Dictionary.ph"
+
+% privately used packages
+#include @"Packs\Logic\trace\trace.ph"
+#include @"Packs\Logic\EntityRegistry\EntityRegistry.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\string\string.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+#include @"pfc\binary\binary.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"appHead\appHead.ph"
+
+% private interfaces
+
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Dictionary\fe_Dictionary.pro"

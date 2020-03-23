@@ -1,0 +1,20 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptLoadable\fe_RibbonScriptLoadable.ph"
+
+% privately used packages
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\timerTick\timerTick.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"Packs\Gui\ribbonLoader\ribbonLoader.ph"
+#include @"pfc\gui\commands\command\Command.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+% private interfaces
+#include @"Interfaces\Logic\coreDictionary.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptLoadable\fe_RibbonScriptLoadable.pro"

@@ -32,25 +32,39 @@ facts
 
 clauses
     start(...):-
-        counter_P:=1,
-        stdio::write(counter_P,": start: "),
-        stdio::write(...),
-        stdio::write("\n").
-
+        if _=stdio::tryGetOutputStream() then
+            counter_P:=1,
+            stdio::write(counter_P,": start: "),
+            stdio::write(...),
+            stdio::write("\n")
+        end if.
 clauses
     w(...):-trace(...).
     trace(...):-
-        counter_P:=counter_P+1,
-        stdio::write(toString(counter_P),": "),
-        stdio::write(...),
-        stdio::write("\n").
+        if _=stdio::tryGetOutputStream() then
+            counter_P:=counter_P+1,
+            stdio::write(toString(counter_P),": "),
+            stdio::write(...),
+            stdio::write("\n")
+        end if.
 
 clauses
     wf(Format, ...):-tracef(Format, ...).
     tracef(Format,...):-
-        counter_P:=counter_P+1,
-        stdio::write(toString(counter_P),": "),
-        stdio::writef(Format,...),
-        stdio::write("\n").
+        if _=stdio::tryGetOutputStream() then
+            counter_P:=counter_P+1,
+            stdio::write(toString(counter_P),": "),
+            stdio::writef(Format,...),
+            stdio::write("\n")
+        end if.
+/****************/
+clauses
+    strForLog(StringIn,Len)=StringOut:-
+        if string::length(StringIn)>Len then
+        string::front(StringIn,Len,StringF,_),
+        StringOut=string::concat(StringF,"...")
+    else
+        StringOut=StringIn
+    end if.
 
 end implement trace

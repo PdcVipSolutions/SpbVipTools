@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ribbon-layout version="23.08.2019">
+  <basedir id="pdc-external">$$(Project.Name)AppData\pdcVipIcons</basedir>
+  <basedir id="fe-icons">$$(Project.Name)AppData\fe_Icons</basedir>
+  <dictionary file="$$(Project.Name)AppData\Ribbons\ribbon_Dictionary.xml" namespace="ribbon_general" />
+  <section id="ribbon.section.config" label="Config">
+    <tooltip text="Change layout of the ribbon, change the Language and Help" />
+    <block>
+      <row>
+        <cmd changeEvent="false" cmdstyle="image-and-text-vertical" enabled="true" id="ribbon.cmd.design-ribbon" label="Design Ribbon" run="default" visible="true">
+          <icon file="$(fe-icons)\if_tools-70px_510859.png" />
+          <tooltip text="Design Ribbon layout" />
+        </cmd>
+      </row>
+      <row>
+        <cmd changeEvent="false" cmdstyle="image-and-text-vertical" enabled="true" id="ribbon.cmd.restore-ribbon-layout" label="Restore" run="default" visible="true">
+          <icon file="$(pdc-external)\actions\view-refresh.ico" />
+          <tooltip text="Restore Ribbon Layout" />
+        </cmd>
+      </row>
+    </block>
+  </section>
+</ribbon-layout>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<$$(Project.Name)_options version="23.08.2019">
+  <be_options />
+  <fe_options use-menu="no">
+    <group id="fe_AppWindow">
+      <language current="eng" last="eng" use-dictionary="yes">
+        <support flag="us" id="eng" title="English" />
+        <support flag="ru" id="rus" title="Russian" />
+      </language>
+      <ribbon startup="default">
+        <loadable script="$$(Project.Name)AppData\Ribbons\ribbon_Basic.xml" />
+        <embedded />
+        <default>
+        </default>
+      </ribbon>
+    </group>
+  </fe_options>
+</$$(Project.Name)_options>

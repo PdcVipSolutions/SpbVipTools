@@ -1,0 +1,30 @@
+﻿/*****************************************************************************
+Copyright (c) 2006-2016 PDCSPB
+
+Author: Виктор Юхтенко/WIN-5L3MH3V6R7Q
+******************************************************************************/
+#include @"..\Components\fePzlHttp_$$(Project.Name)\fePzlHttp_$$(Project.Name).ph"
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usefePzlHttp_$$(Project.Name)Original_C=true #then
+% privately used packages
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\log\logAppenderSupport\logappendersupport.ph"
+#include @"pfc\gui\applicationWindow\applicationWindow.ph"
+#include @"appHead\appHead.ph"
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+#include @"resourceIdentifiers.i"
+#include @"Interfaces\Gui\CoreConstants.i"
+% private classes
+
+% implementations
+    #include @"..\Components\fePzlHttp_$$(Project.Name)\fePzlHttp_$$(Project.Name).pro"
+#else
+    #include @"..\Components\fePzlHttp_$$(Project.Name)\fePzlHttp_$$(Project.Name)Proxy.pro"
+#endif

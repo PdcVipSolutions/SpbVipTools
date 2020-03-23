@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogConfigurations>
+	<LogConfig name="Common">
+		<Appenders>
+			<Appender name="Common">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>.\Log\%date{dd-MM}_%time{HH.mm}_Common.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="Server">
+		<Appenders>
+			<Appender name="Server">
+				<LogLevel>all</LogLevel>
+				<Type>console</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_server.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+			</Appender>
+		</Appenders>
+	</LogConfig>
+</LogConfigurations>

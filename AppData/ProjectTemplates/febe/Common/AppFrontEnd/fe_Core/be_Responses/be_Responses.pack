@@ -1,0 +1,32 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\be_Responses\be_Responses.ph"
+
+% privately used packages
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Tests\fe_Tests.ph"
+#include @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.ph"
+#include @"Packs\Logic\promiseExt\promiseExt.ph"
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"Packs\Logic\edf\edf.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"..\Common\AppFrontEnd\frontEnd\frontEnd.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\vpi\vpiDlgDir\vpiDlgDir.ph"
+
+#include @"Packs\Logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\windowsApi\Shell_api\Shell_api.ph"
+#include @"pfc\gui\errorPresentationDialog\errorPresentationDialog.ph"
+
+#include @"pfc\stream\stream.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\core.ph"
+#include @"pfc\event\event.ph"
+
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\be_Responses\be_Responses.pro"

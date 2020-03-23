@@ -1,0 +1,12 @@
+﻿#include @"Packs\Logic\edf\edf.ph"
+% privately used packages
+#include @"pfc\cryptography\cryptography.ph"
+#include @"pfc\string8\string8.ph"
+#include @"pfc\string\string.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\edf\edf.pro"

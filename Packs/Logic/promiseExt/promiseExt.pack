@@ -1,0 +1,11 @@
+﻿#include @"Packs\Logic\promiseExt\promiseExt.ph"
+
+% privately used packages
+#include @"Packs\Logic\cancelableInterval\cancelableInterval.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\asynchronous\future\future.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Logic\promiseExt\promiseExt.pro"

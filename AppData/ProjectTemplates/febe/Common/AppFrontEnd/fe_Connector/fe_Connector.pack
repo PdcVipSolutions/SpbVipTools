@@ -1,0 +1,28 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+
+% privately used packages
+#include @"pfc\log\Log.ph"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Tests\fe_Tests.ph"
+#include @"..\Common\AppFrontEnd\fe_Tasks\fe_Tasks.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Dictionary\fe_Dictionary.ph"
+#include @"pfc\multiThread\monitorQueue\monitorQueue.ph"
+#include @"Packs\Logic\appFrameSupport\http_Client\http_Client.ph"
+#include @"appHead\appHead.ph"
+#include @"pfc\stream\stream.ph"
+#if appHead::isMonoApplicaion = false #then
+    #include @"pfc\com\exceptionHandling\exceptionHandling.ph"
+    #include @"pfc\web\json\jsonRpc\jsonRpc.ph"
+    #include @"pfc\windowsApi\msXML_api\msXML_HTTP_api\msxml_HTTP_api.ph"
+    #include @"pfc\web\json\json.ph"
+#endif
+#include @"pfc\string\string.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.pro"

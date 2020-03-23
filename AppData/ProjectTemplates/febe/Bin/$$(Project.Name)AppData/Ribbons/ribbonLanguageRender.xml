@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ribbon-layout version="23.08.2019">
+  <basedir id="pdc-external">$$(Project.Name)AppData\pdcVipIcons</basedir>
+  <dictionary file="$$(Project.Name)AppData\Ribbons\ribbonLanguage_Dictionary.xml" namespace="language" />
+  <section id="ribbon.section.language" label="Language">
+    <tooltip text="Change UI language" />
+    <block>
+      <row>
+        <menu 
+			cmdstyle="image-and-text-vertical" 
+			enabled="true" 
+			function="language-list" 
+			id="ribbon.menu.language-list" 
+			label="Language" 
+			layout="render" 
+			style="popupmenu">
+          <icon file="$(pdc-external)\_license-cc\categories\applications-education-language.ico" />
+          <tooltip text="Change UI Language (Render)" />
+        </menu>
+      </row>
+    </block>
+  </section>
+</ribbon-layout>

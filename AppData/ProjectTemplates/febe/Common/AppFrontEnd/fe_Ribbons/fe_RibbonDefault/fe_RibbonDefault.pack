@@ -1,0 +1,19 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonDefault\fe_RibbonDefault.ph"
+
+% privately used packages
+#include @"pfc\gui\controls\checkButton\checkButton.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\gui\controls\dateControl\dateControl.ph"
+#include @"pfc\string\string.ph"
+#include @"..\Common\defaultDictionary\defaultDictionary.ph"
+#include @"pfc\gui\gdiplus\gdiplus.ph"
+#include @"pfc\gui\toolTip\toolTip.ph"
+#include @"pfc\gui\commands\command\Command.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"packs\logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+% private interfaces
+#include @"Interfaces\Logic\coreDictionary.i"
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonDefault\fe_RibbonDefault.pro"

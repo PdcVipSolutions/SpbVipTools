@@ -2,7 +2,6 @@
 
 implement entityRegistry {@Entity}
     open core
-%    open redBlackTree
     open redBlackTree, redBlackTreeRep
 
 constants
@@ -11,7 +10,7 @@ constants
 facts - redBlackTreeStruct
     tree_V:redBlackTree::tree{string, @Entity}:=treeInitial_C.
 
-predicates
+class predicates
     entityIdComparator:core::comparator{string,string}.
 clauses
     entityIdComparator(Name1,Name2)=equal():-
@@ -43,6 +42,15 @@ clauses
 clauses
     unRegister(EntityName,ReferenceToEntity):-
         tree_V:=delete(tree_V,EntityName,ReferenceToEntity).
+
+clauses
+    unRegisterAllByNamePrefix(EntityPrefix):-
+        foreach
+            getNameAndEntity_nd(Name,Entity),
+            string::hasPrefixIgnoreCase(Name,EntityPrefix,_)
+        do
+            tree_V:=delete(tree_V,Name,Entity)
+        end foreach.
 
 clauses
     unRegisterByName(EntityName):-

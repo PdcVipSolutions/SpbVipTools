@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>RibbonScriptEn</title></head>
+<body>
+<h2 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><small><small>Copyright
+(c) Prolog Development Center SPb</small></small></h2>
+<h3 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Application
+Frame.&nbsp;RibbonAsXml</h3>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The ribbon xml view is a
+combination of the domain declarations<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">&nbsp;&nbsp;&nbsp;
+<br><br>pfc\gui\controls\ribbonControl\ribbonControl.i<span> </span></font></span><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;"><br></font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">pfc\gui\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">commands\command</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">command.i<span> </span></font></span><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;"><br></font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">pfc\gui\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">commands</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">menuCommand</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">menuCommand.i<span> </span></font></span><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;"><br></font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">pfc\gui\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">commands</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">customCommand</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">\</font></span></font><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold; font-style: italic;"><font style="vertical-align: inherit;">customCommand.i<span> <br><br></span></font></span><font style="vertical-align: inherit;">with some additions</font></font><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span><h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">Layout</h4>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="color: rgb(128, 128, 0);"><span style="color: black;"></span></span></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none; font-family: Arial;"></span>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 843px; height: 289px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">layout</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">section</span><span style="color: rgb(160, 0, 0);">*.</span><br>
+</td>
+<td><span style="font-weight: bold;">&lt;?xml
+version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span><br>
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">ribbon-layout</span><span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">version</span>="23.08.2019"&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">basedir</span><span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">id</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">DirLogicName</span>&gt;<span style="font-style: italic; font-weight: bold; color: rgb(153, 51, 153);">DirPath</span>&lt;/<span style="color: rgb(102, 51, 51);">basedir</span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ...<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">basedir</span><span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">DirLogicName</span>&gt;<span style="font-style: italic; font-weight: bold; color: rgb(153, 51, 153);">DirPath</span>&lt;/<span style="color: rgb(102, 51, 51);">basedir</span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">dictionary</span><span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">file</span>=<span style="color: rgb(51, 51, 255); font-weight: bold;">FileName</span><span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">namespace</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">NS_Name</span><span>&nbsp;</span>/&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">section</span><span>&nbsp;</span><span style="font-weight: bold;">...<span>&nbsp;</span></span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/<span style="color: rgb(102, 51, 51);">section</span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ...<br>
+&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">section<span style="font-weight: bold;"><span>&nbsp;</span>...<span>&nbsp;</span></span></span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;/<span style="color: rgb(102, 51, 51);">section</span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/<span style="color: rgb(102, 51, 51);">ribbon-layout</span>&gt;</td>
+</tr>
+</tbody>
+</table>
+<br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Here, the<span>&nbsp;</span></font></font></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ribbon-layout<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><font style="vertical-align: inherit;">root node<span>&nbsp;</span></font></font><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contains the<span>&nbsp;</span></font></font></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">version = "08/23/2019"<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><font style="vertical-align: inherit;">attribute<span>&nbsp;</span></font></font><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, which defines the xml
+version of the structure.<span> </span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><span style="font-weight: bold;"><font style="vertical-align: inherit;"><br>Basedir</font></span></font> <span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">node<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><font style="vertical-align: inherit;">(applies only to the
+contents of the panel description file):</font></font><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<ul style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<li><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">id</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>defines
+the logical name of the<span>&nbsp;</span></font></font><span style="font-weight: bold; color: rgb(51, 51, 255);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DirLogicName</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>directory<span>&nbsp;</span></font><font style="vertical-align: inherit;">, which can then be used in
+other nodes.</font></font></li>
+<li><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DirPath</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>-
+absolute or relative route (relative to the application executable)</font></font></li>
+</ul>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dictionary<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><font style="vertical-align: inherit;">node<span>&nbsp;</span></font></font><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(applies only to the
+contents of the panel description file):</font></font></span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<ul style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<li><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">file</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>defines
+the name of the dictionary file (absolute path or relative to the
+current directory of the application executable</font></font></li>
+<li><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">namespace</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>defines
+the<span>&nbsp;</span></font><span style="font-weight: bold;"><font style="vertical-align: inherit;">namespace</font></span><font style="vertical-align: inherit;"><span>&nbsp;</span>name&nbsp;</font></font></li>
+</ul>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Section"></a>Section</h4>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="color: rgb(128, 128, 0);"><span style="color: black;"></span></span></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none; font-family: Arial;"></span>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 832px; height: 385px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">domains</span><br>
+<span style="color: rgb(0, 0, 0);"><br>
+&nbsp; &nbsp;section</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">section</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);"><br>
+&nbsp; &nbsp; &nbsp; string</span>&nbsp;<span style="color: rgb(0, 128, 0);">Id</span><span style="color: rgb(160, 0, 0);">,</span><span style="color: rgb(0, 0, 0);"><br>
+&nbsp; &nbsp; &nbsp; string</span>&nbsp;<span style="color: rgb(0, 128, 0);">Label</span><span style="color: rgb(160, 0, 0);">,</span><span style="color: rgb(0, 0, 0);"><br>
+&nbsp; &nbsp; &nbsp; toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span>&nbsp;<span style="color: rgb(0, 128, 0);">TipText</span><span style="color: rgb(160, 0, 0);">,</span><br>
+&nbsp; &nbsp;<span style="color: rgb(0, 0, 0);"><span>&nbsp;</span>&nbsp;
+optional</span><span style="color: rgb(160, 0, 0);">{::</span><span style="color: rgb(0, 0, 0);">icon</span>&nbsp;<span style="color: rgb(0, 128, 0);">Icon</span><span style="color: rgb(160, 0, 0);">},</span><br>
+&nbsp; &nbsp;<span style="color: rgb(0, 0, 0);"><span>&nbsp;</span>&nbsp;
+block</span><span style="color: rgb(160, 0, 0);">*</span>&nbsp;<span style="color: rgb(0, 128, 0);">Blocks</span><span style="color: rgb(160, 0, 0);"><br>
+&nbsp; &nbsp; &nbsp; ).</span></td>
+<td>&lt;<span style="color: rgb(102, 51, 51);">section</span><span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">SectionID</span>&nbsp;<span style="color: rgb(0, 102, 0); font-weight: bold;">label</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">SectionLabel</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: rgb(102, 51, 51);">icon</span><span>&nbsp;</span>...&nbsp;
+/&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&lt;<span style="color: rgb(102, 51, 51);">tooltip...</span><span>&nbsp;</span>/&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">block</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ...<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">/block</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ...<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">block</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font><br>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; ...</font></font><br>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;</font></font><span style="color: rgb(102, 51, 51);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/block</font></font></span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/<span style="color: rgb(102, 51, 51);">section</span>&gt;<br>
+<ul>
+<li><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">id</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>defins
+section ID&nbsp;</font></font></li>
+<li><span style="font-weight: bold;">label</span><span>&nbsp;</span>-
+corresponds to the&nbsp; Label &nbsp;declaration</li>
+<li>subnode&nbsp;<span style="font-weight: bold;">icon</span>&nbsp;see<a href="#Icon"><span>&nbsp;</span>below</a></li>
+<li>subnode&nbsp;<span style="font-weight: bold;">tooltip</span>&nbsp;see<span>&nbsp;</span><a href="#Tooltip">below</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="color: rgb(128, 128, 0);"><span style="color: black;"></span><br>
+</span></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none; font-family: Arial;"></span>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Block"></a>Block</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 833px; height: 215px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">domains<br>
+&nbsp; &nbsp;</span><span style="color: rgb(0, 0, 0);">block</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">block</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">row</span><span style="color: rgb(160, 0, 0);">*</span>&nbsp;<span style="color: rgb(0, 128, 0);">Rows</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">separator</span><span style="color: rgb(160, 0, 0);">.</span><span style="color: rgb(160, 0, 0);"></span></td>
+<td>&nbsp; &nbsp;&lt;<span style="color: rgb(102, 51, 51);">block</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">row</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);"></span><span style="color: rgb(102, 51, 51);">/row</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">separator</span>/&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">row</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font><br>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &lt;</font></font><span style="color: rgb(102, 51, 51);"></span><span style="color: rgb(102, 51, 51);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/row</font></font></span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;<span style="color: rgb(102, 51, 51);">/block</span><span style="font-weight: bold; color: rgb(51, 51, 255);"></span>&gt;</td>
+</tr>
+</tbody>
+</table>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="color: rgb(128, 128, 0);"></span></span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="font-weight: bold;"><a name="Row"></a>Row</span></h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 831px; height: 287px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vip-</font></font></span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">declaration</font></font></span></span></td>
+<td style="text-align: center; font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">XML-presentation</font></font></td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">domains<br>
+</span><span style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp;row</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">item</span><span style="color: rgb(160, 0, 0);">*.</span><br>
+&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">item</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 0, 0);">cmd</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(0, 128, 0);">CommandId</span><span style="color: rgb(160, 0, 0);">,</span>&nbsp;<span style="color: rgb(0, 0, 0);">cmdStyle</span>&nbsp;<span style="color: rgb(0, 128, 0);">Style</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">separator</span><span style="color: rgb(160, 0, 0);">.<br>
+<br>
+</span><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuItem</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">cmd</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">command</span>&nbsp;<span style="color: rgb(0, 128, 0);">Command</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">separator</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuLayout</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuStatic</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">menuItem</span><span style="color: rgb(160, 0, 0);">*</span>&nbsp;<span style="color: rgb(0, 128, 0);">MenuItem</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuRender</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">function</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">menuItem</span><span style="color: rgb(160, 0, 0);">*}</span>&nbsp;<span style="color: rgb(0, 128, 0);">MenuItemRenderingFunction</span><span style="color: rgb(160, 0, 0);">).</span><br>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">row</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;--! any sequence of --&gt;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;<span style="color: rgb(102, 51, 51);">cmd</span><span>&nbsp;</span>...&gt;
+...&lt;/<span style="color: rgb(102, 51, 51);">cmd</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">menu</span><span>&nbsp;</span>...&gt;
+...&lt;/<span style="color: rgb(102, 51, 51);">menu</span><span style="color: rgb(102, 51, 51);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">custom</span><span>&nbsp;</span>...&gt;
+...&lt;/<span style="color: rgb(102, 51, 51);">custom</span><span style="color: rgb(102, 51, 51);"></span>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">separator</span>/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/<span style="color: rgb(102, 51, 51);">row</span>&gt;<br>
+<ul>
+<li>subnode<span>&nbsp;</span><span style="font-weight: bold;">cmd</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Cmd">below</a></li>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">menu</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Menu_static">below</a></li>
+<li>subnode&nbsp;<span style="font-weight: bold;">custom</span>&nbsp;see<span>&nbsp;</span><a href="#Custom">below</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Cmd"></a>Cmd</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 876px; height: 571px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+see command interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">id</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">o</span><span style="color: rgb(160, 0, 0);">).</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">ribbonLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipTitle</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">acceleratorKey</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">vpiDomains</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">acceleratorKey</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">icon</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">optional</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">icon</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">badge</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">positive</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">category</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">*.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">enabled</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">visible</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">run</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">predicate</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">command</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">stateChangeEvent</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">event1</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">command</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">cmd</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="color: rgb(51, 51, 255); font-weight: bold;">CommandID</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">label</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RibbonLabel</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">menuLabel</span><span>&nbsp;</span>=<span>&nbsp;</span><span style="font-weight: bold; color: rgb(51, 51, 255);">MenuLabel</span><span style="color: black;">_string</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">badge</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">BadgeValue</span>_positive_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">category</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">CategoryList</span><span style="color: rgb(51, 51, 255);"><span style="color: black;">_comma-separated-strings</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">enabled</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">EnabledTrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">visible</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">Visible</span><span style="font-weight: bold; color: rgb(51, 51, 255);">TrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">run</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RunPerformerName</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">changeEvent</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">ChangeEvent</span><span style="font-weight: bold; color: rgb(51, 51, 255);">TrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">cmdstyle</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">CmdStyle</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">icon</span><span>&nbsp;</span>...
+&nbsp;/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">tooltip</span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">acceleratorkey</span><span style="color: rgb(102, 51, 51);"></span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">cmd</span>&gt;<br>
+<ul>
+<li>subnode<span>&nbsp;</span><span style="font-weight: bold;">icon</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Icon">below</a></li>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">tooltip</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Tooltip">below</a></li>
+<li style="height: 24px;">subnode<span>&nbsp;</span><span style="color: black;"><span style="font-weight: bold;">acceleratorkey</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Acceleratorkey">below</a></span></li>
+<li style="height: 24px;"><span style="font-weight: bold;">CmdStyle</span><span>&nbsp;</span>-
+one of values</li>
+<ul>
+<li style="height: 24px; color: black;">"image-only"</li>
+<li style="height: 24px; color: black;">"text-only"</li>
+<li style="height: 24px; color: black;">"image-and-text-vertical"<span style="color: black;"></span></li>
+<li style="height: 24px; color: black;"><span style="color: black;">"image-and-text-horizontal"</span><span style="color: black;"></span></li>
+</ul>
+</ul>
+<span style="font-weight: bold;"></span></td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Menu_static"></a>Menu (static)</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 877px; height: 675px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuLayout</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0); font-weight: bold;">menuStatic</span><span style="color: rgb(160, 0, 0); font-weight: bold;">(</span><span style="color: rgb(0, 0, 0); font-weight: bold;">menuItem</span><span style="color: rgb(160, 0, 0); font-weight: bold;">*</span><span style="font-weight: bold;">&nbsp;</span><span style="color: rgb(0, 128, 0); font-weight: bold;">MenuItem</span><span style="color: rgb(160, 0, 0); font-weight: bold;">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(184, 214, 184);">menuRender(function{menuItem*}&nbsp;RenderingFunction).</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuItem</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">cmd</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">command</span>&nbsp;<span style="color: rgb(0, 128, 0);">Command</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">separator</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuStyle</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">popupMenu</span><span style="color: rgb(160, 0, 0);">;</span>&nbsp;<span style="color: rgb(0, 0, 0);">variantMenu</span><span style="color: rgb(160, 0, 0);">;</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolMenu</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+from command interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">id</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">o</span><span style="color: rgb(160, 0, 0);">).</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">ribbonLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipTitle</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">acceleratorKey</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">vpiDomains</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">acceleratorKey</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">icon</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">optional</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">icon</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">enabled</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"><br>
+</span><br>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">menu</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="color: rgb(51, 51, 255); font-weight: bold;">MenuID</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">label</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RibbonLabel</span>_string<br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(39, 143, 173);"><span style="color: rgb(0, 102, 0); font-weight: bold;">layout</span></span>=<span style="font-weight: bold; color: black;">"static"</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">enabled</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">EnabledTrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">cmdstyle</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">CmdStyle</span><br>
+<span style="color: rgb(39, 143, 173);">&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;style</span></span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">MenuStyle</span>_string<br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">icon</span><span>&nbsp;</span>...
+&nbsp;/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">tooltip</span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">acceleratorkey</span><span style="color: rgb(102, 51, 51);"></span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;any sequence of&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">separator</span>/&gt;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">cmd</span><span>&nbsp;</span>...&gt;
+...&lt;/<span style="color: rgb(102, 51, 51);">cmd</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">menu</span>&gt;<br>
+<ul>
+<li>subnode<span>&nbsp;</span><span style="font-weight: bold;">icon</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Icon">below</a></li>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">tooltip</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Tooltip">below</a></li>
+<li style="height: 21px;">subnode&nbsp;<span style="font-weight: bold;">acceleratorkey</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Acceleratorkey">below</a></li>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">cmd</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Cmd">above</a></li>
+<li style="height: 21px;"><span style="font-weight: bold; color: black;">MenuStyle</span><span style="color: black;"><span>&nbsp;</span>-
+one of values</span></li>
+</ul>
+<span style="color: black;"></span>
+<ul>
+<ul>
+<li style="height: 21px;">"popupmenu"</li>
+<li style="height: 21px;">"variantmenu"</li>
+<li style="height: 21px;">"toolmenu"<span style="font-weight: bold;"></span></li>
+</ul>
+</ul>
+<span style="font-weight: bold;"></span>
+<ul>
+<li style="height: 21px;"><span style="font-weight: bold;">CmdStyle</span><span>&nbsp;</span>-
+one of values<span style="color: black;"></span></li>
+<ul>
+<li style="height: 21px;"><span style="color: black;">"image-only"</span></li>
+<li style="height: 21px;"><span style="color: black;">"text-only"</span></li>
+<li style="height: 21px;"><span style="color: black;">"image-and-text-vertical"</span></li>
+<li style="height: 21px;"><span style="color: black;">"image-and-text-horizontal"</span></li>
+</ul>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Menu_render"></a>Menu (render)</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 879px; height: 610px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: black;">% See
+menuCommand.i</span><br>
+<span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuLayout</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+<span style="color: rgb(215, 215, 215);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuStatic(menuItem*&nbsp;MenuItem);</span><br style="color: rgb(215, 215, 215);">
+<span style="color: rgb(215, 215, 215);"></span><span style="font-weight: bold; color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuRender(function{menuItem*}&nbsp;RenderingFunction).</span><br style="font-weight: bold; color: black;">
+<br>
+<span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuStyle</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">popupMenu</span><span style="color: rgb(160, 0, 0);">;</span>&nbsp;<span style="color: rgb(0, 0, 0);">variantMenu</span><span style="color: rgb(160, 0, 0);">;</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolMenu</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+from command interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">id</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">o</span><span style="color: rgb(160, 0, 0);">).</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">ribbonLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipTitle</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">acceleratorKey</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">vpiDomains</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">acceleratorKey</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">icon</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">optional</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">icon</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">enabled</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"><br>
+</span><br>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">menu</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="color: rgb(51, 51, 255); font-weight: bold;">MenuID</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">label</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RibbonLabel</span>_string<br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(39, 143, 173);"><span style="color: rgb(0, 102, 0); font-weight: bold;">layout</span></span>=<span style="font-weight: bold; color: black;">"render"</span><br>
+<span style="color: rgb(39, 143, 173);">&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">function</span></span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RenderFunctionName</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">enabled</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">EnabledTrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">cmdstyle</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">CmdStyle</span><br>
+<span style="color: rgb(39, 143, 173);">&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;style</span></span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">MenuStyle</span>_string<br>
+<span style="color: rgb(39, 143, 173);"></span>&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">icon</span><span>&nbsp;</span>...
+&nbsp;/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">tooltip</span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">acceleratorkey</span><span style="color: rgb(102, 51, 51);"></span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">menu</span>&gt;<br>
+<ul>
+<li>subnode<span>&nbsp;</span><span style="font-weight: bold;">icon</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Icon">below</a></li>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">tooltip</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Tooltip">below</a></li>
+<li style="height: 21px;">subnode&nbsp;<span style="font-weight: bold;">acceleratorkey</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Acceleratorkey">below</a></li>
+<li><span style="font-weight: bold; color: black;">MenuStyle</span><span style="color: black;"><span>&nbsp;</span>-
+one of values</span></li>
+<ul>
+<li>"popupmenu"</li>
+<li>"variantmenu"</li>
+<li style="height: 7px;">"toolmenu"</li>
+</ul>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">CmdStyle</span><span>&nbsp;</span>-
+one of values</li>
+<ul>
+<li><span style="color: black;">"image-only"</span></li>
+<li><span style="color: black;">"text-only"</span></li>
+<li><span style="color: black;">"image-and-text-vertical"</span></li>
+<li><span style="color: black;">"image-and-text-horizontal"</span></li>
+</ul>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Custom"></a>Custom</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 880px; height: 438px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+see command interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">id</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">o</span><span style="color: rgb(160, 0, 0);">).</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">ribbonLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">menuLabel</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipTitle</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">acceleratorKey</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">vpiDomains</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">acceleratorKey</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">category</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">*.</span><br>
+<span style="color: rgb(128, 128, 0);"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">enabled</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">visible</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">boolean</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+see customComand interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">width</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">integer</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">height</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">integer</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">factory</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">function</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">control</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+<br>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;<span style="color: rgb(102, 51, 51);">custom</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">id</span>=<span style="color: rgb(51, 51, 255); font-weight: bold;">CommandID</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">label</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">RibbonLabel</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">menuLabel</span><span>&nbsp;</span>=<span>&nbsp;</span><span style="font-weight: bold; color: rgb(51, 51, 255);">MenuLabel</span><span style="color: black;">_string</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">category</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">CategoryList</span><span style="color: rgb(51, 51, 255);"><span style="color: black;">_comma-separated-strings</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">enabled</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">EnabledTrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);">visible</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">Visible</span><span style="font-weight: bold; color: rgb(51, 51, 255);">TrueOrFalse</span>_boolean_as_string<br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">width</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">ControlWidth</span>_positive_as_string<br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">height</span><span style="color: rgb(0, 102, 0);">=</span><span style="font-weight: bold; color: rgb(51, 51, 255);">ControlHeight</span>_positive_as_string<br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">factory</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">ControlFactoryName</span>_string<br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<span>&nbsp;</span><span style="font-weight: bold; color: rgb(0, 102, 0);">control-type</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">ControlType</span>_user_defined_string_name<br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">tooltip</span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &lt;<span style="color: rgb(102, 51, 51);">acceleratorkey</span><span style="color: rgb(102, 51, 51);"></span><span>&nbsp;</span>...
+/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">custom</span>&gt;<br>
+<ul>
+<li style="height: 21px;">subnode<span>&nbsp;</span><span style="font-weight: bold;">tooltip</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Tooltip">below</a></li>
+<li style="height: 24px;">subnode<span>&nbsp;</span><span style="color: black;"><span style="font-weight: bold;">acceleratorkey</span><span>&nbsp;</span>see<span>&nbsp;</span><a href="#Acceleratorkey">below</a></span></li>
+<li style="height: 24px; color: black;"><span style="font-weight: bold;">ControlFactoryName</span><span>&nbsp;</span>together
+with<span>&nbsp;</span><span style="font-weight: bold;">ControlType</span><span>&nbsp;</span>defines
+the unique control object to be created</li>
+</ul>
+<span style="font-weight: bold;"></span></td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Icon"></a>Icon</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 745px; height: 218px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">domains</span><br>
+<span style="color: rgb(0, 0, 0);">&nbsp;
+&nbsp;icon</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">optional</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">icon</span><span style="color: rgb(160, 0, 0);">}.</span><br>
+<br>
+</td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<span style="color: rgb(102, 51, 51);">icon</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;--! one of --&gt;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<span style="color: rgb(0, 102, 0); font-weight: bold;">file</span><span style="font-weight: normal;">=</span><span style="font-weight: bold; color: rgb(51, 51, 255);">FileName</span>_string<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;<span>&nbsp;</span><span style="font-weight: bold; color: rgb(51, 102, 102);">binary</span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">BinaryIcon</span>_string<br>
+<span style="color: rgb(39, 143, 173);"><span style="font-weight: bold; color: rgb(0, 102, 0);">&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; function-id</span><span style="color: black;">=<span style="font-weight: bold; color: rgb(51, 51, 255);">FunctionName</span>_string</span></span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;&nbsp;<span style="color: rgb(51, 102, 102); font-weight: bold;">icon-id</span><span style="font-weight: bold;"></span>=<span style="font-weight: bold; color: rgb(51, 51, 255);">IconName</span>_string<span style="color: rgb(39, 143, 173);">&nbsp; &nbsp;
+&nbsp;<span style="font-weight: bold; color: rgb(0, 102, 0);"></span><span style="color: black;"></span></span><span style="color: black;"></span><span style="color: black;"></span><br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">icon</span>&gt;<br>
+<span style="color: black;"><span style="font-weight: bold;">FunctionName</span></span>&nbsp;together
+with&nbsp;<span style="color: black;"><span style="font-weight: bold;">IconName</span></span><span style="color: rgb(51, 102, 102); font-weight: bold;"></span><span style="font-weight: bold;"></span><span>&nbsp;</span>defines
+the unique icon binary to be requested<br>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Tooltip"></a>Tooltip</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 745px; height: 218px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">properties</span><span>&nbsp;</span>%
+see Command interface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipTitle</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">toolTip</span><span style="color: rgb(160, 0, 0);">::</span><span style="color: rgb(0, 0, 0);">tipText</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipText</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">noTip</span><span style="color: rgb(160, 0, 0);">;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tip</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">string</span>&nbsp;<span style="color: rgb(0, 128, 0);">ToolTipText</span><span style="color: rgb(160, 0, 0);">);</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">tipRender</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">function</span><span style="color: rgb(160, 0, 0);">{</span><span style="color: rgb(0, 0, 0);">string</span><span style="color: rgb(160, 0, 0);">}</span>&nbsp;<span style="color: rgb(0, 128, 0);">Render</span><span style="color: rgb(160, 0, 0);">).</span><br>
+</td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<span style="color: rgb(102, 51, 51);">tooltip</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;--! one of --&gt;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<span style="font-weight: bold; color: rgb(0, 153, 0);">text</span><span style="color: rgb(0, 102, 0); font-weight: bold;"></span><span style="font-weight: normal;">=</span><span style="font-weight: bold; color: rgb(51, 51, 255);">TipText</span>_string<br>
+<span style="color: rgb(39, 143, 173);"><span style="font-weight: bold; color: rgb(0, 102, 0);">&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; render</span><span style="color: black;">=<span style="font-weight: bold; color: rgb(51, 51, 255);">FunctionName</span>_string</span></span><br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">tooltip</span>&gt;<span style="color: black;"><span style="font-weight: bold;"></span></span><br>
+<span style="font-weight: bold;"></span><br>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><a name="Acceleratorkey"></a>Acceleratorkey</h4>
+<table style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; width: 891px; height: 420px; font-family: Arial;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold; text-align: center;"><span style="color: rgb(128, 128, 0);"><span style="color: black;">Vip-</span></span><span style="color: rgb(128, 128, 0);"><span style="color: black;">declaration</span></span></td>
+<td style="text-align: center; font-weight: bold;">XML-presentation</td>
+</tr>
+<tr>
+<td><span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">domains</span><span>&nbsp;</span>%
+see VpiDomains<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">acceleratorKey</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">noAccelerator</span><span style="color: rgb(160, 0, 0);">;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">key</span><span style="color: rgb(160, 0, 0);">(</span><span style="color: rgb(0, 0, 0);">keyCode</span>&nbsp;<span style="color: rgb(0, 128, 0);">KeyCode</span><span style="color: rgb(160, 0, 0);">,</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(0, 128, 0);">ShiftControlAlt</span><span style="color: rgb(160, 0, 0);">)</span><br>
+<span style="color: rgb(128, 128, 0);"></span><br>
+<span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">keyCode</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">integer</span><span style="color: rgb(160, 0, 0);">.</span><br>
+<br>
+<span style="color: rgb(128, 128, 0);"></span><span style="color: rgb(128, 128, 0);">domains</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(160, 0, 0);">[</span><span style="color: rgb(0, 0, 192);">0</span><span style="color: rgb(160, 0, 0);">.</span><span style="color: rgb(0, 0, 192);">.7</span><span style="color: rgb(160, 0, 0);">].</span><br>
+<span style="color: rgb(128, 128, 0);">constants</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_nothing</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 192);">0</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_shift</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 192);">1</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_control</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 192);">2</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_alt</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 192);">4</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_shiftCtl</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">c_shift</span><span style="color: rgb(160, 0, 0);">++</span><span style="color: rgb(0, 0, 0);">c_control</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_shiftAlt</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">c_shift</span><span style="color: rgb(160, 0, 0);">++</span><span style="color: rgb(0, 0, 0);">c_alt</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_ctlAlt</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">c_control</span><span style="color: rgb(160, 0, 0);">++</span><span style="color: rgb(0, 0, 0);">c_alt</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);">c_shiftCtlAlt</span>&nbsp;<span style="color: rgb(160, 0, 0);">:</span>&nbsp;<span style="color: rgb(0, 0, 0);">keyModifier</span>&nbsp;<span style="color: rgb(160, 0, 0);">=</span>&nbsp;<span style="color: rgb(0, 0, 0);">c_shift</span><span style="color: rgb(160, 0, 0);">++</span><span style="color: rgb(0, 0, 0);">c_control</span><span style="color: rgb(160, 0, 0);">++</span><span style="color: rgb(0, 0, 0);">c_alt</span><span style="color: rgb(160, 0, 0);">.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(0, 128, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 0, 0);"></span><span style="color: rgb(160, 0, 0);"></span><span style="color: rgb(0, 128, 0);"></span><span style="color: rgb(160, 0, 0);"></span><br>
+</td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &lt;<span style="color: rgb(102, 51, 51);">acceleratorkey</span><br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span style="color: rgb(0, 102, 0); font-weight: bold;">&nbsp;keycode</span><span style="font-weight: normal;">=</span><span style="font-weight: bold; color: rgb(51, 51, 255);">KeyCode</span>_positive_as_string<br>
+<span style="color: rgb(39, 143, 173);"><span style="font-weight: bold; color: rgb(0, 102, 0);">&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;</span></span><span style="font-weight: bold; color: rgb(0, 102, 0);">keymodifier</span><span style="color: rgb(39, 143, 173);"><span style="font-weight: bold; color: rgb(0, 102, 0);"></span><span style="color: black;">=<span style="font-weight: bold; color: rgb(51, 51, 255);">KeyModifier</span>_string</span></span><br>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/<span style="color: rgb(102, 51, 51);">acceleratorkey</span><span style="color: rgb(102, 51, 51); font-weight: bold;"></span>&gt;<span style="color: black;"><span style="font-weight: bold;"></span></span><br>
+<br>
+<span style="color: rgb(39, 143, 173);"><span style="color: black;"><span style="font-weight: bold; color: rgb(51, 51, 255);">KeyModifier</span><span style="color: black;"><span>&nbsp;</span>must
+be one of</span></span></span>:
+<ul>
+<li><span style="color: rgb(160, 0, 0);"></span><span style="color: black;">"nothing".</span></li>
+<li><span style="color: black;">"shift".</span></li>
+<li><span style="color: black;">"control".</span></li>
+<li><span style="color: black;">"alt".</span></li>
+<li><span style="color: black;">"shiftctl".</span></li>
+<li><span style="color: black;">"shiftalt".</span></li>
+<li><span style="color: black;">"ctlalt".</span></li>
+<li><span style="color: black;">"shiftctlalt".</span></li>
+</ul>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+<br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></h4>
+<h4 style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"></h4>
+<br style="font-family: Arial;" class="Apple-interchange-newline">
+</body></html>

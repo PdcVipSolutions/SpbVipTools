@@ -1,0 +1,22 @@
+﻿#include @"..\Common\AppBackEnd\be_Core\be_Tests\be_Tests.ph"
+
+% privately used packages
+#include @"Packs\Logic\appFrameSupport\dictionarySupport\dictionarySupport.ph"
+#include @"pfc\binary\binary.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\log\streamAppender\streamAppender.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+% implementations
+#include @"..\Common\AppBackEnd\be_Core\be_Tests\be_Tests.pro"

@@ -1,0 +1,19 @@
+﻿#include @"Packs\Gui\ribbonLoader\ribbonLoader.ph"
+
+% privately used packages
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\binary\binary.ph"
+#include @"pfc\gui\commands\menuCommand\menuCommand.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+#include @"pfc\gui\toolTip\toolTip.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Gui\ribbonLoader\ribbonLoader.pro"

@@ -1,0 +1,33 @@
+﻿#include @"..\Common\AppFrontEnd\fe_Core\fe_Command\fe_Command.ph"
+
+% privately used packages
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"pfc\collection\M\mapM_redBlack\mapM_redBlack.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\profile\profileTime\profileTime.ph"
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+#include @"Packs\Gui\spbExceptionDialog\spbExceptionDialog.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"pfc\log\log.ph"
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptLoadable\fe_RibbonScriptLoadable.ph"
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptEmbedded\fe_RibbonScriptEmbedded.ph"
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonDefault\fe_RibbonDefault.ph"
+#include @"Packs\Gui\ribbonLoader\ribbonLoader.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\gui\commands\checkCommand\checkCommand.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\gui\controls\ribbonControl\ribbonDesignerDlg\ribbonDesignerDlg.ph"
+#include @"pfc\boolean\boolean.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\fe_Core\fe_Command\fe_Command.pro"

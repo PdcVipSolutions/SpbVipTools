@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="language" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="ribbon.section.language" meaning="ribbon.section.language">
+    <rus>Язык</rus>
+    <eng>Language</eng>
+  </row>
+  <row id="ribbon.menu.language-list" meaning="ribbon.menu.language-list">
+    <rus>Русский</rus>
+    <eng>English</eng>
+  </row>
+  <row id="ribbon.menu.language-list.menulabel" meaning="ribbon.menu.language-list.menulabel">
+    <rus>Английский</rus>
+    <eng>English</eng>
+  </row>
+  <row id="ribbon.menu.language-list.tooltip" meaning="ribbon.menu.language-list.tooltip">
+    <rus>Изменить язык приложения (Render)</rus>
+    <eng>Change UI Language (Render)</eng>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng" meaning="ribbon.menu.language.cmd.eng">
+    <eng>English</eng>
+    <rus>Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng.tooltip" meaning="ribbon.menu.language.cmd.eng.tooltip">
+    <eng>Switch to English</eng>
+    <rus>Переключиться на Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.eng.menulabel" meaning="ribbon.menu.language.cmd.eng.menulabel">
+    <eng>English</eng>
+    <rus>Английский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus" meaning="ribbon.menu.language.cmd.rus">
+    <eng>Russian</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus.tooltip" meaning="ribbon.menu.language.cmd.rus.tooltip">
+    <eng>Switch to Russian_c</eng>
+    <rus>Переключиться на Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.cmd.rus.menulabel" meaning="ribbon.menu.language.cmd.rus.menulabel">
+    <eng>Russian</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language" meaning="ribbon.menu.language">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.tooltip" meaning="ribbon.menu.language.tooltip">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+  <row id="ribbon.menu.language.menulabel" meaning="ribbon.menu.language.menulabel">
+    <eng>English</eng>
+    <rus>Русский</rus>
+  </row>
+</language>

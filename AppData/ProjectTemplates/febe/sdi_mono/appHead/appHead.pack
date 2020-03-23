@@ -1,0 +1,20 @@
+﻿#include @"appHead\appHead.ph"
+
+% privately used packages
+#include @"..\Common\AppFrontEnd\fe_Core\be_Responses\be_Responses.ph"
+#include @"Packs\Logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"pfc\gui\messageLoop\messageLoop.ph"
+#include @"..\Common\AppFrontEnd\fe_Form\fe_Form.ph"
+#include @"..\Common\AppBackEnd\backEnd\backEnd.ph"
+#include @"pfc\log\streamAppender\streamAppender.ph"
+#include @"pfc\windowsApi\systemInformation_api\systemInformation_api.ph"
+#include @"..\Common\AppFrontEnd\frontEnd\frontEnd.ph"
+#include @"Packs\Logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+% private classes
+
+% implementations
+#include @"appHead\appHead.pro"

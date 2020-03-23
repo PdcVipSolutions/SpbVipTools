@@ -1,0 +1,28 @@
+﻿/*****************************************************************************
+Copyright (c)  PDCSPB
+
+Author: Victor Yukhtenko
+******************************************************************************/
+
+#include @"..\components\bePzlHttp_$$(Project.Name)\bePzlHttp_$$(Project.Name).ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usebePzlHttp_$$(Project.Name)Original_C=true #then
+% privately used packages
+#include @"pfc\log\logAppenderSupport\logappendersupport.ph"
+#include @"pfc\log\Log.ph"
+#include @"..\http_backend\appHead\appHead.ph"
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+#include @"resourceIdentifiers.i"
+% private classes
+
+% implementations
+    #include @"..\components\bePzlHttp_$$(Project.Name)\bePzlHttp_$$(Project.Name).pro"
+#else
+    #include @"..\components\bePzlHttp_$$(Project.Name)\bePzlHttp_$$(Project.Name)Proxy.pro"
+#endif

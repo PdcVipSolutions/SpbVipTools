@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-5" /><title>AppFrameTemplateRu</title>
+
+</head>
+<body>
+<span style="font-weight: bold; font-family: Arial;">Copyright
+(c) Prolog Development Center SPb</span>
+<h1 style="font-family: Arial;">AppFrame CookBook<br />
+</h1>
+<h2 style="font-family: Arial;"><span style="font-weight: bold;"></span>AppFrame. Набор
+шаблонов.</h2>
+<span style="font-family: Arial;">Список
+&nbsp;проектов, которые можно построить с помощью набора
+шаблонов&nbsp; AppFrame представлен во </span><a style="font-family: Arial;" href="AppFrameIntroductionRu.html#set_of_templates">введении</a><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Полный набор
+демонстрационных проектов, построенных с помощью шаблонов, приведен в
+директории &nbsp;</span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\Febe</span><span style="font-style: italic; font-family: Arial;">.<br />
+<br />
+</span><span style="font-family: Arial;">Шаблоны для
+построения проекта на основе соглашений AppFrame расположены в
+директории <span style="font-weight: bold; font-style: italic;">SpbVipTools\AppData\febe</span>.<br />
+Состав директорий шаблона проектов &nbsp;представлен ниже<br />
+</span><span style="font-style: italic; font-family: Arial;"><img style="width: 151px; height: 290px;" alt="" src="Pictures/ProjectsCreated.PNG" /></span><br />
+<span style="font-family: Arial;"><br />
+Отмеченные директории содержат собственно проекты, которые опираются на
+пакеты, расположенные в директории <span style="font-weight: bold;">Common</span>.<br />
+Начало практического использования набора шабонов возможно двумя
+способами:<br />
+</span>
+<ul>
+<li><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;
+Ручная подготовка</span></li>
+<li><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;
+Использование программных средств</span></li>
+</ul>
+<h3><span style="font-family: Arial;">Ручная
+подготовка</span></h3>
+При &nbsp;ручной подготовки<span style="font-family: Arial;">
+следует весь
+приведенный набор директорий и поддиректорий </span><span style="font-family: Arial;"><span style="font-weight: bold; font-style: italic;">SpbVipTools\AppData\febe</span>&nbsp;</span><span style="font-family: Arial;">скопировать в директорию<br />
+<span style="font-weight: bold; font-style: italic;">appData\ProjectTemplates\febe</span>
+системы программирования Visual Prolog.<br />
+</span><span style="font-style: italic; font-family: Arial;"><br />
+</span><span style="font-family: Arial;"><img style="width: 143px; height: 235px;" alt="" src="Pictures/AppFrameTemplate.PNG" /></span><br style="font-family: Arial;" />
+<span style="font-family: Arial;"><br />
+Далее:<br />
+в файл <span style="font-weight: bold; font-style: italic;">appData\ProjectTemplates\_order</span>
+добавить строку <br />
+<span style="font-weight: bold;">pattern("Client-Server
+Application","febe","Client-Server application =MDI and SDI=").<br />
+</span></span>
+<h3><span style="font-family: Arial;"><span style="font-weight: bold;">Программная подготовка</span></span></h3>
+<span style="font-family: Arial;"><span style="font-weight: bold;"></span></span>Программная
+подготовка предпочтительна, поскольку она делает все необходимое.<br />
+Для этого следует выполнить программу &nbsp;<span style="font-family: Arial; font-weight: bold; font-style: italic; color: black;">SpbVipTools\Bin\SetSpbToolsToVip.exe.</span><span style="font-family: Arial; color: rgb(204, 51, 204);"></span><br />
+<br />
+<h3>Создание набора проектов</h3>
+<span style="font-family: Arial;">После
+подготовки&nbsp; можно создавать свои проекты.<br />
+<br />
+Так, вызывая в системе Visual Prolog создание нового проекта следует
+выбрать из предлагаемого списка шаблон <span style="font-weight: bold;">"Client-Server application".<br />
+<br />
+</span><img style="width: 557px; height: 366px;" alt="" src="Pictures/newProjectFromTemplate.png" /><br />
+<br />
+После нажания на кнопку Finish <span style="font-weight: bold;">после
+продолжительного времени</span> появится сообщение об ошибке<br />
+<br />
+<img style="width: 480px; height: 173px;" alt="" src="Pictures/CreateProjectErrorMessage.PNG" /><br />
+<br />
+По
+сути это сообщение &nbsp;говорит о завершении создания набора
+проектов,
+а ошибка вызвана тем, что IDE&nbsp;предсматривает создание и
+открытие&nbsp;одного проекта, проектный файл которого xxx.vipprj
+должен
+появиться на один уровень ниже директории проекта. Созданная же
+директория&nbsp;содержит несколько проектов на глубине в два уровня
+и
+какой из них открывать после создания - неизвестно.<br />
+Поэтому проекты следует теперь отдельно открывать в тех директориях:,
+где они расположились.<br />
+<br />
+Сгенерированные
+проекты &nbsp;удобно открывать и строить с использоанием приложения
+<span style="font-weight: bold;">SpbVipTools\Bin\WorkSpaceManager.exe</span>,
+воспользовавшись операцией
+группового добавления проектов в дерево рабочего пространства по
+примеру набора для набора демонстрационных проектов FEBE.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</span><span style="font-style: italic; font-family: Arial;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span></span></span>
+</body></html>

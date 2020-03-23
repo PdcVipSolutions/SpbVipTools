@@ -1,0 +1,13 @@
+﻿#include @"..\Common\AppFrontEnd\fe_TabpageForm\fe_Tabcontrol\fe_Tabcontrol.ph"
+
+#requires @"..\Common\AppFrontEnd\fe_TabpageForm\fe_Tabcontrol\fe_Tabcontrol.ctl"
+
+% privately used packages
+#include @"pfc\gui\controls\ribbonControl\ribbonControl.ph"
+#include @"pfc\gui\controls\controlSupport\controlSupport.ph"
+#include @"pfc\resourceIdentifiers.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_TabpageForm\fe_Tabcontrol\fe_Tabcontrol.pro"

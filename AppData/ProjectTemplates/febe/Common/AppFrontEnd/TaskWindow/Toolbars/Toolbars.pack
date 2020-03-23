@@ -1,0 +1,18 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"..\Common\AppFrontEnd\TaskWindow\Toolbars\Toolbars.ph"
+
+% privately used packages
+#include @"resourceIdentifiers.i"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"..\Common\AppFrontEnd\TaskWindow\Toolbars\ProjectToolbar.pro"
+#include @"..\Common\AppFrontEnd\TaskWindow\Toolbars\StatusLine.pro"

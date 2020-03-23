@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-5" /><title>AppFrameUsageRu</title>
+
+</head>
+<body>
+<span style="font-weight: bold; font-family: Arial;">Copyright
+(c) Prolog Development Center SPb</span>
+<h1 style="font-family: Arial;">AppFrame CookBook<br />
+</h1>
+<h2 style="font-family: Arial;"><span style="font-weight: bold;"></span>AppFrame. Применение</h2>
+<span style="font-family: Arial;">Список
+&nbsp;проектов, которые можно построить с помощью набора
+шаблонов&nbsp; AppFrame представлен во </span><a style="font-family: Arial;" href="AppFrameIntroductionRu.html#set_of_templates">введении</a><span style="font-family: Arial;">.</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;">Полный набор
+демонстрационных проектов, построенных с помощью шаблонов, приведен в
+директории &nbsp;</span><span style="font-weight: bold; font-style: italic; font-family: Arial;">SpbExamples\Febe</span><span style="font-style: italic; font-family: Arial;">.<br />
+<br />
+</span><span style="font-family: Arial;">По сути
+дела AppFrame
+представляет собой один большой шаблон для разработки приложения,
+которое может обладать одним или комбинацей&nbsp; свойств:<br />
+</span>
+<ul style="font-family: Arial;">
+<li>пользовательский интерфейс трансформируется в новое
+качество, например, в интерфейс, основанный на Web-браузере.</li>
+<li>пользовательский интерфейс основан на применении панелей</li>
+<li>панели пользовательского интерфейса представляются в виде
+скриптов (xml-представление)<br />
+</li>
+<li>функциональные возможности расширяются и модифицируются в
+условиях&nbsp;эксплуатации.</li>
+<li>разнесенное в пространстве существование FrontEnd и BackEnd
+(по схеме классического клиент-серверного приложения)</li>
+<li>модифицируемость текстовых заголовков пользовательского
+интерфейса и мультиязычность как частный случай</li>
+</ul>
+<span style="font-family: Arial;">Представляется разумным
+следующий порядок использования AppFrame<br />
+<br />
+В зависимости от задачи назначения создается проект с типом
+пользовательского интерфейса MDI или SDI<br />
+Проект развивается согласно представлениям разработчика, но с
+соблюдением <a href="FE_BE_DataExchangeRu.html">соглашений
+о правилах обмена данными между FrontEnd-BackEnd</a>, в том числе:<br />
+</span>
+<ul style="font-family: Arial;">
+<li>Если выбирается MDI стиль пользовательского интерфейса, то
+шаблоны проектов с SDI стилем должны быть удалены сразу. И наоборот.</li>
+<li>Если
+не предполагается раздельное функционироание FrontEnd и BackEnd, то
+шаблоны, ориентированные на раздельное применение, могут быть сразу
+удалены.</li>
+<li>Если расширение панели управления не
+предполагаются, то панель может быть представлена своим кодом (режим
+старта <span style="font-weight: bold;">default</span>),
+либо она
+может быть &nbsp;<a href="RibbonsRu.html">описана
+&nbsp;как XML и использован режим embedded</a>.</li>
+<li>Если предполагается расширение панели управления, то
+создаются xml-представления фрагментов панелей и создается <a href="RibbonsRu.html">поддержка этих функций в коде
+приложения.</a></li>
+<li>Если
+предполагается мультиязычность приложения, либо возможность в условиях
+эксплуатации изменять надписи элементов пользовательского интерфейса,
+то <a href="DictionariesSupportRu.html">создаются
+необходимые словари</a>.</li>
+<li>Осуществляется классическая отладка приложения<br />
+</li>
+</ul>
+<span style="font-family: Arial;">При
+возникновении задачи изменения пользовательского интерфейса,
+основанного на GUI &nbsp;системы Visual Prolog, модифицируется
+только
+FrontEnd.<br />
+При возникновении задачи перехода на
+использование&nbsp;Web-браузера в качестве пользовательского
+интерфейса,
+следует функции FrontEnd реализовать на платформе Web-браузера
+(JavaScript) с соблюдением соглашения об обмене информацией с BackEnd.<br />
+<br />
+Если
+такое приложение может представлять интерес в виде PlugIn в контексте
+приложения, построенного, в свою очередь, на база AppFrame, то набор
+AppFrame уже обеспечивает такую возможность (использование
+xxx_pzlMonoSDI.pzl или xxx_pzlHttpFroneEnd.pzl).<br />
+<br />
+<br />
+<br />
+</span><br style="font-family: Arial;" />
+<span style="font-family: Arial;"><br />
+<br />
+<br />
+</span><span style="font-style: italic; font-family: Arial;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span></span></span>
+</body></html>

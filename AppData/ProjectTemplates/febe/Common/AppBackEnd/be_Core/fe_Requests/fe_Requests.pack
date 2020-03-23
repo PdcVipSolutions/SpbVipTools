@@ -1,0 +1,20 @@
+#include @"..\Common\AppBackEnd\be_Core\fe_Requests\fe_Requests.ph"
+
+% privately used packages
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\event\event.ph"
+#include @"..\Common\AppBackEnd\be_Connector\be_Connector.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+#include @"..\Common\dataExchangeIdentifiers.i"
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"..\Common\AppBackEnd\be_Core\fe_Requests\fe_Requests.pro"

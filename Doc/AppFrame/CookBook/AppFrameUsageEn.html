@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><title>AppFrameUsageEn</title></head>
+<body>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copyright (c) Prolog
+Developemnt Center SPb</font></font></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none; font-family: Arial;"></span>
+<h1 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AppFrame CookBook</font></font><br />
+</h1>
+<h2 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><span style="font-weight: bold;"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AppFrame.<span>&nbsp;</span></font><font style="vertical-align: inherit;">Application</font></font></h2>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The list of projects that
+can be built using the AppFrame template set is presented in the<span>&nbsp;</span></font></font></span><a href="AppFrameIntroductionEn.html#set_of_templates" style="font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">introduction<span>&nbsp;</span></font></font></a><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;" />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A complete set of demo
+projects built using templates is provided in the<span>&nbsp;</span></font></font></span><span style="color: rgb(0, 0, 0); font-size: medium; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold; font-style: italic; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SpbExamples\Febe<span>&nbsp;</span></font></font></span><font style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; vertical-align: inherit; font-family: Arial;"><font style="vertical-align: inherit;">directory &nbsp;<span>&nbsp;</span></font></font><span style="color: rgb(0, 0, 0); font-size: medium; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-style: italic; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font><br />
+<br />
+</span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Essentially, an AppFrame is
+one big template for developing an application that can have one or a
+combination of properties:</font></font><br />
+</span>
+<ul style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the user interface is being
+transformed into a new quality, for example, into an interface based on
+a Web browser.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">user interface based on ribbons</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">user interface ribbons are
+presented in the form of scripts (xml view)</font></font><br />
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">functionality is expanded
+and modified in the field.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">distributed existence of
+FrontEnd and BackEnd (according to the scheme of the classic
+client-server application)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">modifiability of user
+interface text titles and multilingualism as a special case</font></font></li>
+</ul>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The following procedure for
+using AppFrame seems reasonable.</font></font><br />
+<br />
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Depending on the assignment
+task, a project is created with the user interface type MDI or SDI.</font></font><br />
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The project is developed
+according to the ideas of the developer, but<span>&nbsp;</span></font><font style="vertical-align: inherit;">subject<span>&nbsp;</span></font><font style="vertical-align: inherit;">to<span>&nbsp;</span></font></font><a href="FE_BE_DataExchangeEn.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">agreements on the rules for
+exchanging data between FrontEnd-BackEnd</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>,
+including:</font></font><br />
+</span>
+<ul style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+<li>If you select the <span style="font-weight: bold;">MDI</span> style of the user interface, then project templates with <span style="font-weight: bold;">SDI</span> style should be deleted immediately. And vice versa.</li><li>If it is not intended to run FrontEnd and BackEnd separately, then templates oriented to separate use can be deleted immediately.</li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If the extension of the
+control panel is not intended, then the panel can be represented by its
+code (<span>&nbsp;</span></font></font><span style="font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">default</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>start
+mode<span>&nbsp;</span></font><font style="vertical-align: inherit;">), or it can be &nbsp;<span>&nbsp;</span></font></font><a href="RibbonsEn.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">described as XML and
+embedded mode is used</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If you are planning to
+expand the control panel, then xml-representations of panel fragments
+are created and<span>&nbsp;</span></font></font><a href="RibbonsEn.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">support for these functions
+is created in the application code.</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If it is supposed to be
+multilingual, or the ability to change the labels of user interface
+elements under operating conditions, the<span>&nbsp;</span></font></font><a href="DictionariesSupportEn.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">necessary dictionaries are
+created</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span>&nbsp;</span>.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Classically debugging the
+application</font></font><br />
+</li>
+</ul>
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">When the task of changing
+the user interface based on the GUI of the Visual Prolog system arises,
+only FrontEnd is modified.</font></font><br />
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If you are faced with the
+problem of switching to using a Web browser as a user interface, you
+should implement the FrontEnd function on the Web browser platform
+(JavaScript) in compliance with the agreement on the exchange of
+information with BackEnd.</font></font><br />
+<br />
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If such an application may
+be of interest in the form of PlugIn in the context of an application
+built, in turn, on the basis of the AppFrame, then the AppFrame set
+already provides such an opportunity (using xxx_pzlMonoSDI.pzl or
+xxx_pzlHttpFroneEnd.pzl).</font></font><br />
+<br />
+<br />
+<br />
+</span><br style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;" />
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;"><br />
+<br />
+</span>
+</body></html>

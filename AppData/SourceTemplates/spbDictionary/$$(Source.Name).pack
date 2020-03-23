@@ -1,0 +1,11 @@
+#include @"$$(Source.Path)$$(Source.Name).ph"
+
+% privately used packages
+#include @"pfc\core.ph"
+% private interfaces
+
+% private classes
+% implementations
+#include @"$$(Source.Path)$$(Source.Name).pro"
+
+

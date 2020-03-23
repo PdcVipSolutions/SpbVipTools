@@ -1,0 +1,18 @@
+﻿
+% privately used packages
+#include @"Packs\Logic\trace\trace.ph"
+#include @"Packs\Logic\AppFrameSupport\dictionarySupport\dictionarySupport.ph"
+#include @"pfc\log\Log.ph"
+#include @"..\Common\AppBackEnd\be_Connector\be_Connector.ph"
+#include @"Packs\Logic\EntityRegistry\EntityRegistry.ph"
+#include @"packs\logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\string\string.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+#include @"pfc\binary\binary.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"pfc\collection\M\varM\varM.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppBackEnd\be_Core\be_Dictionary\be_Dictionary.pro"

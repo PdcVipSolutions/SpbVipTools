@@ -1,4 +1,4 @@
-﻿% Copyright (c) 2006
+﻿% Copyright (c) Prolog Development Center SPb
 
 interface xmlDocument
     supports xmlDataImporter

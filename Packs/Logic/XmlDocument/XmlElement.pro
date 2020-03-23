@@ -13,8 +13,15 @@ clauses
         nameSpacePrefix_P:=NameSpace.
 
 clauses
+    new(ElementName,Parent):-
+        parent_P:=Parent,
+        name_P:=ElementName,
+        nameSpacePrefix_P:="".
+
+clauses
     new(ElementName):-
-        name_P:=ElementName.
+        name_P:=ElementName,
+        nameSpacePrefix_P:="".
 
 facts
     name_P:string:=erroneous.

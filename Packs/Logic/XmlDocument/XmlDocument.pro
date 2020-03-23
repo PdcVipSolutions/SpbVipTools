@@ -1,21 +1,14 @@
-﻿% Copyright (c) 2006
+﻿% Copyright (c) Prolog Development Center SPb
 
 implement xmlDocument
     open core, xmlLite, pfc\log
 
 facts
-    target_V:xmlDataImporter:=erroneous.
-clauses
-    target_P(_Target).
-
-facts
     docType_P:tuple{string Name,string PublicID,string SystemID,string Subset}:=erroneous.
     processingInstruction_P:string:="".
     root_P:xmlElement:=erroneous.
-%    parent_P:xmlHierarchy:=erroneous. % Not used in the xmlDocument
 
 facts
-%    nameSpace_P:mapM{string NameSpaceName, ns_Attr_D NS_Attributes}:=erroneous. % Not in use. Just to support Inteface
     xmlElement_F:(xmlElement XmlElement). % XML level stack
 
 facts
@@ -67,8 +60,7 @@ clauses
         XmlDeclarationOutput:close().
 
     procInstruction(_Value,_Context).
-%        log::writef(log::info,"procInstruction->Value = %s, Context=%\n",Value, Context),
-%        !.
+
     docType(DocTypeParams,_Context):-
         _Dummy=[""||
             DocTypeParam=list::getMember_nd(DocTypeParams),
@@ -168,12 +160,10 @@ clauses
         if Context=[tuple(_P,"xml")] then
             XmlElement=xmlElement::new(ElName),
             XmlElement:nameSpacePrefix_P:=Prefix,
-%            XmlElement:name_P:=ElName,
             root_P:=XmlElement
         else
             xmlElement_F(ParentElement),
             XmlElement=xmlElement::new(Prefix,ElName,ParentElement),
-%            XmlElement:name_P:=ElName,
             ParentElement:addNode(XmlElement)
         end if,
         asserta(xmlElement_F(XmlElement)),
@@ -195,7 +185,6 @@ clauses
 
     getNodeAndPath_nd([xmlNavigate::current(StartElement)|Path])=StartElement:getNodeAndPath_nd(Path).
     getNodeAndPath_nd([xmlNavigate::root|Path])=root_P:getNodeAndPath_nd(Path).
-
 
     getNodeTree(XmlElement)=XmlElement:getNodeTree().
     getNodeTree()=getNodeTree(root_P).

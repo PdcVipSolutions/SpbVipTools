@@ -1,0 +1,18 @@
+﻿#include @"..\Common\AppFrontEnd\fe_TabpageForm\fe_TabpageForm.ph"
+
+#requires @"..\Common\AppFrontEnd\fe_TabpageForm\fe_TabpageForm.frm"
+
+% privately used packages
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonScriptLoadable\fe_RibbonScriptLoadable.ph"
+#include @"..\Common\AppFrontEnd\fe_Ribbons\fe_RibbonDefault\fe_RibbonDefault.ph"
+#include @"..\Common\AppFrontEnd\fe_Connector\fe_Connector.ph"
+#include @"..\Common\AppFrontEnd\fe_TabpageForm\fe_Tabcontrol\fe_Tabcontrol.ph"
+#include @"pfc\gui\controls\tabControl\tabControl.ph"
+#include @"pfc\gui\controls\button\button.ph"
+#include @"pfc\gui\gui.ph"
+#include @"pfc\resourceIdentifiers.ph"
+
+% private interfaces
+% private classes
+% implementations
+#include @"..\Common\AppFrontEnd\fe_TabpageForm\fe_TabpageForm.pro"
