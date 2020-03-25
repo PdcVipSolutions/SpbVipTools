@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<work_space title="SpbRSolutions"  >
+<work_space title="SpbRSolutions" ws_File="C:\Users\Виктор Юхтенко\Documents\SpbProjects\SPBrSolutions_75\Cmd\Solutions\SystemNew.wsm">
   <group title="Clean">
     <group title="CleanExamples">
-      <source filename="$(SpbExamples)CleanCommonExamples.cmd" />
+      <source datetime="2.10.2017 17:57:50" filename="$(SpbExamples)CleanCommonExamples.cmd" status="4" />
     </group>
     <group title="CleanSpbRProjects">
-      <source filename="$(SpbProjects)CleanSPbProjects.cmd">
-        <commandL index="1" />
-        <commandL codePage="50220" index="2" inputCP="1250" streamMode="1" />
-        <commandL index="3" />
-      </source>
+      <source datetime="2.10.2017 18:00:06" filename="$(SpbProjects)CleanSPbProjects.cmd" status="2" />
     </group>
   </group>
   <group title="SpbExamples">
@@ -192,6 +188,7 @@
         <source datetime="30.01.2020 15:49:27" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" status="4" />
         <source datetime="30.01.2020 15:49:28" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer3\WinTimer3.vipprj" status="4" />
         <source datetime="30.01.2020 15:49:29" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer4\WinTimer4.vipprj" status="4" />
+        <source datetime="30.01.2020 15:49:30" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer5\WinTimer5.vipprj" status="4" />
       </group>
       <group title="Containers">
         <source datetime="30.01.2020 15:49:40" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" status="4" />
@@ -213,64 +210,27 @@
     </group>
     <group title="FeBe">
       <group title="Applications">
-        <source datetime="21.03.2020 22:55:39" filename="$(SpbExamples)Febe\sdi_mono\febe_MonoSdi.vipprj" status="4" />
-        <source datetime="21.03.2020 22:55:45" filename="$(SpbExamples)Febe\mdi_mono\febe_MonoMdi.vipprj" status="4" warnings="1" />
-        <source datetime="21.03.2020 22:55:47" filename="$(SpbExamples)Febe\http_FrontendSdi\febe_httpFrontendSdi.vipprj" status="4" />
-        <source datetime="21.03.2020 22:55:48" filename="$(SpbExamples)Febe\http_FrontendMdi\febe_httpFrontendMdi.vipprj" status="4" />
-        <source datetime="21.03.2020 22:55:54" filename="$(SpbExamples)Febe\http_Backend\febe_httpBackend.vipprj" status="4" />
+        <source filename="$(SpbExamples)Febe\sdi_mono\febe_MonoSdi.vipprj" />
+        <source datetime="2.02.2020 21:37:35" filename="$(SpbExamples)Febe\mdi_mono\febe_MonoMdi.vipprj" status="4" />
+        <source filename="$(SpbExamples)Febe\http_FrontendSdi\febe_httpFrontendSdi.vipprj" />
+        <source filename="$(SpbExamples)Febe\http_FrontendMdi\febe_httpFrontendMdi.vipprj" />
+        <source filename="$(SpbExamples)Febe\http_Backend\febe_httpBackend.vipprj" />
       </group>
       <group title="Containers">
-        <source filename="$(SpbExamples)Febe\Clean.cmd" />
-        <source filename="$(SpbExamples)Febe\Bin\PzlRegistry.pzr" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\basic_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\chooseRbnScriptDlg_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\createRbnDictionaryDlg_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\LogConfig.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\options.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\optionsDlg_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses-full.txt" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses.txt" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\pdcVipIcons\_license-cc\readme.txt" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonConfig.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonEdit.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonFile.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonHelpAbout.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonHidden_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonLanguageRender.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonLanguageStatic.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonLanguage_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonPlugins.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonPlugins_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbonTests.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbon_Basic.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbon_CookBook.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbon_CreateDictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Bin\febeAppData\Ribbons\ribbon_Dictionary.xml" />
-        <source filename="$(SpbExamples)Febe\Common\AppBackEnd\be_Options\OptionsTemplate.xml" />
-        <source filename="$(SpbExamples)Febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses-full.txt" />
-        <source filename="$(SpbExamples)Febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses.txt" />
-        <source filename="$(SpbExamples)Febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\readme.txt" />
-        <source filename="$(SpbExamples)Febe\Common\Templates\DictionaryTemplate.xml" />
-        <source filename="$(SpbExamples)Febe\Common\Templates\OptionsTemplate.xml" />
-        <source filename="$(SpbExamples)Febe\http_FrontendMdi\appHead\Module4Solutions.cmd" />
-        <source filename="$(SpbExamples)Febe\http_FrontendSdi\appHead\Module4Solutions.cmd" />
-        <source filename="$(SpbExamples)Febe\mdi_mono\appHead\Module4Solutions.cmd" />
-        <source datetime="21.03.2020 22:55:59" filename="$(SpbExamples)Febe\pzlHttpBackend\febe_pzlHttpBackend.vipprj" status="4" />
-        <source datetime="21.03.2020 22:56:01" filename="$(SpbExamples)Febe\pzlHttpFrontend\febe_pzlHttpFrontend.vipprj" status="4" />
-        <source filename="$(SpbExamples)Febe\pzlHttpFrontend\AppHead\Module4Solutions.cmd" />
-        <source datetime="21.03.2020 22:56:07" filename="$(SpbExamples)Febe\pzlMonoSdi\febe_pzlMonoSdi.vipprj" status="4" />
-        <source filename="$(SpbExamples)Febe\sdi_mono\appHead\Module4Solutions.cmd" />
+        <source filename="$(SpbExamples)Febe\Containers\pzlHttpBackend\febe_pzlHttpBackend.vipprj" />
+        <source filename="$(SpbExamples)Febe\Containers\pzlHttpFrontend\febe_pzlHttpFrontend.vipprj" />
+        <source filename="$(SpbExamples)Febe\Containers\pzlMono\febe_pzlMono.vipprj" />
       </group>
       <group title="Doc">
         <group title="HTML">
           <group title="AppFrame">
             <group title="Ru">
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoRu.html" />
+              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionRu.html" />
+              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesRu.html" />
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeRu.html" />
@@ -280,63 +240,34 @@
               <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsRu.html" />
             </group>
             <group title="En">
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptEn.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookEn.chm" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookIndexEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookRu.chm" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameIntroductionEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\FE_BE_DataExchangeEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\InterModuleCommunicationEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\DictionariesSupportEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\RibbonsEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\RibbonScriptEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\ConfigurationFileEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\EmbeddedFeaturesEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\PlugInsEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameDemoEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameTemplateEn.html" />
+              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameUsageEn.html" />
             </group>
           </group>
           <group title="PzlSystem">
-            <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class Pzl.htm" />
-            <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class PzlPort.htm" />
-            <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\PzlComponent.htm" />
-            <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
-            <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
+            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
+            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
+            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class Pzl.htm" />
+            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\PzlComponent.htm" />
+            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class PzlPort.htm" />
           </group>
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsEn.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsRu.html" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class Pzl.htm" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class PzlPort.htm" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\PzlComponent.htm" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
         </group>
         <group title="WinHelp">
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookEn.hhp" />
           <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookRu.hhp" />
+          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookEn.hhp" />
           <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsEn.hhc" />
           <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsRu.hhc" />
           <source filename="$(SpbVipTools)Doc\AppFrame\AppFrameCookBookEn.chm" />
@@ -346,9 +277,6 @@
     </group>
   </group>
   <group title="SpbProjects">
-    <group title="PrepareActivity">
-      <source datetime="5.03.2020 16:53:14" filename="$(SpbProjects)setSpbToolsToVip\setSpbToolsToVip.vipprj" status="4" />
-    </group>
     <group title="WSM">
       <source filename="$(SpbProjects)WS_manager\ReadMe.htm" />
       <source filename="$(SpbProjects)WS_manager\Doc\ReadMeRu.html" />
@@ -360,156 +288,9 @@
         <source datetime="30.01.2020 15:58:42" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\WSMbackend.vipprj" status="4" warnings="3" />
         <source datetime="30.01.2020 15:58:57" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WSMfrontend.vipprj" status="4" />
       </group>
-      <group title="Doc">
-        <source filename="$(SpbVipTools)Bin\wsmAppData\LanguageWSM.xml" />
-        <source filename="$(SpbVipTools)Bin\wsmAppData\OptionsWSM.xml" />
-        <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpEn.chm" />
-        <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpRu.chm" />
-      </group>
     </group>
     <group title="DelFiles">
       <source datetime="29.09.2017 10:48:05" filename="$(SpbProjects)DelFiles\DelFiles.vipprj" status="4" warnings="2" />
     </group>
-    <group title="VicTest">
-      <source filename="$(SpbProjects)VicTest\Clean.cmd" />
-      <source filename="$(SpbProjects)VicTest\Bin\PzlRegistry.pzr" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\basic_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\chooseRbnScriptDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\createRbnDictionaryDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\LogConfig.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\options.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\optionsDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\pdcVipIcons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\pdcVipIcons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\pdcVipIcons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbonConfig.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbonHelpAbout.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbonHidden_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbonLanguageRender.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbonLanguage_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbon_Basic.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbon_CookBook.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbon_CreateDictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Bin\febeAppData\Ribbons\ribbon_Dictionary.xml" />
-      <source filename="$(SpbProjects)VicTest\Common\AppBackEnd\be_Options\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)VicTest\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)VicTest\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)VicTest\Common\AppFrontEnd\pdcvip_icons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)VicTest\Common\Templates\DictionaryTemplate.xml" />
-      <source filename="$(SpbProjects)VicTest\Common\Templates\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)VicTest\Containers\pzlHttpFrontend\AppHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)VicTest\http_FrontendMdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)VicTest\http_FrontendSdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)VicTest\mdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Clean.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\PzlRegistry.pzr" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\basic_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\chooseRbnScriptDlg_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\createRbnDictionaryDlg_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\LogConfig.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\options.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\optionsDlg_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\pdcVipIcons\_license-cc\readme.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbonConfig.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbonHelpAbout.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbonHidden_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbonLanguageRender.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbonLanguage_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbon_Basic.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbon_CookBook.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbon_CreateDictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Bin\febeAppData\Ribbons\ribbon_Dictionary.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\AppBackEnd\be_Options\OptionsTemplate.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\readme.txt" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\Templates\DictionaryTemplate.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Common\Templates\OptionsTemplate.xml" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\Containers\pzlHttpFrontend\AppHead\Module4Solutions.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\http_FrontendMdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\http_FrontendSdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\mdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbVipTools)AppData\ProjectTemplates\febe\sdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)CleanSPbProjects.cmd" />
-      <source filename="$(SpbProjects)febe\Clean.cmd" />
-      <source filename="$(SpbProjects)febe\Bin\PzlRegistry.pzr" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\basic_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\chooseRbnScriptDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\createRbnDictionaryDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\LogConfig.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\options.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\optionsDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonConfig.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonHelpAbout.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonHidden_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonLanguageRender.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonLanguage_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_Basic.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_CookBook.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_CreateDictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Common\AppBackEnd\be_Options\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)febe\Common\Templates\DictionaryTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Common\Templates\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Containers\pzlHttpFrontend\AppHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\http_FrontendMdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\http_FrontendSdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\mdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\sdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)pzlStudio\cleanStudio.cmd" />
-      <source filename="$(SpbProjects)pzlStudio\RegisterComponents.cmd" />
-      <source filename="$(SpbProjects)SPBrServer\SPBrHost\ServiceHandle\ServiceDelete.cmd" />
-      <source filename="$(SpbProjects)SPBrServer\SPBrHost\ServiceHandle\ServiceInstall.cmd" />
-      <source filename="$(SpbProjects)SPBrServer\SPBrHost\ServiceHandle\ServiceRename.cmd" />
-      <source filename="$(SpbProjects)SPBrServer\SPBrHost\ServiceHandle\ServiceStart.cmd" />
-      <source filename="$(SpbProjects)WS_manager\Containers\WSM_FE_Container\WorkSpaceManager\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\Exe\LanguageWSM.xml" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\Exe\OptionsWSM.xml" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WorkSpaceManager\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_SCSC\WSM_http_backend\Exe\LanguageWSM.xml" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_SCSC\WSM_http_backend\Exe\OptionsWSM.xml" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_SCSC\WSM_http_frontend\Exe\LogConfig.xml" />
-      <source filename="$(SpbProjects)WS_manager\WSM_http_SCSC\WSM_http_frontend\WorkSpaceManager\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)WS_manager\WSM_mono\WorkSpaceManager\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\Clean.cmd" />
-      <source filename="$(SpbProjects)febe\Bin\PzlRegistry.pzr" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\basic_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\chooseRbnScriptDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\createRbnDictionaryDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\LogConfig.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\options.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\optionsDlg_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\pdcVipIcons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonConfig.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonHelpAbout.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonHidden_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonLanguageRender.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbonLanguage_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_Basic.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_CookBook.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_CreateDictionary.xml" />
-      <source filename="$(SpbProjects)febe\Bin\febeAppData\Ribbons\ribbon_Dictionary.xml" />
-      <source filename="$(SpbProjects)febe\Common\AppBackEnd\be_Options\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses-full.txt" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\licenses.txt" />
-      <source filename="$(SpbProjects)febe\Common\AppFrontEnd\pdcvip_icons\_license-cc\readme.txt" />
-      <source filename="$(SpbProjects)febe\Common\Templates\DictionaryTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Common\Templates\OptionsTemplate.xml" />
-      <source filename="$(SpbProjects)febe\Containers\pzlHttpFrontend\AppHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\http_FrontendMdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\http_FrontendSdi\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\mdi_mono\appHead\Module4Solutions.cmd" />
-      <source filename="$(SpbProjects)febe\sdi_mono\appHead\Module4Solutions.cmd" />
-      group>
   </group>
 </work_space>
