@@ -1,83 +1,185 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <work_space title="SpbRSolutions" ws_File="C:\Users\Виктор Юхтенко\Documents\SpbProjects\SPBrSolutions_75\Cmd\Solutions\SystemNew.wsm">
+  <group title="Doc">
+    <group title="WS_Manager">
+      <group title="En">
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\HelpEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\IntroductionEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\InitialActionsEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\FileActionsEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\AddAndRemoveFilesEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\CreateAndEditWSM_VarsEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\FileTypeDefEn.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\WorkSpaceStructureEn.html" />
+      </group>
+      <group title="Ru">
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\HelpRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\IntroductionRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\InitialActionsRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\FileActionsRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\FileTypeDefRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\WorkSpaceStructureRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\AddAndRemoveFilesRu.html" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\CreateAndEditWSM_VarsRu.html" />
+      </group>
+      <group title="WinHelp">
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\WSM_HelpEn.hhp" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\wsm_helpRu.hhp" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\wsm_toc.hhc" />
+        <source filename="$(SpbProjects)WS_manager\Doc\Help\wsm_tocEn.hhc" />
+        <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpEn.chm" />
+        <source filename="$(SpbVipTools)Bin\wsmAppData\wsm_helpRu.chm" />
+      </group>
+    </group>
+    <group title="AppFrame">
+      <group title="Ru">
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptRu.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsRu.html" />
+      </group>
+      <group title="En">
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptEn.html" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsEn.html" />
+      </group>
+      <group title="WinHelp">
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookRu.hhp" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookEn.hhp" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsEn.hhc" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsRu.hhc" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\AppFrameCookBookEn.chm" />
+        <source filename="$(SpbVipTools)Doc\AppFrame\AppFrameCookBookRu.chm" />
+      </group>
+    </group>
+    <group title="PzlSystem">
+      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
+      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
+      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class Pzl.htm" />
+      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\PzlComponent.htm" />
+      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class PzlPort.htm" />
+    </group>
+  </group>
   <group title="Clean">
     <group title="CleanExamples">
-      <source datetime="2.10.2017 17:57:50" filename="$(SpbExamples)CleanCommonExamples.cmd" status="4" />
+      <source filename="$(SpbExamples)CleanCommonExamples.cmd" />
     </group>
     <group title="CleanSpbRProjects">
-      <source datetime="2.10.2017 18:00:06" filename="$(SpbProjects)CleanSPbProjects.cmd" status="2" />
+      <source filename="$(SpbProjects)CleanSPbProjects.cmd" />
     </group>
   </group>
   <group title="SpbExamples">
     <group title="Polyline">
-      <group title="Rel14">
-        <group title="Containers">
-          <source datetime="30.01.2020 15:30:22" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" status="4" />
-          <source datetime="30.01.2020 15:30:29" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj" status="4" />
-          <source datetime="30.01.2020 15:34:38" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj" status="4" />
-          <source datetime="30.01.2020 15:30:36" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj" status="4" />
-          <source datetime="30.01.2020 15:30:41" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj" status="4" />
-          <source datetime="30.01.2020 15:30:50" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj" status="4" />
-          <source datetime="30.01.2020 15:30:56" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj" status="4" />
-          <source datetime="30.01.2020 15:31:03" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj" status="4" />
-          <source datetime="30.01.2020 15:31:08" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj" status="4" warnings="1" />
-          <group title="Main">
-            <source datetime="30.01.2020 15:31:09" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj" status="4" />
+      <group title="KeyProjects">
+        <group title="PL_1">
+          <source filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline1\Readme.htm" />
+        </group>
+        <group title="PL_9">
+          <source filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\PolyLine9\Readme.htm" />
+        </group>
+        <group title="PL_11">
+          <source filename="$(SpbExamples)PolyLine\Polyline11\ReadmeEn.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\ReadmeRu.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\VersionReference.html" />
+          <group title="SourceApp">
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" />
           </group>
-          <group title="Core">
-            <source datetime="30.01.2020 15:31:10" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:11" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:12" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:13" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:14" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:15" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" status="4" />
-          </group>
-          <group title="Players">
-            <source datetime="30.01.2020 15:31:15" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:17" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj" status="4" />
-            <source datetime="30.01.2020 15:31:18" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj" status="4" />
+          <group title="Source+Lib">
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" />
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" />
           </group>
         </group>
-        <group title="Application">
-          <source datetime="30.01.2020 15:37:16" filename="$(SpbExamples)PolyLine\Polyline14\Programs\MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj" status="4" warnings="1" />
-          <source datetime="30.01.2020 15:37:30" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Polyline14_ObjWindowsPzl.vipprj" status="4" />
-          <source datetime="30.01.2020 15:37:32" filename="$(SpbExamples)PolyLine\Polyline14\Programs\BuildComputer3Lib.cmd" status="4" />
-          <source datetime="30.01.2020 15:37:32" filename="$(SpbExamples)PolyLine\Polyline14\Programs\BuildHumanInterfaceLib.cmd" status="4" />
-          <source datetime="30.01.2020 15:37:41" filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\RegisterComponents.cmd" status="4" />
+        <group title="PL_13">
+          <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" />
+          <source filename="$(SpbExamples)PolyLine\Polyline13\VersionReference.html" />
+          <group title="DLL">
+            <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" />
+          </group>
+          <group title="Application">
+            <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" />
+          </group>
+        </group>
+        <group title="PL_14">
+          <source filename="$(SpbExamples)PolyLine\Polyline14\CLEAN.cmd" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\RegisterComponents.cmd" />
+          <group title="Containers">
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj" />
+          </group>
+          <group title="Applications">
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Polyline14_ObjWindowsPzl.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\RegisterComponents.cmd" />
+          </group>
         </group>
       </group>
       <group title="ReadmeAndClean">
         <source filename="$(SpbExamples)Polyline\ReadmeEn.html" />
         <source filename="$(SpbExamples)Polyline\ReadmeRu.html" />
         <source filename="$(SpbExamples)Polyline\VersionReference.html" />
-        <source datetime="20.09.2017 22:46:23" filename="$(SpbExamples)Polyline\CleanPolyline.cmd" status="4" />
+        <source filename="$(SpbExamples)Polyline\CleanPolyline.cmd" />
       </group>
       <group title="Rel1-10">
-        <source datetime="2.10.2017 18:02:36" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:39" filename="$(SpbExamples)PolyLine\Polyline2\PolyLine2.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:40" filename="$(SpbExamples)PolyLine\Polyline3\Polyline3.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:40" filename="$(SpbExamples)PolyLine\Polyline4\Polyline4.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:41" filename="$(SpbExamples)PolyLine\Polyline5\Polyline5.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:42" filename="$(SpbExamples)PolyLine\Polyline6\Polyline6.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:42" filename="$(SpbExamples)PolyLine\Polyline7\Polyline7.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:43" filename="$(SpbExamples)PolyLine\PolyLine8\Polyline8.vipprj" status="4" />
-        <source datetime="19.09.2017 23:52:44" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" />
-        <source datetime="19.09.2017 23:53:37" filename="$(SpbExamples)PolyLine\PolyLine10\Polyline10.vipprj" status="4" warnings="7" />
+        <source filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline2\PolyLine2.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline3\Polyline3.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline4\Polyline4.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline5\Polyline5.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline6\Polyline6.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\Polyline7\Polyline7.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\PolyLine8\Polyline8.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" />
+        <source filename="$(SpbExamples)PolyLine\PolyLine10\Polyline10.vipprj" />
       </group>
       <group title="Rel11">
-        <source datetime="20.09.2017 21:35:20" filename="$(SpbExamples)Polyline\Polyline11\ReadmeEn.html" status="4" />
+        <source filename="$(SpbExamples)Polyline\Polyline11\ReadmeEn.html" />
         <source filename="$(SpbExamples)Polyline\Polyline11\ReadmeRu.html" />
-        <source datetime="20.09.2017 21:35:47" filename="$(SpbExamples)Polyline\Polyline11\VersionReference.html" status="4" />
+        <source filename="$(SpbExamples)Polyline\Polyline11\VersionReference.html" />
         <group title="SourceApps">
-          <source datetime="20.09.2017 00:01:53" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" />
-          <source datetime="20.09.2017 00:02:39" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
-          <source datetime="20.09.2017 00:04:28" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" />
-          <source datetime="2.10.2017 00:53:58" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="7" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" />
         </group>
         <group title="Source+Lib">
-          <source datetime="20.09.2017 00:05:06" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_Console.vipprj" status="4" />
-          <source datetime="20.09.2017 00:05:44" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsole.vipprj" status="4" />
-          <source datetime="20.09.2017 00:07:38" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindows.vipprj" status="4" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_Console.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsole.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindows.vipprj" />
         </group>
       </group>
       <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Exe\LanguageWSM.xml" />
@@ -90,10 +192,10 @@
           <source filename="$(SpbExamples)PolyLine\Polyline12\VersionReference.html" />
         </group>
         <group title="Apps">
-          <source datetime="14.10.2017 00:22:13" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj" status="4" />
+          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj" />
           <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin1\Polyline12_ObjWindows1.vipprj" />
-          <source datetime="14.10.2017 00:23:25" filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin2\Polyline12_ObjWindows2.vipprj" status="4" />
-          <source datetime="14.10.2017 00:32:24" filename="$(SpbExamples)PolyLine\Polyline12\Programs\BuildHumanInterfaceLib.cmd" status="4" />
+          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWin2\Polyline12_ObjWindows2.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\BuildHumanInterfaceLib.cmd" />
         </group>
         <group title="App+Lib">
           <source filename="$(SpbExamples)PolyLine\Polyline12\Programs\ObjectWinLib0\Polyline12_ObjWindowsLib0.vipprj" />
@@ -114,45 +216,42 @@
           <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" />
         </group>
       </group>
-      <group title="KeyProjects">
-        <group title="PL_1">
-          <source datetime="9.10.2017 22:58:58" filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" status="4" />
-          <source filename="$(SpbExamples)PolyLine\Polyline1\Readme.htm" />
-        </group>
-        <group title="PL_9">
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\PolyLine9\Polyline9.vipprj" status="4" />
-          <source filename="$(SpbExamples)PolyLine\PolyLine9\Readme.htm" />
-        </group>
-        <group title="PL_11">
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\ReadmeEn.html" status="7" />
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\ReadmeRu.html" status="7" />
-          <source datetime="9.10.2017 22:58:59" filename="$(SpbExamples)PolyLine\Polyline11\VersionReference.html" status="7" />
-          <group title="SourceApp">
-            <source datetime="9.10.2017 22:59:00" filename="$(SpbExamples)PolyLine\Polyline11\Programs\Console\Polyline11_Console.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:00" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsole\Polyline11_ObjConsole.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWin\Polyline11_ObjWindows.vipprj" status="4" />
+      <group title="Rel14">
+        <group title="Containers">
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj" />
+          <group title="Main">
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj" />
           </group>
-          <group title="Source+Lib">
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" status="4" />
-            <source datetime="9.10.2017 22:59:02" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:03" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" status="4" />
+          <group title="Core">
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" />
           </group>
-        </group>
-        <group title="PL_13">
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" status="7" />
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" status="7" />
-          <source datetime="9.10.2017 22:59:04" filename="$(SpbExamples)PolyLine\Polyline13\VersionReference.html" status="7" />
-          <group title="DLL">
-            <source datetime="9.10.2017 22:59:05" filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:06" filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" status="4" />
-            <source datetime="9.10.2017 22:59:06" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ModelsDLL\ModelsDLL.vipprj" status="4" />
-          </group>
-          <group title="Application">
-            <source datetime="9.10.2017 22:59:07" filename="$(SpbExamples)PolyLine\Polyline13\Programs\ObjectWin\Polyline13_ObjWindows.vipprj" status="4" />
+          <group title="Players">
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj" />
+            <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj" />
           </group>
         </group>
-        <group title="PL_14" />
+        <group title="Applications">
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Polyline14_ObjWindowsPzl.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\BuildComputer3Lib.cmd" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\BuildHumanInterfaceLib.cmd" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\RegisterComponents.cmd" />
+          <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\MonoApplicaionLib\Polyline14_ObjWindowsLib.vipprj" />
+        </group>
       </group>
       <group title="ReadmeS">
         <source filename="$(SpbExamples)PolyLine\ReadmeEn.html" />
@@ -183,96 +282,43 @@
     </group>
     <group title="WinTimer">
       <group title="Applications">
-        <source datetime="30.01.2020 15:49:25" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer0\WinTimer0.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:26" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer1\WinTimer1.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:27" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:28" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer3\WinTimer3.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:29" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer4\WinTimer4.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:30" filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer5\WinTimer5.vipprj" status="4" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer0\WinTimer0.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer1\WinTimer1.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer3\WinTimer3.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer4\WinTimer4.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer5\WinTimer5.vipprj" />
       </group>
       <group title="Containers">
-        <source datetime="30.01.2020 15:49:40" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:48" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerControl\WinTimerControl3.vipprj" status="4" />
-        <source datetime="30.01.2020 15:49:57" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerContainer\WinTimerContainer4.vipprj" status="4" />
-        <source datetime="30.01.2020 15:50:06" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerControl\WinTimerControl4.vipprj" status="4" />
-        <source datetime="30.01.2020 15:50:14" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerMonitor\WinTimerMonitor4.vipprj" status="4" />
+        <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerControl\WinTimerControl3.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerContainer\WinTimerContainer4.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerControl\WinTimerControl4.vipprj" />
+        <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerMonitor\WinTimerMonitor4.vipprj" />
         <group title="Containers3">
-          <source datetime="30.01.2020 15:50:15" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" status="4" />
-          <source datetime="30.01.2020 15:50:16" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerControl\WinTimerControl3.vipprj" status="4" />
-          <source datetime="30.01.2020 15:50:24" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerMonitor\WinTimerMonitor3.vipprj" status="4" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerControl\WinTimerControl3.vipprj" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerMonitor\WinTimerMonitor3.vipprj" />
         </group>
         <group title="Containers4">
-          <source datetime="30.01.2020 15:50:25" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerContainer\WinTimerContainer4.vipprj" status="4" />
-          <source datetime="30.01.2020 15:50:25" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerControl\WinTimerControl4.vipprj" status="4" />
-          <source datetime="30.01.2020 15:50:26" filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerMonitor\WinTimerMonitor4.vipprj" status="4" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerContainer\WinTimerContainer4.vipprj" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerControl\WinTimerControl4.vipprj" />
+          <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer4\WinTimerMonitor\WinTimerMonitor4.vipprj" />
         </group>
       </group>
     </group>
     <group title="FeBe">
       <group title="Applications">
         <source filename="$(SpbExamples)Febe\sdi_mono\febe_MonoSdi.vipprj" />
-        <source datetime="2.02.2020 21:37:35" filename="$(SpbExamples)Febe\mdi_mono\febe_MonoMdi.vipprj" status="4" />
+        <source filename="$(SpbExamples)Febe\mdi_mono\febe_MonoMdi.vipprj" />
         <source filename="$(SpbExamples)Febe\http_FrontendSdi\febe_httpFrontendSdi.vipprj" />
         <source filename="$(SpbExamples)Febe\http_FrontendMdi\febe_httpFrontendMdi.vipprj" />
         <source filename="$(SpbExamples)Febe\http_Backend\febe_httpBackend.vipprj" />
       </group>
       <group title="Containers">
-        <source filename="$(SpbExamples)Febe\Containers\pzlHttpBackend\febe_pzlHttpBackend.vipprj" />
-        <source filename="$(SpbExamples)Febe\Containers\pzlHttpFrontend\febe_pzlHttpFrontend.vipprj" />
-        <source filename="$(SpbExamples)Febe\Containers\pzlMono\febe_pzlMono.vipprj" />
-      </group>
-      <group title="Doc">
-        <group title="HTML">
-          <group title="AppFrame">
-            <group title="Ru">
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookIndexRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameIntroductionRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameDemoRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameTemplateRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\AppFrameUsageRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\ConfigurationFileRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\DictionariesSupportRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\EmbeddedFeaturesRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\FE_BE_DataExchangeRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\InterModuleCommunicationRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\PlugInsRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonScriptRu.html" />
-              <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\RibbonsRu.html" />
-            </group>
-            <group title="En">
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookEn.chm" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookIndexEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\CookBookRu.chm" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameIntroductionEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\FE_BE_DataExchangeEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\InterModuleCommunicationEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\DictionariesSupportEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\RibbonsEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\RibbonScriptEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\ConfigurationFileEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\EmbeddedFeaturesEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\PlugInsEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameDemoEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameTemplateEn.html" />
-              <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\AppFrameUsageEn.html" />
-            </group>
-          </group>
-          <group title="PzlSystem">
-            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
-            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
-            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class Pzl.htm" />
-            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\PzlComponent.htm" />
-            <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class PzlPort.htm" />
-          </group>
-        </group>
-        <group title="WinHelp">
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookRu.hhp" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\CookBookEn.hhp" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsEn.hhc" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\TableOfContentsRu.hhc" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\AppFrameCookBookEn.chm" />
-          <source filename="$(SpbVipTools)Doc\AppFrame\AppFrameCookBookRu.chm" />
-        </group>
+        <source filename="$(SpbExamples)Febe\pzlMonoSdi\febe_pzlMonoSdi.vipprj" />
+        <source filename="$(SpbExamples)Febe\pzlHttpBackend\febe_pzlHttpBackend.vipprj" />
+        <source filename="$(SpbExamples)Febe\pzlHttpFrontend\febe_pzlHttpFrontend.vipprj" />
       </group>
     </group>
   </group>
@@ -282,15 +328,18 @@
       <source filename="$(SpbProjects)WS_manager\Doc\ReadMeRu.html" />
       <source filename="$(SpbProjects)WS_manager\Doc\ReadMeEn.html" />
       <group title="WSM_mono">
-        <source datetime="30.01.2020 15:58:30" errors="2" filename="$(SpbProjects)WS_manager\WSM_mono\WorkSpaceManager.vipprj" status="6" />
+        <source filename="$(SpbProjects)WS_manager\WSM_mono\WorkSpaceManager.vipprj" />
       </group>
       <group title="WSM_http_CS">
-        <source datetime="30.01.2020 15:58:42" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\WSMbackend.vipprj" status="4" warnings="3" />
-        <source datetime="30.01.2020 15:58:57" filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WSMfrontend.vipprj" status="4" />
+        <source filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_backend\WSMbackend.vipprj" />
+        <source filename="$(SpbProjects)WS_manager\WSM_http_CS\WSM_http_frontend\WSMfrontend.vipprj" />
       </group>
     </group>
     <group title="DelFiles">
-      <source datetime="29.09.2017 10:48:05" filename="$(SpbProjects)DelFiles\DelFiles.vipprj" status="4" warnings="2" />
+      <source filename="$(SpbProjects)DelFiles\DelFiles.vipprj" />
+    </group>
+    <group title="SetSpbToolsToVip">
+      <source filename="$(SpbProjects)setSpbToolsToVip\setSpbToolsToVip.vipprj" />
     </group>
   </group>
 </work_space>
