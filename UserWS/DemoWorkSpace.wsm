@@ -72,11 +72,11 @@
       </group>
     </group>
     <group title="PzlSystem">
-      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
-      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
-      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class Pzl.htm" />
-      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\PzlComponent.htm" />
-      <source filename="$(SpbExamples)Febe\Bin\febeAppData\CookBook\VpPuzzle\Class PzlPort.htm" />
+      <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Introduction.htm" />
+      <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\VpPuZzle Observe.htm" />
+      <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class PzlPort.htm" />
+      <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\Class Pzl.htm" />
+      <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\PzlComponent.htm" />
     </group>
   </group>
   <group title="Clean">
