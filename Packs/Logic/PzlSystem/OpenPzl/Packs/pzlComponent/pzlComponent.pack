@@ -1,0 +1,18 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"packs\logic\pzlSystem\openPzl\packs\pzlComponent\pzlComponent.ph"
+
+% privately used packages
+#include @"pfc\string\string.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"packs\logic\pzlSystem\openPzl\packs\pzlComponent\pzlComponent.pro"

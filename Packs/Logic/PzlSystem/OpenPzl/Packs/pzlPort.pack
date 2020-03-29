@@ -1,0 +1,18 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"packs\logic\pzlSystem\openPzl\packs\pzlPort.ph"
+
+% privately used packages
+#include @"pfc\exception\exception.ph"
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+

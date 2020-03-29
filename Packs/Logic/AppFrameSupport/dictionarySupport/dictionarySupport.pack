@@ -1,0 +1,16 @@
+﻿#include @"Packs\Logic\appFrameSupport\dictionarySupport\dictionarySupport.ph"
+
+% privately used packages
+#include @"pfc\binary\binary.ph"
+#include @"pfc\stream\stream.ph"
+#include @"pfc\stream\outputStreamSupport\outputStreamSupport.ph"
+
+#include @"pfc\string\string.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Logic\appFrameSupport\dictionarySupport\dictionarySupport.pro"

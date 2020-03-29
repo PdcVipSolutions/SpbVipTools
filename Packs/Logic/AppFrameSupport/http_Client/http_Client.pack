@@ -1,0 +1,29 @@
+﻿#include @"Packs\Logic\appFrameSupport\http_Client\http_Client.ph"
+
+% privately used packages
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+#include @"pfc\time\time.ph"
+#include @"Packs\Logic\Web\xmlHttpEventSink\xmlHttpEventSink.ph"
+#include @"Packs\Logic\timerTick\timerTick.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"pfc\log\Log.ph"
+#include @"Packs\Logic\trace\trace.ph"
+#include @"packs\logic\appFrameSupport\eventManager\eventManager.ph"
+#include @"pfc\web\http\http.ph"
+
+#include @"pfc\stream\stream.ph"
+#include @"pfc\com\exceptionHandling\exceptionHandling.ph"
+#include @"pfc\exception\exception.ph"
+#include @"pfc\windowsApi\com_api\comDomains\comDomains.ph"
+#include @"pfc\windowsApi\msXML_api\msXML_HTTP_api\msxml_HTTP_api.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\web\json\jsonRpc\jsonRpc.ph"
+#include @"pfc\web\json\json.ph"
+
+% private interfaces
+#include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\appFrameSupport\http_Client\http_Client.pro"

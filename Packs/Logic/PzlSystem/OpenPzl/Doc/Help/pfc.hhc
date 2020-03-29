@@ -1,0 +1,50 @@
+<HTML>
+<!-- Sitemap 1.0 -->
+<OBJECT type="text/site properties">
+<param name="FrameName" value="content">
+<param name="Window Styles" value="0x800405">
+<param name="ExWindow Styles" value="0x100">
+</OBJECT>
+
+<UL>
+
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Packs"><param name="ImageNumber" value="1"></OBJECT>
+<UL>
+
+<LI><OBJECT type="text/sitemap"><param name="Name" value="pzl"><param name="Local" value="Packs\pzl_cl.htm"><param name="ImageNumber" value="41"></OBJECT>
+<UL>
+
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Predicates"><param name="Local" value="Packs\pzl_cl.htm#method_summary"><param name="ImageNumber" value="35"></OBJECT>
+<UL>
+
+<LI><OBJECT type="text/sitemap"><param name="Name" value="classInfo/?"><param name="Local" value="Packs\pzl_cl.htm#classinfo_undef"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getComponentRegisterFileName/0->"><param name="Local" value="Packs\pzl_cl.htm#getcomponentregisterfilename_0_ret">
+<param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getContainerActivity_nd/2"><param name="Local" value="Packs\pzl_cl.htm#getcontaineractivity_nd_2"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getContainerContentList/1->"><param name="Local" value="Packs\pzl_cl.htm#getcontainercontentlist_1_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getContainerName/0->"><param name="Local" value="Packs\pzl_cl.htm#getcontainername_0_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getContainerToBeUnloaded_nd/1"><param name="Local" value="Packs\pzl_cl.htm#getcontainertobeunloaded_nd_1"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getContainerVersion/0->"><param name="Local" value="Packs\pzl_cl.htm#getcontainerversion_0_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getLicenseLevel/0->"><param name="Local" value="Packs\pzl_cl.htm#getlicenselevel_0_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getNameAndObject_nd/2"><param name="Local" value="Packs\pzl_cl.htm#getnameandobject_nd_2"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getNameByObject_nd/1->"><param name="Local" value="Packs\pzl_cl.htm#getnamebyobject_nd_1_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="getObjectByName_nd/1->"><param name="Local" value="Packs\pzl_cl.htm#getobjectbyname_nd_1_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="newByID/2->"><param name="Local" value="Packs\pzl_cl.htm#newbyid_2_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="newByName/2->"><param name="Local" value="Packs\pzl_cl.htm#newbyname_2_ret"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="newInstance/0"><param name="Local" value="Packs\pzl_cl.htm#newinstance_0"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="register/2"><param name="Local" value="Packs\pzl_cl.htm#register_2"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="registerMulti/2"><param name="Local" value="Packs\pzl_cl.htm#registermulti_2"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="release/0"><param name="Local" value="Packs\pzl_cl.htm#release_0"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="releaseInactiveContainers/0"><param name="Local" value="Packs\pzl_cl.htm#releaseinactivecontainers_0"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="setStdOutputStream/1"><param name="Local" value="Packs\pzl_cl.htm#setstdoutputstream_1"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="subscribe/1"><param name="Local" value="Packs\pzl_cl.htm#subscribe_1"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="unRegister/2"><param name="Local" value="Packs\pzl_cl.htm#unregister_2"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="unRegisterAll/0"><param name="Local" value="Packs\pzl_cl.htm#unregisterall_0"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="unRegisterByName/1"><param name="Local" value="Packs\pzl_cl.htm#unregisterbyname_1"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="unRegisterByObject/1"><param name="Local" value="Packs\pzl_cl.htm#unregisterbyobject_1"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="unSubscribe/1"><param name="Local" value="Packs\pzl_cl.htm#unsubscribe_1"><param name="ImageNumber" value="11"></OBJECT>
+</UL>
+</UL>
+</UL>
+</UL>
+</HTML>

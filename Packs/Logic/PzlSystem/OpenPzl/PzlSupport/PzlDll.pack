@@ -1,0 +1,25 @@
+﻿/*****************************************************************************
+
+                        Copyright (c) 2003 Prolog Development Center SPb
+
+******************************************************************************/
+
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlDll.ph"
+
+% privately used packages
+#include @"pfc\stream\stream.ph"
+#include @"pfc\application\dll\dll.ph"
+#include @"pfc\exception\exception.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlCore.i"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlRegister.i"
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+% private interfaces
+
+% private classes
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlDll.cl"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\Export.cl"
+
+% implementations
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlDll.pro"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\Export.pro"

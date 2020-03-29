@@ -1,0 +1,20 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+ Written by: Victor Yukhtenko
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+% privately used packages
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+
+% privately used interfaces
+
+% private classes
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"

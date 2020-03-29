@@ -1,0 +1,11 @@
+﻿#include @"Packs\Logic\pzlSystem\OpenPzl\PzlSupport\pzlLog\pzlLog.ph"
+
+% privately used packages
+#include @"pfc\log\Log.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\pzlSystem\OpenPzl\PzlSupport\pzlLog\pzlLog.pro"

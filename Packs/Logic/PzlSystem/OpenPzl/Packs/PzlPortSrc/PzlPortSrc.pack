@@ -1,0 +1,12 @@
+﻿#include @"packs\logic\pzlSystem\openPzl\packs\PzlPortSrc\PzlPortSrc.ph"
+
+% privately used packages
+%#include @"Pzl.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations

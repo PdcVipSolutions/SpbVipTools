@@ -1,0 +1,16 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+Written by: Victor Yukhtenko
+******************************************************************************/
+
+#include @"packs\logic\pzlSystem\openPzl\packs\Pzl.ph"
+
+% privately used packages
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations

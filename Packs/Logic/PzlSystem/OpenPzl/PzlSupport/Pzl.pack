@@ -1,0 +1,30 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+ Written by: Victor Yukhtenko
+******************************************************************************/
+
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\Pzl.ph"
+
+% privately used packages
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"pfc\windowsApi\systemInformation_api\systemInformation_api.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\log\logAppenderSupport\logappendersupport.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlCore.i"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlRegister.i"
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlContainerVersions.i"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlSystemVersionInfo.i"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzl.pro"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlSys.pro"

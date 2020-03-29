@@ -1,0 +1,8 @@
+﻿% privately used packages
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

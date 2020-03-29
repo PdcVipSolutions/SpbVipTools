@@ -1,0 +1,22 @@
+﻿#include @"Packs\Logic\appFrameSupport\eventManager\eventManager.ph"
+
+% privately used packages
+#include @"Packs\Logic\edf\edf.ph"
+#include @"pfc\collection\M\varM\varM.ph"
+#include @"pfc\binary\binary.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\exception\exception.ph"
+#include @"Packs\Logic\SpbXmlLiteSupport\SpbXmlLiteSupport.ph"
+#include @"pfc\stream\stream.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+#include @"Packs\Logic\XmlDocument\XmlDocument.ph"
+#include @"pfc\event\event.ph"
+#include @"pfc\core.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Packs\Logic\appFrameSupport\eventManager\eventManager.pro"

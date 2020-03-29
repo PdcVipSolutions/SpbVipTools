@@ -1,0 +1,41 @@
+﻿/*****************************************************************************
+
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.ph"
+
+% privately used packages
+#include @"Packs\Logic\trace\trace.ph"
+#include @"pfc\multiThread\multiThread.ph"
+#include @"pfc\windowsApi\systemInformation_api\systemInformation_api.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\web\xmlSupport\xmlSupport.ph"
+#include @"pfc\web\xmlLite\xmlLite.ph"
+
+#include @"pfc\collection\algebraic\redBlackTree\redBlackTree.ph"
+#include @"Pfc\list\list.ph"
+#include @"pfc\registry\registry.ph"
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\stream\inputStreamSupport\inputStreamSupport.ph"
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\application\useDll\usedll.ph"
+#include @"pfc\memory\memory.ph"
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+#include @"Packs\Logic\NotificationAgency\NotificationAgency.ph"
+
+% private interfaces
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlContainerVersions.i"
+%#include @"PzlSystem\OpenPzl\Containers\pzlOpen\pzlContainerVersionInfo.i"
+
+% private classes
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlRegister.cl"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlSys.cl"
+
+% implementations
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlRegister.pro"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlCore.pro"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.pro"
+
