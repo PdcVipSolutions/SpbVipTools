@@ -1,0 +1,11 @@
+﻿#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.ph"
+
+% privately used packages
+#include @"pfc\exception\exceptionDump\exceptionDump.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\namedValue\namedValue.ph"
+% private interfaces
+% private classes
+% implementations
+#include @"Packs\Logic\exceptionHandlingSupport\exceptionHandlingSupport.pro"
