@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wsm_options>
+  <be_options>
+    <group title="VirtualDir" />
+    <group title="CompRun">
+      <compRun name="wsBE_PerformVIPPRJ" synname="Visual Prolog" />
+    </group>
+    <group title="PerformExt">
+      <source compRun="wsBE_PerformVIPPRJ" ext="vipprj" name="Vip Project">
+        <command defCmd="true" filename="$(VipDir)bin\vip.exe" formatCmd="[Application] &quot;$(SourceFile)&quot;" index="1" name="Edit" winAss="true" />
+        <command argument="/build /saveproject" checkSts="true" codePage="65001" filename="$(VipDir)bin\vipBuilder.exe" formatCmd="[Application] [Arguments] &quot;$(SourceFile)&quot;" hasAll="true" index="2" name="Build" sModeOn="true" streamMode="1" />
+        <command argument="/rebuild /saveproject" checkSts="true" codePage="65001" filename="$(VipDir)bin\vipBuilder.exe" formatCmd="[Application] [Arguments] &quot;$(SourceFile)&quot;" hasAll="true" index="3" name="Rebuild" sModeOn="true" streamMode="1" />
+        <command filename="$(SourceExeDir)\$(ExeName)" formatCmd="[Application]" index="4" name="RunExe" />
+      </source>
+      <source ext="cmd" name="Command File">
+        <command defCmd="true" filename="c:\Windows\notepad.exe" formatCmd="[Application] &quot;$(SourceFile)&quot;" index="1" name="Edit" />
+        <command argument="/u /c" checkSts="true" filename="C:\WINDOWS\System32\cmd.exe" formatCmd="[Application] [Arguments] &quot;$(SourceFile)&quot; [Suffix]" hasAll="true" index="2" name="Perform" suffix="&lt;$(SpbVipTools)\bin\yes.txt" />
+        <command argument="/u /c" checkSts="true" filename="C:\WINDOWS\System32\cmd.exe" formatCmd="[Application] [Arguments] &quot;$(SourceFile)&quot; [Suffix]" hasAll="true" index="3" name="Perform2" suffix="&lt;$(SpbVipTools)\bin\yes.txt" />
+      </source>
+      <source ext="txt" name="Plain Text">
+        <command defCmd="true" index="1" name="Edit" winAss="true" />
+      </source>
+      <source ext="doc, docx" name="Word Document">
+        <command defCmd="true" index="1" name="Open" winAss="true" />
+      </source>
+      <source ext="xls, xlsx" name="Excel Spread Sheet">
+        <command defCmd="true" index="1" name="Open" winAss="true" />
+      </source>
+      <source ext="hhp" name="Help WorkShop">
+        <command defCmd="true" index="1" name="Open" winAss="true" />
+      </source>
+      <source ext="htm, html" name="Web Page">
+        <command defCmd="true" index="1" name="Open" winAss="true" />
+      </source>
+    </group>
+  </be_options>
+  <fe_options>
+    <group title="wsFE_Tasks">
+      <work_space path=".\" />
+      <source path=".\" />
+      <folder path=".\" />
+      <rbState path="[namedValue(&quot;reset&quot;,boolean(true)),namedValue(&quot;local&quot;,boolean(false))]" />
+    </group>
+    <group title="wsFE_Form">
+      <nodeIDList path="[namedValue(&quot;work_space&quot;,string(&quot;Unknown&quot;))]" />
+      <ribbon1 path="[section(&quot;workSpace&quot;,&quot;WorkSpace Editing&quot;,noTip,none,[block([[cmd(&quot;workSpace&quot;,imageAndText(vertical))]]),block([[cmd(&quot;treeMenu&quot;,imageAndText(vertical))]])]),section(&quot;manipulate&quot;,&quot;Manipulate Entity&quot;,noTip,none,[block([[cmd(&quot;DeleteEntity&quot;,imageAndText(vertical))],[cmd(&quot;MoveNodeUp&quot;,imageAndText(vertical))],[cmd(&quot;MoveNodeDown&quot;,imageAndText(vertical))]])]),section(&quot;sourceSpace&quot;,&quot;Add File(s)&quot;,noTip,none,[block([[cmd(&quot;addSource&quot;,imageAndText(vertical))],[cmd(&quot;addFromFolder&quot;,imageAndText(vertical))],[cmd(&quot;checkFile&quot;,imageAndText(vertical))]])]),section(&quot;actions&quot;,&quot;File Actions&quot;,noTip,none,[block([[cmd(&quot;command_1&quot;,imageAndText(vertical))],[cmd(&quot;command_2&quot;,imageAndText(vertical))]]),block([[cmd(&quot;command_3&quot;,imageAndText(vertical))],[cmd(&quot;command_4&quot;,imageAndText(vertical))]]),block([[cmd(&quot;Pause&quot;,imageAndText(vertical))],[cmd(&quot;Stop&quot;,imageAndText(vertical))]]),block([[cmd(&quot;resetSource&quot;,imageAndText(vertical))]])]),section(&quot;options&quot;,&quot;Options&quot;,noTip,none,[block([[cmd(&quot;showFilter&quot;,imageAndText(vertical))]]),block([[cmd(&quot;settingsdlg&quot;,imageAndText(vertical))]]),block([[cmd(&quot;showlocaloptions&quot;,imageAndText(vertical))]]),block([[cmd(&quot;ribbon.design&quot;,imageAndText(vertical))]])]),section(&quot;about&quot;,&quot;Help &amp; About&quot;,noTip,none,[block([[cmd(&quot;help&quot;,imageAndText(vertical))]]),block([[cmd(&quot;about&quot;,imageAndText(vertical))]])])]" />
+      <filter path="[&quot;$All&quot;]" />
+    </group>
+    <group title="wSFE_SourceList">
+      <color textColor="[namedValue(&quot;Group File&quot;,string(&quot;tuple(0,16777215)&quot;)),namedValue(&quot;Folder File&quot;,string(&quot;tuple(6316128,16777215)&quot;)),namedValue(&quot;Excluded File&quot;,string(&quot;tuple(12632256,16777215)&quot;))]" />
+    </group>
+  </fe_options>
+</wsm_options>
