@@ -287,7 +287,6 @@
         <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer2\WinTimer2.vipprj" />
         <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer3\WinTimer3.vipprj" />
         <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer4\WinTimer4.vipprj" />
-        <source filename="$(SpbExamples)vpPuzzle\Programs\WinTimer\WinTimer5\WinTimer5.vipprj" />
       </group>
       <group title="Containers">
         <source filename="$(SpbExamples)vpPuzzle\Containers\gui\WinTimer\WinTimer3\WinTimerContainer\WinTimerContainer3.vipprj" />
