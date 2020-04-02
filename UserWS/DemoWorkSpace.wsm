@@ -79,14 +79,6 @@
       <source filename="$(SpbVipTools)Doc\AppFrame\CookBook\VpPuzzle\PzlComponent.htm" />
     </group>
   </group>
-  <group title="Clean">
-    <group title="CleanExamples">
-      <source filename="$(SpbExamples)CleanCommonExamples.cmd" />
-    </group>
-    <group title="CleanSpbRProjects">
-      <source filename="$(SpbProjects)CleanSPbProjects.cmd" />
-    </group>
-  </group>
   <group title="SpbExamples">
     <group title="Polyline">
       <group title="KeyProjects">
