@@ -2,9 +2,9 @@
 
 **Open Source (MIT license)**
 
-Created using Visual Prolog v.9 build 902 
+Created using Visual Prolog v.9 build 904 
 
-## SpbVipTools v.3.0 content
+## SpbVipTools v.3.1 content
 
 ### Packs
   + Gui

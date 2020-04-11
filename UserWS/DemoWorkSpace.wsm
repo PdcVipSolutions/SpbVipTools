@@ -109,7 +109,6 @@
         <group title="PL_13">
           <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeEn.html" />
           <source filename="$(SpbExamples)PolyLine\Polyline13\ReadmeRu.html" />
-          <source filename="$(SpbExamples)PolyLine\Polyline13\VersionReference.html" />
           <group title="DLL">
             <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\Computer3Dll\Computer3Dll.vipprj" />
             <source filename="$(SpbExamples)PolyLine\Polyline13\Programs\HumanInterfaceDLL\HumanInterfaceDLL.vipprj" />
@@ -120,7 +119,6 @@
           </group>
         </group>
         <group title="PL_14">
-          <source filename="$(SpbExamples)PolyLine\Polyline14\CLEAN.cmd" />
           <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\RegisterComponents.cmd" />
           <group title="Containers">
             <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj" />
@@ -144,7 +142,6 @@
         <source filename="$(SpbExamples)Polyline\ReadmeEn.html" />
         <source filename="$(SpbExamples)Polyline\ReadmeRu.html" />
         <source filename="$(SpbExamples)Polyline\VersionReference.html" />
-        <source filename="$(SpbExamples)Polyline\CleanPolyline.cmd" />
       </group>
       <group title="Rel1-10">
         <source filename="$(SpbExamples)PolyLine\Polyline1\Polyline1.vipprj" />
@@ -169,13 +166,12 @@
           <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" />
         </group>
         <group title="Source+Lib">
-          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_Console.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsole.vipprj" />
-          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindows.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\BuildHumanInterfaceLib.cmd" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ConsoleLib\Polyline11_ConsoleLib.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectConsoleLib\Polyline11_ObjConsoleLib.vipprj" />
+          <source filename="$(SpbExamples)PolyLine\Polyline11\Programs\ObjectWinLib\Polyline11_ObjWindowsLib.vipprj" />
         </group>
       </group>
-      <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Exe\LanguageWSM.xml" />
-      <source filename="$(SpbExamples)PolyLine\Polyline14\Programs\pzlBasedApplication\Exe\OptionsWSM.xml" />
       <group title="Rel12">
         <group title="Readme">
           <source filename="$(SpbExamples)PolyLine\Polyline12\Readme.htm" />
