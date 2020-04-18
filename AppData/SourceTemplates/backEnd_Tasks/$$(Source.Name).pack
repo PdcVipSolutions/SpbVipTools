@@ -14,7 +14,7 @@
 #include @"pfc\core.ph"
 
 % private interfaces
-#include @"Febe\Common\dataExchangeIdentifiers.i"
+#include @"..\Common\dataExchangeIdentifiers.i"
 #include @"Packs\Logic\appFrameSupport\coreIdentifiers.i"
 
 % private classes

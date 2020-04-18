@@ -6,7 +6,7 @@
 #include @"pfc\asynchronous\future\future.ph"
 #include @"Packs\Logic\edf\edf.ph"
 #include @"pfc\gui\commands\checkCommand\checkCommand.ph"
-#include @"febe\common\appfrontend\frontend\frontend.ph"
+#include @"..\common\appfrontend\frontend\frontend.ph"
 
 % exported interfaces
 #include @"$$(Source.Path)$$(Source.Name).i"
